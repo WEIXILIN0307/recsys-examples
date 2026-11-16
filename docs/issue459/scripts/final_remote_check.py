@@ -1,0 +1,11 @@
+import concurrent.futures,hashlib,json,os,subprocess,urllib.request
+from pathlib import Path
+R=Path(__file__).resolve().parents[1];gh='/home/lwx/.cache/recsys-459-submit/gh';env=dict(os.environ,GH_CONFIG_DIR='/home/lwx/.cache/recsys-459-submit/gh-config');pub=json.loads((R/'evidence/published-stack.json').read_text());tasks=[('NVIDIA/recsys-examples',551,'8518eddaf1ac3da2cca6070215b7841ddccfe2f9'),('NVIDIA/recsys-examples',558,'cd4326dfb2711be06d31361267ce6d6d396ef4ee'),('NVIDIA/recsys-examples',559,'ee3618ea47a3348cb0b63136bd6943c925ff6f3e'),('NVIDIA/recsys-examples',560,'9a1d450fffce83021ecbbeccc2620870abf7d741')]+[(p['repo'],p['number'],p['head']) for p in pub]
+def api(ep):return json.loads(subprocess.check_output([gh,'api',ep],env=env,text=True))
+def check(t):
+ repo,n,head=t;x=api(f'repos/{repo}/pulls/{n}');assert x['draft'] and x['state']=='open' and x['head']['sha']==head
+ runs=api(f'repos/{repo}/commits/{head}/check-runs');status=api(f'repos/{repo}/commits/{head}/status');out=dict(url=x['html_url'],draft=x['draft'],head=head,base_ref=x['base']['ref'],base_sha=x['base']['sha'],mergeable=x['mergeable'],mergeable_state=x['mergeable_state'],additions=x['additions'],deletions=x['deletions'],files=x['changed_files'],check_runs=[dict(name=r['name'],status=r['status'],conclusion=r['conclusion'],url=r['html_url']) for r in runs['check_runs']],status=status['state'],statuses=[dict(context=r['context'],state=r['state']) for r in status['statuses']]);print(out['url'],out['additions'],out['deletions'],out['mergeable_state'],flush=True);return out
+with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:rows=list(ex.map(check,tasks))
+(R/'evidence/final-remote-state.json').write_text(json.dumps(rows,indent=2)+'\n')
+a=json.loads((R/'evidence/artifact-publication.json').read_text());url=f"https://raw.githubusercontent.com/WEIXILIN0307/recsys-examples/{a['head']}/docs/issue459/evidence-current.tar.gz";data=urllib.request.urlopen(url,timeout=60).read();assert len(data)==a['archive_bytes'] and hashlib.sha256(data).hexdigest()==a['archive_sha256'];print('Public artifact download SHA256 verified',len(data),flush=True)
+(R/'evidence/public-artifact-verification.json').write_text(json.dumps(dict(url=url,bytes=len(data),sha256=hashlib.sha256(data).hexdigest(),verified=True),indent=2)+'\n')

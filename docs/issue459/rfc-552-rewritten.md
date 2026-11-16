@@ -10,7 +10,7 @@ After:  keys → input_dist completion → resolve/init/pin rows → TorchRec fo
 Both:   output_dist → DynamicEmb backward/optimizer → ordered row release
 ```
 
-Receiver completion includes native split-fusion reconstruction. Resolved input retains original-key metadata for dedup, scores, frequencies and output maps. Eligible persistent matrices are borrowed; other layouts use explicit compact rows and EC/EBC fallback. TorchRec reuse covers forward lookup, not optimizer, eviction or checkpoint ownership. Detailed fields, state transitions and alternatives are in [design notes](https://github.com/WEIXILIN0307/recsys-examples/tree/docs-459-receiver-split-evidence/docs/issue459/DESIGN_DETAILS.md).
+Receiver completion includes native split-fusion reconstruction. Resolved input retains original-key metadata for dedup, scores, frequencies and output maps. Eligible persistent matrices are borrowed; other layouts use explicit compact rows and EC/EBC fallback. TorchRec reuse covers forward lookup, not optimizer, eviction or checkpoint ownership. Detailed fields, state transitions and alternatives are in [design notes](https://github.com/WEIXILIN0307/recsys-examples/tree/d830f982cf57b7ec5b24bb7626a34974d81c8961/docs/issue459/DESIGN_DETAILS.md).
 
 ## Core Invariants
 
@@ -37,7 +37,7 @@ Local tests cover native RW, split fusion, Cache, Host/Hybrid, interface-level S
 
 Every slice has prefix-specific tests; the combined reference corpus reports828 passed/6 skipped per rank on production identical to the final frozen-base prefix. These results use4466f9d. Main subsequently advanced to08eed12:548 adds FP8 storage, gradient-precision and64-bit-offset behavior. The stack has a real merge conflict and requires semantic integration, a fresh native build and revalidation; old results do not validate that merge.
 
-Current full-step medians regress9.7% for raw HBM core,6.2% for HBM prefetch and14.6–25.5% for Cache/Host/Hybrid. SparseDist median improves2.8% in a small shared-host run, with worse p95; no general speedup is claimed. Historical adverse results are retained. [Acceptance matrix](https://github.com/WEIXILIN0307/recsys-examples/tree/docs-459-receiver-split-evidence/docs/issue459/ACCEPTANCE_MATRIX.md) and [performance evidence](https://github.com/WEIXILIN0307/recsys-examples/tree/docs-459-receiver-split-evidence/docs/issue459/PERFORMANCE_REPORT.md) distinguish current, historical and missing runs.459 remains incomplete.
+Current full-step medians regress9.7% for raw HBM core,6.2% for HBM prefetch and14.6–25.5% for Cache/Host/Hybrid. SparseDist median improves2.8% in a small shared-host run, with worse p95; no general speedup is claimed. Historical adverse results are retained. [Acceptance matrix](https://github.com/WEIXILIN0307/recsys-examples/tree/d830f982cf57b7ec5b24bb7626a34974d81c8961/docs/issue459/ACCEPTANCE_MATRIX.md) and [performance evidence](https://github.com/WEIXILIN0307/recsys-examples/tree/d830f982cf57b7ec5b24bb7626a34974d81c8961/docs/issue459/PERFORMANCE_REPORT.md) distinguish current, historical and missing runs.459 remains incomplete.
 
 ## Open Questions
 

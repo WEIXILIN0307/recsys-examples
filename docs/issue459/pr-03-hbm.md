@@ -21,13 +21,13 @@ HBM-backed, native RW, sequence training. Cache, Host/Hybrid/PS, pooled/processo
 
 ## Validation
 
-Local result on `94fd32f561`: 66 passed per rank; score script passed. Environment: RTX PRO6000 SM120, PyTorch2.13/cu130, TorchRec/FBGEMM1.8. Commands, source/native hashes, skipped cases and failure logs: [PR_VALIDATION_MATRIX.md](https://github.com/WEIXILIN0307/recsys-examples/tree/docs-459-receiver-split-evidence/docs/issue459/PR_VALIDATION_MATRIX.md). Static own-diff/DCO checks pass. Upstream CI and the maintained1.5 image are not represented as local passes.
+Local result on `94fd32f561`: 66 passed per rank; score script passed. Environment: RTX PRO6000 SM120, PyTorch2.13/cu130, TorchRec/FBGEMM1.8. Commands, source/native hashes, skipped cases and failure logs: [PR_VALIDATION_MATRIX.md](https://github.com/WEIXILIN0307/recsys-examples/tree/d830f982cf57b7ec5b24bb7626a34974d81c8961/docs/issue459/PR_VALIDATION_MATRIX.md). Static own-diff/DCO checks pass. Upstream CI and the maintained1.5 image are not represented as local passes.
 
 The tested base is4466f9d. Main advanced to08eed12 during validation:548's FP8/gradient/row-offset changes require a new native build and revalidation. The integrated stack has an actual conflict; do not resolve it textually or reuse old test claims.
 
 ## Performance
 
-Current controlled pair groups: Raw HBM1.951→2.141ms (+9.7%); SparseDist+MLP17.253→16.763ms (−2.8%, worse p95); HBM prefetch17.864→18.973ms (+6.2%); miss-heavy2.174→2.706ms (+24.5%). No overall speedup claim. Full samples, p95/variance and profiler limitations: [PERFORMANCE_REPORT.md](https://github.com/WEIXILIN0307/recsys-examples/tree/docs-459-receiver-split-evidence/docs/issue459/PERFORMANCE_REPORT.md).
+Current controlled pair groups: Raw HBM1.951→2.141ms (+9.7%); SparseDist+MLP17.253→16.763ms (−2.8%, worse p95); HBM prefetch17.864→18.973ms (+6.2%); miss-heavy2.174→2.706ms (+24.5%). No overall speedup claim. Full samples, p95/variance and profiler limitations: [PERFORMANCE_REPORT.md](https://github.com/WEIXILIN0307/recsys-examples/tree/d830f982cf57b7ec5b24bb7626a34974d81c8961/docs/issue459/PERFORMANCE_REPORT.md).
 
 ## Dependencies / Follow-ups
 

@@ -2,7 +2,7 @@
 
 Frozen build/test base: `4466f9d2ea34fd74105f57e1d81291798cd23690` (main at the start of this split). Last remote refresh found `08eed1273bd3021a5cd210db657fcfb4f790bd40`: #548 adds FP8 storage, gradient precision and 64-bit optimizer offsets; #531 adds HSTU inference. The complete stack has a real content conflict with this newer main. #558/#559/#560 content-merge cleanly in separate Git probes, but none of these merge probes was compiled or executed. **Revalidation on latest main is a merge blocker, not a passed compatibility check.**
 
-Local environment: Python3.12, PyTorch2.13.0+cu130, TorchRec1.8.0+0ea0ec0, FBGEMM1.8.0+cu130, driver580.126.09; RTX PRO6000 Blackwell Server SM120 (96GB), PCIe without NVLink. NCCL2.30.7 is preloaded; PyTorch metadata reports2.29.7. This is an experimental target environment, not the project-maintained1.5 image. Timing used GPU0 for raw cases and GPUs0,2 for pipelines, OMP1, fixed rank CPU affinity, with no competing tests from this task. The host was shared and other GPUs had unrelated workloads.
+Local environment: Python 3.12, PyTorch 2.13.0+cu130, TorchRec 1.8.0+0ea0ec0, FBGEMM1.8.0+cu130, driver580.126.09; RTX PRO6000 Blackwell Server SM120 (96GB), PCIe without NVLink. NCCL2.30.7 is preloaded; PyTorch metadata reports2.29.7. This is an experimental target environment, not the project-maintained1.5 image. Timing used GPU0 for raw cases and GPUs0,2 for pipelines, OMP1, fixed rank CPU affinity, with no competing tests from this task. The host was shared and other GPUs had unrelated workloads.
 
 | Branch | Tested HEAD | Actual result | Recorded run |
 |---|---|---|---|
@@ -46,7 +46,7 @@ Combining independently process-group-owning test modules in one pytest process 
 | Missing validation | Required environment / command / assertion |
 |---|---|
 | Latest08eed12/#548 integration | Resolve semantic merge, rebuild native/JIT from latest source; run fp8 storage, optimizer row-offset, output_alloc small-gradient/checkpoint tests and every prefix regression; preserve upstream FP8 decode and 64-bit offsets |
-| Maintained dependency CI | Project container/TorchRec/FBGEMM1.5; run registered unit_test.sh groups and full mypy/codespell/pre-commit |
+| Maintained dependency CI | Project container/TorchRec/FBGEMM 1.5; run registered unit_test.sh groups and full mypy/codespell/pre-commit |
 | Native hierarchical NVLink/GIN | Supported NVLink team + real multi-node GIN; registered test_hier_dist.py suite, parity/status/overflow/window ownership/gradient assertions |
 | Real network PS | Supported production PS service; repeat Storage eviction/overlap/out-of-order optimizer-state tests across actual service persistence and failure boundaries |
 | Full application and checkpoint matrix | Production training workload, all checkpoint/mode transitions/backend combinations; current score dump/load and local tests are only subsets |
