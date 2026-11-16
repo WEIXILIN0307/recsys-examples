@@ -1,0 +1,2094 @@
+[
+  {
+    "path": "corelib/dynamicemb/DynamicEmb_APIs.md",
+    "original_hunk": "@@ -542,4 +542,4 @@ Rules:",
+    "entity": "Rules:",
+    "owners": [
+      "docs/evidence; existing original version retained"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/README.md",
+    "original_hunk": "@@ -156 +156 @@ Regarding how to use the DynamicEmb APIs and their parameters, please refer to t",
+    "entity": "Regarding how to use the DynamicEmb APIs and their parameters, please refer to t",
+    "owners": [
+      "reference8518 / published evidence branch"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/README.md",
+    "original_hunk": "@@ -162,0 +163,17 @@ Regarding how to use the DynamicEmb APIs and their parameters, please refer to t",
+    "entity": "Regarding how to use the DynamicEmb APIs and their parameters, please refer to t",
+    "owners": [
+      "reference8518 / published evidence branch"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/benchmark/README.md",
+    "original_hunk": "@@ -989,0 +990,23 @@ so this benchmark times it in place (`--kernel_times`, `--trace`).",
+    "entity": "so this benchmark times it in place (`--kernel_times`, `--trace`).",
+    "owners": [
+      "reference8518 / published evidence branch"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/benchmark/benchmark_resolved_lookup.py",
+    "original_hunk": "@@ -0,0 +1,423 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "reference8518 / published evidence branch"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/benchmark/input_dist_dense_lookup_results.json",
+    "original_hunk": "@@ -0,0 +1,7267 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "reference8518 / published evidence branch"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/benchmark/input_dist_optimization_results.json",
+    "original_hunk": "@@ -0,0 +1,10034 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "reference8518 / published evidence branch"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/benchmark/input_dist_review_results.json",
+    "original_hunk": "@@ -0,0 +1,7481 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "reference8518 / published evidence branch"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/benchmark/resolved_lookup_results.json",
+    "original_hunk": "@@ -0,0 +1,309 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "reference8518 / published evidence branch"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/docs/input_dist_acceptance.md",
+    "original_hunk": "@@ -0,0 +1,401 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "reference8518 / published evidence branch"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/docs/input_dist_indices_design.md",
+    "original_hunk": "@@ -0,0 +1,199 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "reference8518 / published evidence branch"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/async_erase.py",
+    "original_hunk": "@@ -51,0 +52,34 @@ from torch import nn",
+    "entity": "from torch import nn",
+    "owners": [
+      "01-lifetime"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/async_erase.py",
+    "original_hunk": "@@ -144,0 +179 @@ class TableAccessGate:",
+    "entity": "TableAccessGate.__init__",
+    "owners": [
+      "01-lifetime"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/async_erase.py",
+    "original_hunk": "@@ -148,4 +183,5 @@ class TableAccessGate:",
+    "entity": "TableAccessGate.__call__",
+    "owners": [
+      "01-lifetime"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/async_erase.py",
+    "original_hunk": "@@ -157 +193,5 @@ class TableAccessGate:",
+    "entity": "TableAccessGate.__call__",
+    "owners": [
+      "01-lifetime"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/async_erase.py",
+    "original_hunk": "@@ -159,0 +200,7 @@ class TableAccessGate:",
+    "entity": "TableAccessGate.__call__",
+    "owners": [
+      "01-lifetime"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+    "original_hunk": "@@ -295,0 +296,49 @@ def _get_dynamicemb_options_per_table(",
+    "entity": "_ResolvedInputMixin",
+    "owners": [
+      "03-hbm",
+      "04-cache",
+      "05-storage",
+      "06-layouts"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+    "original_hunk": "@@ -296,0 +346 @@ class BatchedDynamicEmbeddingBag(",
+    "entity": "BatchedDynamicEmbeddingBag",
+    "owners": [
+      "03-hbm",
+      "04-cache",
+      "05-storage",
+      "06-layouts"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+    "original_hunk": "@@ -413,7 +462,0 @@ class BatchedDynamicEmbeddingBag(",
+    "entity": "BatchedDynamicEmbeddingBag",
+    "owners": [
+      "03-hbm",
+      "04-cache",
+      "05-storage",
+      "06-layouts"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+    "original_hunk": "@@ -429,0 +473,3 @@ class BatchedDynamicEmbeddingBag(",
+    "entity": "BatchedDynamicEmbeddingBag.forward",
+    "owners": [
+      "03-hbm",
+      "04-cache",
+      "05-storage",
+      "06-layouts"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+    "original_hunk": "@@ -434 +480,2 @@ class BatchedDynamicEmbeddingBag(",
+    "entity": "BatchedDynamicEmbeddingBag.forward",
+    "owners": [
+      "03-hbm",
+      "04-cache",
+      "05-storage",
+      "06-layouts"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+    "original_hunk": "@@ -438 +485 @@ class BatchedDynamicEmbeddingBag(",
+    "entity": "BatchedDynamicEmbedding",
+    "owners": [
+      "03-hbm",
+      "04-cache",
+      "05-storage",
+      "06-layouts"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+    "original_hunk": "@@ -549,7 +595,0 @@ class BatchedDynamicEmbedding(BaseBatchedEmbedding[torch.Tensor]):",
+    "entity": "BatchedDynamicEmbedding",
+    "owners": [
+      "03-hbm",
+      "04-cache",
+      "05-storage",
+      "06-layouts"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+    "original_hunk": "@@ -556,0 +597,8 @@ class BatchedDynamicEmbedding(BaseBatchedEmbedding[torch.Tensor]):",
+    "entity": "BatchedDynamicEmbedding.forward",
+    "owners": [
+      "03-hbm",
+      "04-cache",
+      "05-storage",
+      "06-layouts"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -16 +16,4 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -18 +21,5 @@ from enum import Enum, auto",
+    "entity": "from enum import Enum, auto",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -21 +28 @@ import torch",
+    "entity": "import torch",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -38 +44,0 @@ from dynamicemb.key_value_table import (",
+    "entity": "from dynamicemb.key_value_table import (",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -43,0 +50 @@ from dynamicemb.optimizer import BaseDynamicEmbeddingOptimizer",
+    "entity": "from dynamicemb.optimizer import BaseDynamicEmbeddingOptimizer",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -49,2 +55,0 @@ from dynamicemb_extensions import (",
+    "entity": "from dynamicemb_extensions import (",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -77 +82 @@ def _copy_cuda_tensor_to_pinned_cpu(tensor: torch.Tensor) -> torch.Tensor:",
+    "entity": "_copy_cuda_tensor_to_pinned_cpu",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -200,0 +206,112 @@ class StorageMode(Enum):",
+    "entity": "_PinnedRowLease",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -206 +323 @@ class PrefetchState:",
+    "entity": "PrefetchState",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -219,0 +337 @@ class PrefetchState:",
+    "entity": "PrefetchState",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -227,0 +346,21 @@ class PrefetchState:",
+    "entity": "PrefetchState",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -230,16 +369,4 @@ class PrefetchState:",
+    "entity": "PrefetchState.record_stream",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -696 +823,2 @@ def _prefetch_hbm_direct_path(",
+    "entity": "_prefetch_hbm_direct_path",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -702 +830,3 @@ def _prefetch_hbm_direct_path(",
+    "entity": "_prefetch_hbm_direct_path",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -719 +849 @@ def _prefetch_hbm_direct_path(",
+    "entity": "_prefetch_hbm_direct_path",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -744,0 +875,8 @@ def _prefetch_hbm_direct_path(",
+    "entity": "_prefetch_hbm_direct_path",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -752 +890 @@ def _prefetch_hbm_direct_path(",
+    "entity": "_prefetch_hbm_direct_path",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -849 +987 @@ def _prefetch_hbm_direct_path(",
+    "entity": "_prefetch_hbm_direct_path",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -866,0 +1005,3 @@ def dynamicemb_prefetch(",
+    "entity": "dynamicemb_prefetch",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -930,0 +1072 @@ def dynamicemb_prefetch(",
+    "entity": "dynamicemb_prefetch",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -931,0 +1074,2 @@ def dynamicemb_prefetch(",
+    "entity": "dynamicemb_prefetch",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -945 +1088,0 @@ def dynamicemb_prefetch(",
+    "entity": "dynamicemb_prefetch",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -947 +1090,3 @@ def dynamicemb_prefetch(",
+    "entity": "dynamicemb_prefetch",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -955,0 +1101 @@ def dynamicemb_prefetch(",
+    "entity": "dynamicemb_prefetch",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -982,0 +1129 @@ def dynamicemb_prefetch(",
+    "entity": "dynamicemb_prefetch",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -993,0 +1141,3 @@ def dynamicemb_prefetch(",
+    "entity": "dynamicemb_prefetch",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -996,69 +1146,61 @@ def dynamicemb_prefetch(",
+    "entity": "dynamicemb_prefetch",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1066,32 +1208,24 @@ def dynamicemb_eval_forward(",
+    "entity": "dynamicemb_prefetch",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1099,2 +1233,2 @@ def dynamicemb_eval_forward(",
+    "entity": "dynamicemb_resolve_eval",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1102,0 +1237 @@ def dynamicemb_eval_forward(",
+    "entity": "dynamicemb_resolve_eval",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1104,20 +1239,14 @@ def dynamicemb_eval_forward(",
+    "entity": "dynamicemb_resolve_eval",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1126 +1255 @@ def dynamicemb_eval_forward(",
+    "entity": "_resolve_storage_rows",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1140 +1269 @@ def _generic_forward_path(",
+    "entity": "_resolve_storage_rows",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1142,8 +1271,3 @@ def _generic_forward_path(",
+    "entity": "_resolve_storage_rows",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1151 +1275 @@ def _generic_forward_path(",
+    "entity": "_resolve_storage_rows",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1153,2 +1276,0 @@ def _generic_forward_path(",
+    "entity": "_resolve_storage_rows",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1175,2 +1296,0 @@ def _generic_forward_path(",
+    "entity": "_resolve_storage_rows",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1188,0 +1309,2 @@ def _generic_forward_path(",
+    "entity": "_resolve_storage_rows",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1245,0 +1368,24 @@ def _generic_forward_path(",
+    "entity": "place_lookup_output",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1278,2 +1424 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1281,3 +1425,0 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1294,3 +1436 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1298,4 +1438 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1308,2 +1445,2 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1311,3 +1448,12 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1317,2 +1462,0 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1343,17 +1487,4 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1362,29 +1493,17 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1392,27 +1511,4 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1444,0 +1541,2 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1446,6 +1544,2 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1457,0 +1552,4 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.backward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1497 +1595,3 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.backward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1522,8 +1621,0 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.backward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1554,3 +1646,12 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.backward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1567,0 +1669,11 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.backward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+    "original_hunk": "@@ -1569 +1681 @@ class DynamicEmbeddingFunction(torch.autograd.Function):",
+    "entity": "DynamicEmbeddingFunction.backward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+    "original_hunk": "@@ -39,2 +38,0 @@ from dynamicemb.batched_dynamicemb_function import (",
+    "entity": "from dynamicemb.batched_dynamicemb_function import (",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "04-cache",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+    "original_hunk": "@@ -42,2 +40,2 @@ from dynamicemb.batched_dynamicemb_function import (",
+    "entity": "from dynamicemb.batched_dynamicemb_function import (",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "04-cache",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+    "original_hunk": "@@ -94,0 +93,2 @@ from dynamicemb.optimizer import (",
+    "entity": "from dynamicemb.optimizer import (",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "04-cache",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+    "original_hunk": "@@ -662,3 +661,0 @@ class BatchedDynamicEmbeddingTablesV2(nn.Module):",
+    "entity": "BatchedDynamicEmbeddingTablesV2.__init__",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "04-cache",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+    "original_hunk": "@@ -665,0 +663,7 @@ class BatchedDynamicEmbeddingTablesV2(nn.Module):",
+    "entity": "BatchedDynamicEmbeddingTablesV2.__init__",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "04-cache",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+    "original_hunk": "@@ -1128,0 +1133 @@ class BatchedDynamicEmbeddingTablesV2(nn.Module):",
+    "entity": "BatchedDynamicEmbeddingTablesV2.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "04-cache",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+    "original_hunk": "@@ -1130 +1135,16 @@ class BatchedDynamicEmbeddingTablesV2(nn.Module):",
+    "entity": "BatchedDynamicEmbeddingTablesV2.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "04-cache",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+    "original_hunk": "@@ -1201,6 +1221,10 @@ class BatchedDynamicEmbeddingTablesV2(nn.Module):",
+    "entity": "BatchedDynamicEmbeddingTablesV2.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "04-cache",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+    "original_hunk": "@@ -1208,68 +1232,44 @@ class BatchedDynamicEmbeddingTablesV2(nn.Module):",
+    "entity": "BatchedDynamicEmbeddingTablesV2.forward",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "04-cache",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+    "original_hunk": "@@ -1322,0 +1323,6 @@ class BatchedDynamicEmbeddingTablesV2(nn.Module):",
+    "entity": "BatchedDynamicEmbeddingTablesV2._check_training_mode",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "04-cache",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+    "original_hunk": "@@ -1332 +1337,0 @@ class BatchedDynamicEmbeddingTablesV2(nn.Module):",
+    "entity": "BatchedDynamicEmbeddingTablesV2.prefetch",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "04-cache",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+    "original_hunk": "@@ -1334,0 +1340,59 @@ class BatchedDynamicEmbeddingTablesV2(nn.Module):",
+    "entity": "BatchedDynamicEmbeddingTablesV2.prefetch",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "04-cache",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+    "original_hunk": "@@ -1362,19 +1426,20 @@ class BatchedDynamicEmbeddingTablesV2(nn.Module):",
+    "entity": "BatchedDynamicEmbeddingTablesV2.resolve_input",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "04-cache",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+    "original_hunk": "@@ -1382,0 +1448,2 @@ class BatchedDynamicEmbeddingTablesV2(nn.Module):",
+    "entity": "BatchedDynamicEmbeddingTablesV2.resolve_input",
+    "owners": [
+      "01-lifetime",
+      "03-hbm",
+      "04-cache",
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/dense_lookup.py",
+    "original_hunk": "@@ -0,0 +1,90 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "02-adapter"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/key_value_table.py",
+    "original_hunk": "@@ -4331,0 +4332 @@ def _eval_lookup_storage(",
+    "entity": "_eval_lookup_storage",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/key_value_table.py",
+    "original_hunk": "@@ -4347,0 +4349,9 @@ def _eval_lookup_storage(",
+    "entity": "_eval_lookup_storage",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/key_value_table.py",
+    "original_hunk": "@@ -4359,0 +4370 @@ def _eval_lookup_cached(",
+    "entity": "_eval_lookup_cached",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/key_value_table.py",
+    "original_hunk": "@@ -4375,13 +4386,2 @@ def _eval_lookup_cached(",
+    "entity": "_eval_lookup_cached",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/key_value_table.py",
+    "original_hunk": "@@ -4390,5 +4389,0 @@ def _eval_lookup_cached(",
+    "entity": "_eval_lookup_cached",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/key_value_table.py",
+    "original_hunk": "@@ -4405,0 +4401 @@ def eval_lookup(",
+    "entity": "eval_lookup",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/key_value_table.py",
+    "original_hunk": "@@ -4426 +4422,3 @@ def eval_lookup(",
+    "entity": "eval_lookup",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/key_value_table.py",
+    "original_hunk": "@@ -4433,0 +4432 @@ def eval_lookup(",
+    "entity": "eval_lookup",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/resolved_storage.py",
+    "original_hunk": "@@ -0,0 +1,210 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/scored_hashtable.py",
+    "original_hunk": "@@ -49,0 +50 @@ from dynamicemb_extensions import (",
+    "entity": "from dynamicemb_extensions import (",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/scored_hashtable.py",
+    "original_hunk": "@@ -1003 +1004,4 @@ class LinearBucketTable(ScoredHashTable):",
+    "entity": "LinearBucketTable.increment_counter",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/scored_hashtable.py",
+    "original_hunk": "@@ -1011,4 +1015,6 @@ class LinearBucketTable(ScoredHashTable):",
+    "entity": "LinearBucketTable.increment_counter",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/scored_hashtable.py",
+    "original_hunk": "@@ -1017 +1023,11 @@ class LinearBucketTable(ScoredHashTable):",
+    "entity": "LinearBucketTable.increment_counter",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/scored_hashtable.py",
+    "original_hunk": "@@ -1031,0 +1048 @@ class LinearBucketTable(ScoredHashTable):",
+    "entity": "LinearBucketTable.increment_counter",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/scored_hashtable.py",
+    "original_hunk": "@@ -1046,4 +1063,2 @@ class LinearBucketTable(ScoredHashTable):",
+    "entity": "LinearBucketTable.decrement_counter",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/embedding.py",
+    "original_hunk": "@@ -580,0 +581,10 @@ class ShardedDynamicEmbeddingCollection(ShardedEmbeddingCollection):",
+    "entity": "ShardedDynamicEmbeddingCollection.prefetch",
+    "owners": [
+      "03-hbm"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/hier_output_dist.py",
+    "original_hunk": "@@ -813,0 +814,11 @@ class HierDist:",
+    "entity": "HierDist.rebind_input",
+    "owners": [
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/input_dist.py",
+    "original_hunk": "@@ -16 +16,3 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "03-hbm"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/input_dist.py",
+    "original_hunk": "@@ -39 +41 @@ from torchrec.sparse.jagged_tensor import KeyedJaggedTensor",
+    "entity": "from torchrec.sparse.jagged_tensor import KeyedJaggedTensor",
+    "owners": [
+      "03-hbm"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/input_dist.py",
+    "original_hunk": "@@ -210,0 +213,103 @@ class _ScoredSplitsAwaitable(Awaitable[KJTAllToAllTensorsAwaitable]):",
+    "entity": "_ResolveOnce",
+    "owners": [
+      "03-hbm"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/input_dist.py",
+    "original_hunk": "@@ -273,0 +379,3 @@ class RwSparseFeaturesDist(_RwSparseFeaturesDist):",
+    "entity": "RwSparseFeaturesDist.__init__",
+    "owners": [
+      "03-hbm"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/input_dist.py",
+    "original_hunk": "@@ -297,0 +406,10 @@ class RwSparseFeaturesDist(_RwSparseFeaturesDist):",
+    "entity": "RwSparseFeaturesDist.__init__",
+    "owners": [
+      "03-hbm"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/input_dist.py",
+    "original_hunk": "@@ -319 +437,10 @@ class RwSparseFeaturesDist(_RwSparseFeaturesDist):",
+    "entity": "RwSparseFeaturesDist.forward",
+    "owners": [
+      "03-hbm"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/input_dist.py",
+    "original_hunk": "@@ -321 +448 @@ class RwSparseFeaturesDist(_RwSparseFeaturesDist):",
+    "entity": "RwSparseFeaturesDist.forward",
+    "owners": [
+      "03-hbm"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/input_dist.py",
+    "original_hunk": "@@ -346 +473,8 @@ class RwSparseFeaturesDist(_RwSparseFeaturesDist):",
+    "entity": "RwSparseFeaturesDist.forward",
+    "owners": [
+      "03-hbm"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/input_dist.py",
+    "original_hunk": "@@ -431,0 +566 @@ class RwSparseFeaturesDist(_RwSparseFeaturesDist):",
+    "entity": "RwSparseFeaturesDist.hier_forward",
+    "owners": [
+      "03-hbm"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/input_dist.py",
+    "original_hunk": "@@ -463,0 +599,3 @@ class HierKJTAwaitable(Awaitable[KeyedJaggedTensor]):",
+    "entity": "HierKJTAwaitable.__init__",
+    "owners": [
+      "03-hbm"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/input_dist.py",
+    "original_hunk": "@@ -472,0 +611 @@ class HierKJTAwaitable(Awaitable[KeyedJaggedTensor]):",
+    "entity": "HierKJTAwaitable.__init__",
+    "owners": [
+      "03-hbm"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/input_dist.py",
+    "original_hunk": "@@ -476 +615 @@ class HierKJTAwaitable(Awaitable[KeyedJaggedTensor]):",
+    "entity": "HierKJTAwaitable._wait_impl",
+    "owners": [
+      "03-hbm"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/input_dist.py",
+    "original_hunk": "@@ -478,0 +618,5 @@ class HierKJTAwaitable(Awaitable[KeyedJaggedTensor]):",
+    "entity": "HierKJTAwaitable._wait_impl",
+    "owners": [
+      "03-hbm"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/resolved_input.py",
+    "original_hunk": "@@ -0,0 +1,128 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "03-hbm"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+    "original_hunk": "@@ -19,0 +20 @@ import warnings",
+    "entity": "import warnings",
+    "owners": [
+      "03-hbm",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+    "original_hunk": "@@ -68,0 +70 @@ from .input_dist import RwSparseFeaturesDist",
+    "entity": "from .input_dist import RwSparseFeaturesDist",
+    "owners": [
+      "03-hbm",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+    "original_hunk": "@@ -133,0 +136,140 @@ def sharding_takes_scores(sharding_infos: List[EmbeddingShardingInfo]) -> bool:",
+    "entity": "sharding_has_dynamic_tables",
+    "owners": [
+      "03-hbm",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+    "original_hunk": "@@ -185 +327 @@ def output_dist_options(",
+    "entity": "GroupedEmbeddingsLookup",
+    "owners": [
+      "03-hbm",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+    "original_hunk": "@@ -212 +354 @@ class GroupedEmbeddingsLookup(_GroupedEmbeddingsLookup):",
+    "entity": "GroupedEmbeddingsLookup._prefetch_raw",
+    "owners": [
+      "03-hbm",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+    "original_hunk": "@@ -351,0 +494 @@ class RwSequenceDynamicEmbeddingSharding(RwSequenceEmbeddingSharding):",
+    "entity": "RwSequenceDynamicEmbeddingSharding._init_customized_distributor",
+    "owners": [
+      "03-hbm",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+    "original_hunk": "@@ -468,0 +612 @@ class RwSequenceDynamicEmbeddingSharding(RwSequenceEmbeddingSharding):",
+    "entity": "RwSequenceDynamicEmbeddingSharding.create_input_dist",
+    "owners": [
+      "03-hbm",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+    "original_hunk": "@@ -480 +624 @@ class RwSequenceDynamicEmbeddingSharding(RwSequenceEmbeddingSharding):",
+    "entity": "RwSequenceDynamicEmbeddingSharding.create_lookup",
+    "owners": [
+      "03-hbm",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+    "original_hunk": "@@ -483,4 +627,8 @@ class RwSequenceDynamicEmbeddingSharding(RwSequenceEmbeddingSharding):",
+    "entity": "RwSequenceDynamicEmbeddingSharding.create_lookup",
+    "owners": [
+      "03-hbm",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+    "original_hunk": "@@ -487,0 +636 @@ class RwSequenceDynamicEmbeddingSharding(RwSequenceEmbeddingSharding):",
+    "entity": "RwSequenceDynamicEmbeddingSharding.create_lookup",
+    "owners": [
+      "03-hbm",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+    "original_hunk": "@@ -504 +653,6 @@ class RwSequenceDynamicEmbeddingSharding(RwSequenceEmbeddingSharding):",
+    "entity": "GroupedPooledEmbeddingsLookup",
+    "owners": [
+      "03-hbm",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+    "original_hunk": "@@ -560,0 +715 @@ class RwPooledDynamicEmbeddingSharding(RwPooledEmbeddingSharding):",
+    "entity": "RwPooledDynamicEmbeddingSharding._init_customized_distributor",
+    "owners": [
+      "03-hbm",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+    "original_hunk": "@@ -579,0 +735 @@ class RwPooledDynamicEmbeddingSharding(RwPooledEmbeddingSharding):",
+    "entity": "RwPooledDynamicEmbeddingSharding.create_input_dist",
+    "owners": [
+      "03-hbm",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+    "original_hunk": "@@ -588 +744 @@ class RwPooledDynamicEmbeddingSharding(RwPooledEmbeddingSharding):",
+    "entity": "RwPooledDynamicEmbeddingSharding.create_lookup",
+    "owners": [
+      "03-hbm",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+    "original_hunk": "@@ -594,0 +751,4 @@ class RwPooledDynamicEmbeddingSharding(RwPooledEmbeddingSharding):",
+    "entity": "RwPooledDynamicEmbeddingSharding.create_lookup",
+    "owners": [
+      "03-hbm",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/twrw_sharding.py",
+    "original_hunk": "@@ -55,2 +55,11 @@ from ..batched_dynamicemb_tables import BatchedDynamicEmbeddingTablesV2",
+    "entity": "from ..batched_dynamicemb_tables import BatchedDynamicEmbeddingTablesV2",
+    "owners": [
+      "07-twrw"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/twrw_sharding.py",
+    "original_hunk": "@@ -90,0 +100 @@ class TwRwSparseFeaturesDist(_TwRwSparseFeaturesDist):",
+    "entity": "TwRwSparseFeaturesDist.__init__",
+    "owners": [
+      "07-twrw"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/twrw_sharding.py",
+    "original_hunk": "@@ -105,0 +116,5 @@ class TwRwSparseFeaturesDist(_TwRwSparseFeaturesDist):",
+    "entity": "TwRwSparseFeaturesDist.__init__",
+    "owners": [
+      "07-twrw"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/twrw_sharding.py",
+    "original_hunk": "@@ -135,0 +151,8 @@ class TwRwSparseFeaturesDist(_TwRwSparseFeaturesDist):",
+    "entity": "TwRwSparseFeaturesDist.forward",
+    "owners": [
+      "07-twrw"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/twrw_sharding.py",
+    "original_hunk": "@@ -166,0 +190 @@ class TwRwPooledDynamicEmbeddingSharding(TwRwPooledEmbeddingSharding):",
+    "entity": "TwRwPooledDynamicEmbeddingSharding.__init__",
+    "owners": [
+      "07-twrw"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/twrw_sharding.py",
+    "original_hunk": "@@ -188,0 +213 @@ class TwRwPooledDynamicEmbeddingSharding(TwRwPooledEmbeddingSharding):",
+    "entity": "TwRwPooledDynamicEmbeddingSharding.create_input_dist",
+    "owners": [
+      "07-twrw"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/shard/twrw_sharding.py",
+    "original_hunk": "@@ -225,0 +251,3 @@ class TwRwPooledDynamicEmbeddingSharding(TwRwPooledEmbeddingSharding):",
+    "entity": "TwRwPooledDynamicEmbeddingSharding.create_lookup",
+    "owners": [
+      "07-twrw"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/dynamicemb/torchrec_lookup.py",
+    "original_hunk": "@@ -0,0 +1,241 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "02-adapter"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/dynamic_emb_op.cu",
+    "original_hunk": "@@ -81,0 +82,116 @@ std::vector<int64_t> offsets_to_table_features_offsets(",
+    "entity": "std::vector<int64_t> offsets_to_table_features_offsets(",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/dynamic_emb_op.cu",
+    "original_hunk": "@@ -1043,0 +1160,8 @@ void bind_dyn_emb_op(py::module &m) {",
+    "entity": "void bind_dyn_emb_op(py::module &m) {",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/lookup_kernel.cuh",
+    "original_hunk": "@@ -811 +811 @@ HOST_DEVICE_INLINE int64_t bs_upper_bound_sub_one(const T *const arr,",
+    "entity": "HOST_DEVICE_INLINE int64_t bs_upper_bound_sub_one(const T *const arr,",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/lookup_kernel.cuh",
+    "original_hunk": "@@ -820,0 +821,4 @@ __global__ void one_to_one_warp_per_ev_kernel(CopyDesc copy_desc) {",
+    "entity": "__global__ void one_to_one_warp_per_ev_kernel(CopyDesc copy_desc) {",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/lookup_kernel.cuh",
+    "original_hunk": "@@ -827 +831 @@ __global__ void one_to_one_warp_per_ev_kernel(CopyDesc copy_desc) {",
+    "entity": "__global__ void one_to_one_warp_per_ev_kernel(CopyDesc copy_desc) {",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/lookup_kernel.cuh",
+    "original_hunk": "@@ -845,0 +850,4 @@ __global__ void one_to_one_warp_per_ev_vec4_kernel(CopyDesc copy_desc) {",
+    "entity": "__global__ void one_to_one_warp_per_ev_vec4_kernel(CopyDesc copy_desc) {",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/lookup_kernel.cuh",
+    "original_hunk": "@@ -1015 +1023 @@ void copy_multi_to_one(CopyDesc &copy_desc, bool feature_dims_vec4,",
+    "entity": "void copy_multi_to_one(CopyDesc &copy_desc, bool feature_dims_vec4,",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/lookup_kernel.cuh",
+    "original_hunk": "@@ -1027 +1035 @@ void copy_one_to_one(CopyDesc &copy_desc, int ev_size, int num_sms,",
+    "entity": "void copy_one_to_one(CopyDesc &copy_desc, int ev_size, int num_sms,",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/lookup_kernel.cuh",
+    "original_hunk": "@@ -1035 +1043 @@ void copy_one_to_one(CopyDesc &copy_desc, int ev_size, int num_sms,",
+    "entity": "void copy_one_to_one(CopyDesc &copy_desc, int ev_size, int num_sms,",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/lookup_kernel.cuh",
+    "original_hunk": "@@ -1042 +1050 @@ void copy_one_to_one(CopyDesc &copy_desc, int ev_size, int num_sms,",
+    "entity": "void copy_one_to_one(CopyDesc &copy_desc, int ev_size, int num_sms,",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/lookup_kernel.cuh",
+    "original_hunk": "@@ -1048 +1056 @@ void copy_one_to_one(CopyDesc &copy_desc, int ev_size, int num_sms,",
+    "entity": "void copy_one_to_one(CopyDesc &copy_desc, int ev_size, int num_sms,",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/table_operation/insert_and_evict.cu",
+    "original_hunk": "@@ -21,0 +22,2 @@ All rights reserved. # SPDX-License-Identifier: Apache-2.0",
+    "entity": "All rights reserved. # SPDX-License-Identifier: Apache-2.0",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/table_operation/insert_and_evict.cu",
+    "original_hunk": "@@ -25,3 +27,2 @@ namespace dyn_emb {",
+    "entity": "namespace dyn_emb {",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/table_operation/insert_and_evict.cu",
+    "original_hunk": "@@ -34 +35,4 @@ __global__ void update_counter_with_layout_kernel(",
+    "entity": "__global__ void update_counter_with_layout_kernel(",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/table_operation/insert_and_evict.cu",
+    "original_hunk": "@@ -35,0 +40,7 @@ __global__ void update_counter_with_layout_kernel(",
+    "entity": "__global__ void update_counter_with_layout_kernel(",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/table_operation/insert_and_evict.cu",
+    "original_hunk": "@@ -59 +70 @@ __global__ void update_counter_with_layout_kernel(",
+    "entity": "__global__ void update_counter_with_layout_kernel(",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/table_operation/insert_and_evict.cu",
+    "original_hunk": "@@ -443,3 +454,3 @@ table_insert_and_evict(at::Tensor table_storage,",
+    "entity": "table_insert_and_evict(at::Tensor table_storage,",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/table_operation/insert_and_evict.cu",
+    "original_hunk": "@@ -447,3 +458,5 @@ void table_update_counter_with_layout(",
+    "entity": "void table_update_counter_with_layout(",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/table_operation/insert_and_evict.cu",
+    "original_hunk": "@@ -452 +465,2 @@ void table_update_counter_with_layout(",
+    "entity": "void table_update_counter_with_layout(",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/table_operation/insert_and_evict.cu",
+    "original_hunk": "@@ -470 +484 @@ void table_update_counter_with_layout(",
+    "entity": "void table_update_counter_with_layout(",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/table_operation/insert_and_evict.cu",
+    "original_hunk": "@@ -474 +488,2 @@ void table_update_counter_with_layout(",
+    "entity": "void table_update_counter_with_layout(",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/table_operation/insert_and_evict.cu",
+    "original_hunk": "@@ -478,0 +494,45 @@ void table_update_counter_with_layout(",
+    "entity": "void table_update_counter_with_layout(",
+    "owners": [
+      "#558 atomic prerequisite; optional fused projection held in reference8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/table_operation/table.cu",
+    "original_hunk": "@@ -211,0 +212,12 @@ void bind_table_operation(py::module &m) {",
+    "entity": "void bind_table_operation(py::module &m) {",
+    "owners": [
+      "optional projection held in reference8518 (not required by current stack)"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/src/table_operation/table.cuh",
+    "original_hunk": "@@ -188,0 +189,10 @@ void table_update_counter_with_layout(",
+    "entity": "void table_update_counter_with_layout(",
+    "owners": [
+      "optional projection held in reference8518 (not required by current stack)"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/test_batched_dynamic_embedding_tables_v2.py",
+    "original_hunk": "@@ -1527,9 +1526,0 @@ def test_forward_train_eval(",
+    "entity": "test_forward_train_eval",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_test.sh",
+    "original_hunk": "@@ -22,0 +23,2 @@ FWD_BWD_TEST_FILES=(",
+    "entity": "FWD_BWD_TEST_FILES=(",
+    "owners": [
+      "01-lifetime",
+      "02-adapter",
+      "03-hbm",
+      "04-cache",
+      "05-storage",
+      "06-layouts",
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/erase_async/test_async_erase.py",
+    "original_hunk": "@@ -80,0 +81,46 @@ def test_the_kernels_of_a_section_run_after_those_of_the_section_before(device):",
+    "entity": "def test_the_kernels_of_a_section_run_after_those_of_the_section_before(device):",
+    "owners": [
+      "01-lifetime"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/per_key_score/test_per_key_score_dist.py",
+    "original_hunk": "@@ -23,5 +23,4 @@ Run with ``torchrun --nproc_per_node 2``. Three parts:",
+    "entity": "Run with ``torchrun --nproc_per_node 2``. Three parts:",
+    "owners": [
+      "03-hbm",
+      "03-hbm capability-aware existing score regression; repeated on each enabled backend"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/per_key_score/test_per_key_score_dist.py",
+    "original_hunk": "@@ -67 +65,0 @@ from dynamicemb import (",
+    "entity": "from dynamicemb import (",
+    "owners": [
+      "03-hbm",
+      "03-hbm capability-aware existing score regression; repeated on each enabled backend"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/per_key_score/test_per_key_score_dist.py",
+    "original_hunk": "@@ -79,0 +78 @@ from dynamicemb.shard.input_dist import RwSparseFeaturesDist",
+    "entity": "from dynamicemb.shard.input_dist import RwSparseFeaturesDist",
+    "owners": [
+      "03-hbm",
+      "03-hbm capability-aware existing score regression; repeated on each enabled backend"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/per_key_score/test_per_key_score_dist.py",
+    "original_hunk": "@@ -89,5 +88,2 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))",
+    "entity": "sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))",
+    "owners": [
+      "03-hbm",
+      "03-hbm capability-aware existing score regression; repeated on each enabled backend"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/per_key_score/test_per_key_score_dist.py",
+    "original_hunk": "@@ -102,3 +97,0 @@ INPUT_BATCH_PER_RANK = 4",
+    "entity": "INPUT_BATCH_PER_RANK = 4",
+    "owners": [
+      "03-hbm",
+      "03-hbm capability-aware existing score regression; repeated on each enabled backend"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/per_key_score/test_per_key_score_dist.py",
+    "original_hunk": "@@ -106 +99 @@ seen_names = (\"forward\", \"prefetch\")",
+    "entity": "_input_model",
+    "owners": [
+      "03-hbm",
+      "03-hbm capability-aware existing score regression; repeated on each enabled backend"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/per_key_score/test_per_key_score_dist.py",
+    "original_hunk": "@@ -114,0 +108 @@ def _input_model(use_index_dedup: bool):",
+    "entity": "_input_model",
+    "owners": [
+      "03-hbm",
+      "03-hbm capability-aware existing score regression; repeated on each enabled backend"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/per_key_score/test_per_key_score_dist.py",
+    "original_hunk": "@@ -179,3 +173,5 @@ def check_input_dist(use_index_dedup: bool) -> None:",
+    "entity": "check_input_dist",
+    "owners": [
+      "03-hbm",
+      "03-hbm capability-aware existing score regression; repeated on each enabled backend"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/per_key_score/test_per_key_score_dist.py",
+    "original_hunk": "@@ -193,2 +189,5 @@ def check_input_dist(use_index_dedup: bool) -> None:",
+    "entity": "check_input_dist",
+    "owners": [
+      "03-hbm",
+      "03-hbm capability-aware existing score regression; repeated on each enabled backend"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/per_key_score/test_per_key_score_dist.py",
+    "original_hunk": "@@ -196,2 +194,0 @@ def check_input_dist(use_index_dedup: bool) -> None:",
+    "entity": "def check_input_dist(use_index_dedup: bool) -> None:",
+    "owners": [
+      "03-hbm",
+      "03-hbm capability-aware existing score regression; repeated on each enabled backend"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/per_key_score/test_per_key_score_dist.py",
+    "original_hunk": "@@ -199,10 +196,3 @@ def check_train_pipeline_is_refused() -> None:",
+    "entity": "check_train_pipeline_keeps_scores",
+    "owners": [
+      "03-hbm",
+      "03-hbm capability-aware existing score regression; repeated on each enabled backend"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/per_key_score/test_per_key_score_dist.py",
+    "original_hunk": "@@ -210,68 +200,21 @@ def check_train_pipeline_is_refused() -> None:",
+    "entity": "check_train_pipeline_keeps_scores",
+    "owners": [
+      "03-hbm",
+      "03-hbm capability-aware existing score regression; repeated on each enabled backend"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/per_key_score/test_per_key_score_dist.py",
+    "original_hunk": "@@ -685 +628 @@ if __name__ == \"__main__\":",
+    "entity": "if __name__ == \"__main__\":",
+    "owners": [
+      "03-hbm",
+      "03-hbm capability-aware existing score regression; repeated on each enabled backend"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/table_operation/test_counter_row_projection.py",
+    "original_hunk": "@@ -0,0 +1,166 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "optional projection held in reference8518 (not required by current stack)"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_dense_lookup.py",
+    "original_hunk": "@@ -0,0 +1,222 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "02-adapter"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_hier_dist.py",
+    "original_hunk": "@@ -67,0 +68 @@ from typing import Callable, Dict, List, NamedTuple, Optional, Sequence, Tuple",
+    "entity": "from typing import Callable, Dict, List, NamedTuple, Optional, Sequence, Tuple",
+    "owners": [
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_hier_dist.py",
+    "original_hunk": "@@ -766 +767,7 @@ class Probe:",
+    "entity": "Probe.__init__.forward",
+    "owners": [
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_hier_dist.py",
+    "original_hunk": "@@ -854 +861 @@ class Run(NamedTuple):",
+    "entity": "Run",
+    "owners": [
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_hier_dist.py",
+    "original_hunk": "@@ -856,0 +864 @@ class Run(NamedTuple):",
+    "entity": "Run",
+    "owners": [
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_hier_dist.py",
+    "original_hunk": "@@ -867,0 +876,9 @@ def counted(fn: Callable):",
+    "entity": "counted",
+    "owners": [
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_hier_dist.py",
+    "original_hunk": "@@ -870,0 +888 @@ def counted(fn: Callable):",
+    "entity": "counted",
+    "owners": [
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_hier_dist.py",
+    "original_hunk": "@@ -873 +891,4 @@ def counted(fn: Callable):",
+    "entity": "counted",
+    "owners": [
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_hier_dist.py",
+    "original_hunk": "@@ -880,0 +902 @@ def run_model(ec, kjt, sync_count: bool) -> Run:",
+    "entity": "run_model",
+    "owners": [
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_hier_dist.py",
+    "original_hunk": "@@ -886 +908,16 @@ def run_model(ec, kjt, sync_count: bool) -> Run:",
+    "entity": "run_model",
+    "owners": [
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_hier_dist.py",
+    "original_hunk": "@@ -892 +929 @@ def run_model(ec, kjt, sync_count: bool) -> Run:",
+    "entity": "run_model",
+    "owners": [
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_hier_dist.py",
+    "original_hunk": "@@ -1286,0 +1324 @@ def run_case(",
+    "entity": "run_case",
+    "owners": [
+      "08-hierarchy"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_input_dist_indices.py",
+    "original_hunk": "@@ -0,0 +1,1593 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "reference/459-integration-validation full oracle; capability-specific tests in feature branches"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_input_dist_indices.sh",
+    "original_hunk": "@@ -0,0 +1,9 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "per-slice unit_test.sh registration; original integration runner retained on8518"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_resolved_lifecycle.py",
+    "original_hunk": "@@ -0,0 +1,554 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "reference/459-integration-validation full oracle; capability-specific tests in feature branches"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  },
+  {
+    "path": "corelib/dynamicemb/test/unit_tests/test_storage_row_copy.py",
+    "original_hunk": "@@ -0,0 +1,79 @@",
+    "entity": "<module/global or non-Python>",
+    "owners": [
+      "05-storage"
+    ],
+    "scope": "Ownership inventory; shared-function changes have multiple functional owners, see manual invariants table."
+  }
+]

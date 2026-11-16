@@ -1,0 +1,37 @@
+[
+  {
+    "path": "corelib/dynamicemb/benchmark/benchmark_results.json",
+    "lines": 362,
+    "bytes": 9752,
+    "sha256": "0c37807faf37adb9cd0c475d0dd8a01c45018da50a5836b44589acf69e87e1df",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/blob/8518eddaf1ac3da2cca6070215b7841ddccfe2f9/corelib/dynamicemb/benchmark/benchmark_results.json"
+  },
+  {
+    "path": "corelib/dynamicemb/benchmark/input_dist_dense_lookup_results.json",
+    "lines": 7267,
+    "bytes": 1343621,
+    "sha256": "cccdfb1ef3c2a3b6149fb43556c19ad07160b754879606c6a1d53ed0c1f4ba58",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/blob/8518eddaf1ac3da2cca6070215b7841ddccfe2f9/corelib/dynamicemb/benchmark/input_dist_dense_lookup_results.json"
+  },
+  {
+    "path": "corelib/dynamicemb/benchmark/input_dist_optimization_results.json",
+    "lines": 10034,
+    "bytes": 373105,
+    "sha256": "3a7b83d75ecf5f6e3cf3518076bb3df9c6240ae84b515abc28ccd479ba8a7489",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/blob/8518eddaf1ac3da2cca6070215b7841ddccfe2f9/corelib/dynamicemb/benchmark/input_dist_optimization_results.json"
+  },
+  {
+    "path": "corelib/dynamicemb/benchmark/input_dist_review_results.json",
+    "lines": 7481,
+    "bytes": 244981,
+    "sha256": "ea80ae5627d357e88d7be32e25e355b46ccef73ca766aba0030cbe23f2208528",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/blob/8518eddaf1ac3da2cca6070215b7841ddccfe2f9/corelib/dynamicemb/benchmark/input_dist_review_results.json"
+  },
+  {
+    "path": "corelib/dynamicemb/benchmark/resolved_lookup_results.json",
+    "lines": 309,
+    "bytes": 8652,
+    "sha256": "f17ad05b58f304b7b82dc00f71f195dee1a07c8eaf686bd279652c13e5462685",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/blob/8518eddaf1ac3da2cca6070215b7841ddccfe2f9/corelib/dynamicemb/benchmark/resolved_lookup_results.json"
+  }
+]

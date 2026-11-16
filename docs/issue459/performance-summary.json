@@ -1,0 +1,1526 @@
+[
+  {
+    "case": "raw-hbm",
+    "version": 0,
+    "processes": 3,
+    "median_ms": 1.9513324089348316,
+    "process_medians": [
+      1.975745945237577,
+      1.9202617451082915,
+      1.9513324089348316
+    ],
+    "change_pct": 0.0,
+    "trial_mean_p95_ms": 2.0270578493364155,
+    "trial_mean_stddev_ms": 0.04338848899781112,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 11,
+      "kernel_launches_median": 145,
+      "peak_increment_bytes_median": 9936384,
+      "record_stream_count_median": 25,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 254.9950000000099,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.20900000000438
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.175999999997657
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 309.08000000000357,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2070000000003347
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2069999999966967
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 319.3980000000047,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.142999999996391
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.208000000001448
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "4466f9d2ea34fd74105f57e1d81291798cd23690"
+    ]
+  },
+  {
+    "case": "raw-hbm",
+    "version": 3,
+    "processes": 3,
+    "median_ms": 2.1406898193527013,
+    "process_medians": [
+      2.1406898193527013,
+      2.1342858590651304,
+      2.154889110242948
+    ],
+    "change_pct": 9.704005814223816,
+    "trial_mean_p95_ms": 2.207350873039104,
+    "trial_mean_stddev_ms": 0.03216551894464074,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 11,
+      "kernel_launches_median": 145,
+      "peak_increment_bytes_median": 9936384,
+      "record_stream_count_median": 25,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 304.0009999999975,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.1740000000008877
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.176000000001295
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 324.9340000000011,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.1119999999973516
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.077999999997701
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 328.6560000000063,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2079999999969004
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2070000000003347
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "26bfbd5384b66dbc3e643bac497bdc3a31cf4280"
+    ]
+  },
+  {
+    "case": "raw-hbm",
+    "version": 8,
+    "processes": 3,
+    "median_ms": 2.472344604320824,
+    "process_medians": [
+      2.4105641792993993,
+      2.4928414286114275,
+      2.472344604320824
+    ],
+    "change_pct": 26.70033014366815,
+    "trial_mean_p95_ms": 2.5404997528530657,
+    "trial_mean_stddev_ms": 0.08056220273558826,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 11,
+      "kernel_launches_median": 150,
+      "peak_increment_bytes_median": 9936384,
+      "record_stream_count_median": 25,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 325.3109999999906,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2080000000005384
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.144000000002052
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 324.89000000000124,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.174999999992906
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.242000000000189
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 348.18200000000434,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.208999999997104
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2080000000005384
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "5f7a7c16ef1acd6596e633e5f5187d6721e4c1d8"
+    ]
+  },
+  {
+    "case": "sparse-hbm",
+    "version": 0,
+    "processes": 3,
+    "median_ms": 17.253106117248535,
+    "process_medians": [
+      17.476490020751953,
+      17.253106117248535,
+      16.98966121673584
+    ],
+    "change_pct": 0.0,
+    "trial_mean_p95_ms": 17.56030445098877,
+    "trial_mean_stddev_ms": 0.5766921473658616,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 71,
+      "kernel_launches_median": 590,
+      "peak_increment_bytes_median": 17367040,
+      "record_stream_count_median": 80,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 75,
+            "cpu_us": 2330.6810000000223,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 45,
+            "cpu_us": 0,
+            "device_us": 19.742000000012922
+          },
+          {
+            "name": "Memcpy HtoD (Pageable -> Device)",
+            "count": 20,
+            "cpu_us": 0,
+            "device_us": 6.461999999995896
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.1780000000053406
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.831999999983964
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 75,
+            "cpu_us": 2228.7300000000314,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 45,
+            "cpu_us": 0,
+            "device_us": 19.614000000017768
+          },
+          {
+            "name": "Memcpy HtoD (Pageable -> Device)",
+            "count": 20,
+            "cpu_us": 0,
+            "device_us": 6.623999999988882
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.1740000000045256
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.7999999999919964
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 75,
+            "cpu_us": 2363.9859999999044,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 45,
+            "cpu_us": 0,
+            "device_us": 19.840000000067448
+          },
+          {
+            "name": "Memcpy HtoD (Pageable -> Device)",
+            "count": 20,
+            "cpu_us": 0,
+            "device_us": 6.591999999996915
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.175999999997657
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.8000000000211
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "4466f9d2ea34fd74105f57e1d81291798cd23690"
+    ]
+  },
+  {
+    "case": "sparse-hbm",
+    "version": 3,
+    "processes": 3,
+    "median_ms": 16.762821197509766,
+    "process_medians": [
+      16.407787322998047,
+      17.656532287597656,
+      16.762821197509766
+    ],
+    "change_pct": -2.8417197251723536,
+    "trial_mean_p95_ms": 18.028266811370848,
+    "trial_mean_stddev_ms": 0.6294007763213573,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 71,
+      "kernel_launches_median": 595,
+      "peak_increment_bytes_median": 17498112,
+      "record_stream_count_median": 120,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 75,
+            "cpu_us": 1945.3699999999826,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 45,
+            "cpu_us": 0,
+            "device_us": 19.801999999986947
+          },
+          {
+            "name": "Memcpy HtoD (Pageable -> Device)",
+            "count": 20,
+            "cpu_us": 0,
+            "device_us": 6.432999999993626
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2079999999914435
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.767999999985477
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 75,
+            "cpu_us": 2258.5889999999545,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 45,
+            "cpu_us": 0,
+            "device_us": 19.71200000002773
+          },
+          {
+            "name": "Memcpy HtoD (Pageable -> Device)",
+            "count": 20,
+            "cpu_us": 0,
+            "device_us": 6.464999999985594
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2409999999927095
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.735999999982596
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 75,
+            "cpu_us": 4887.817000000008,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 45,
+            "cpu_us": 0,
+            "device_us": 35.45600000000559
+          },
+          {
+            "name": "Memcpy HtoD (Pageable -> Device)",
+            "count": 20,
+            "cpu_us": 0,
+            "device_us": 13.824000000013257
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.320999999996275
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.7669999999852735
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "26bfbd5384b66dbc3e643bac497bdc3a31cf4280"
+    ]
+  },
+  {
+    "case": "sparse-hbm",
+    "version": 8,
+    "processes": 3,
+    "median_ms": 16.34224033355713,
+    "process_medians": [
+      16.335960388183594,
+      16.34224033355713,
+      18.09809398651123
+    ],
+    "change_pct": -5.279430715265709,
+    "trial_mean_p95_ms": 18.33093147277832,
+    "trial_mean_stddev_ms": 0.8842704515577083,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 71,
+      "kernel_launches_median": 595,
+      "peak_increment_bytes_median": 17498112,
+      "record_stream_count_median": 120,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 75,
+            "cpu_us": 7398.590000000006,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 45,
+            "cpu_us": 0,
+            "device_us": 26.842000000035114
+          },
+          {
+            "name": "Memcpy HtoD (Pageable -> Device)",
+            "count": 20,
+            "cpu_us": 0,
+            "device_us": 8.960000000002765
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 3.0710000000017317
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.7999999999738066
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 75,
+            "cpu_us": 1857.5100000000293,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 45,
+            "cpu_us": 0,
+            "device_us": 32.64300000000458
+          },
+          {
+            "name": "Memcpy HtoD (Pageable -> Device)",
+            "count": 20,
+            "cpu_us": 0,
+            "device_us": 11.391000000029635
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 3.3280000000086147
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.800000000013824
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 75,
+            "cpu_us": 2253.4840000000395,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 45,
+            "cpu_us": 0,
+            "device_us": 19.71199999995315
+          },
+          {
+            "name": "Memcpy HtoD (Pageable -> Device)",
+            "count": 20,
+            "cpu_us": 0,
+            "device_us": 6.557999999993626
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2729999999992287
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.80000000000291
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "5f7a7c16ef1acd6596e633e5f5187d6721e4c1d8"
+    ]
+  },
+  {
+    "case": "lifetime-raw",
+    "version": 0,
+    "processes": 2,
+    "median_ms": 1.8728442373685539,
+    "process_medians": [
+      1.9752727006562054,
+      1.7704157740809023
+    ],
+    "change_pct": 0.0,
+    "trial_mean_p95_ms": 2.000052760820836,
+    "trial_mean_stddev_ms": 0.10809268382795582,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 11.0,
+      "kernel_launches_median": 145.0,
+      "peak_increment_bytes_median": 9936384.0,
+      "record_stream_count_median": 25.0,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 278.9779999999946,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2089999999998327
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.1759999999985666
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 243.0669999999991,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.176000000003114
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2399999999970532
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "4466f9d2ea34fd74105f57e1d81291798cd23690"
+    ]
+  },
+  {
+    "case": "lifetime-raw",
+    "version": 1,
+    "processes": 2,
+    "median_ms": 2.0694796374300495,
+    "process_medians": [
+      2.033292190171778,
+      2.1056670846883208
+    ],
+    "change_pct": 10.499292794246395,
+    "trial_mean_p95_ms": 2.1582195399096236,
+    "trial_mean_stddev_ms": 0.07337264338237326,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 11.0,
+      "kernel_launches_median": 145.0,
+      "peak_increment_bytes_median": 9936384.0,
+      "record_stream_count_median": 25.0,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 366.20800000000054,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.209000000000742
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.208999999993466
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 274.60299999999734,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.176000000001295
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.1439999999975043
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "ee3618ea47a3348cb0b63136bd6943c925ff6f3e"
+    ]
+  },
+  {
+    "case": "cache-raw",
+    "version": 0,
+    "processes": 2,
+    "median_ms": 2.331017103861086,
+    "process_medians": [
+      2.1152752882335335,
+      2.5467589194886386
+    ],
+    "change_pct": 0.0,
+    "trial_mean_p95_ms": 2.5804933299077675,
+    "trial_mean_stddev_ms": 0.22396165435184098,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 16.0,
+      "kernel_launches_median": 165.0,
+      "peak_increment_bytes_median": 9928192.0,
+      "record_stream_count_median": 25.0,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 20,
+            "cpu_us": 396.9890000000032,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.209000000000742
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.8640000000023065
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 10,
+            "cpu_us": 0,
+            "device_us": 4.290000000003602
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 20,
+            "cpu_us": 538.6980000000012,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2049999999999272
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.894999999998618
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 10,
+            "cpu_us": 0,
+            "device_us": 4.321000000000822
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "4466f9d2ea34fd74105f57e1d81291798cd23690"
+    ]
+  },
+  {
+    "case": "cache-raw",
+    "version": 4,
+    "processes": 2,
+    "median_ms": 2.670594932860695,
+    "process_medians": [
+      2.5851229345425963,
+      2.7560669311787933
+    ],
+    "change_pct": 14.567796539850942,
+    "trial_mean_p95_ms": 2.804637379711494,
+    "trial_mean_stddev_ms": 0.0989392488641166,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 16.0,
+      "kernel_launches_median": 165.0,
+      "peak_increment_bytes_median": 9928192.0,
+      "record_stream_count_median": 25.0,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 20,
+            "cpu_us": 567.7100000000028,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2080000000041764
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.801000000000386
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 10,
+            "cpu_us": 0,
+            "device_us": 4.321999999997388
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 20,
+            "cpu_us": 569.0420000000076,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2080000000005384
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.831999999995787
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 10,
+            "cpu_us": 0,
+            "device_us": 4.31800000000203
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "2e9af4549be3e4b62b7069f3dd6571ead2e2913f"
+    ]
+  },
+  {
+    "case": "host-prefetch",
+    "version": 0,
+    "processes": 2,
+    "median_ms": 2.49256041017361,
+    "process_medians": [
+      2.5585063197650015,
+      2.426614500582218
+    ],
+    "change_pct": 0.0,
+    "trial_mean_p95_ms": 2.6098586501320824,
+    "trial_mean_stddev_ms": 0.07739861801652932,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 11.0,
+      "kernel_launches_median": 185.0,
+      "peak_increment_bytes_median": 10190336.0,
+      "record_stream_count_median": 15.0,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 15,
+            "cpu_us": 477.6510000000062,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2409999999963475
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.240000000000691
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.800000000000182
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 15,
+            "cpu_us": 451.4649999999974,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2729999999928623
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2710000000033688
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.768000000000939
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "4466f9d2ea34fd74105f57e1d81291798cd23690"
+    ]
+  },
+  {
+    "case": "host-prefetch",
+    "version": 5,
+    "processes": 2,
+    "median_ms": 2.933287737541832,
+    "process_medians": [
+      2.9777116852346808,
+      2.8888637898489833
+    ],
+    "change_pct": 17.68171096553384,
+    "trial_mean_p95_ms": 3.022424368886277,
+    "trial_mean_stddev_ms": 0.05867644534785069,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 11.0,
+      "kernel_launches_median": 190.0,
+      "peak_increment_bytes_median": 10190848.0,
+      "record_stream_count_median": 180.0,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 25,
+            "cpu_us": 726.8849999999939,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.270999999992455
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.240000000007967
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 15,
+            "cpu_us": 0,
+            "device_us": 14.815999999998894
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 25,
+            "cpu_us": 673.3539999999857,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2719999999999345
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2069999999966967
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 15,
+            "cpu_us": 0,
+            "device_us": 14.784999999999854
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "81f068a6ef118ab2a531ba133759164cbc25f39a"
+    ]
+  },
+  {
+    "case": "hybrid-prefetch",
+    "version": 0,
+    "processes": 2,
+    "median_ms": 2.944991033291444,
+    "process_medians": [
+      2.9611223854590207,
+      2.9288596811238676
+    ],
+    "change_pct": 0.0,
+    "trial_mean_p95_ms": 3.041902187629603,
+    "trial_mean_stddev_ms": 0.04829388937596269,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 36.0,
+      "kernel_launches_median": 245.0,
+      "peak_increment_bytes_median": 10190336.0,
+      "record_stream_count_median": 15.0,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 40,
+            "cpu_us": 982.315999999998,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 25,
+            "cpu_us": 0,
+            "device_us": 10.463000000009743
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 10,
+            "cpu_us": 0,
+            "device_us": 4.225000000005821
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.639999999999418
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 40,
+            "cpu_us": 893.7000000000035,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 25,
+            "cpu_us": 0,
+            "device_us": 10.400000000007822
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 10,
+            "cpu_us": 0,
+            "device_us": 4.318999999994048
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.6709999999984575
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "4466f9d2ea34fd74105f57e1d81291798cd23690"
+    ]
+  },
+  {
+    "case": "hybrid-prefetch",
+    "version": 5,
+    "processes": 2,
+    "median_ms": 3.697330592549406,
+    "process_medians": [
+      3.59696330036968,
+      3.797697884729132
+    ],
+    "change_pct": 25.54641256130128,
+    "trial_mean_p95_ms": 3.8293752094032243,
+    "trial_mean_stddev_ms": 0.112403413796403,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 36.0,
+      "kernel_launches_median": 250.0,
+      "peak_increment_bytes_median": 10190848.0,
+      "record_stream_count_median": 180.0,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 50,
+            "cpu_us": 1090.565999999987,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 25,
+            "cpu_us": 0,
+            "device_us": 10.273000000004686
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 10,
+            "cpu_us": 0,
+            "device_us": 4.289000000006126
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 15,
+            "cpu_us": 0,
+            "device_us": 14.71900000000096
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 50,
+            "cpu_us": 1110.9490000000196,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 25,
+            "cpu_us": 0,
+            "device_us": 10.302000000002408
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 10,
+            "cpu_us": 0,
+            "device_us": 4.320999999991727
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 15,
+            "cpu_us": 0,
+            "device_us": 14.721999999997934
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "81f068a6ef118ab2a531ba133759164cbc25f39a"
+    ]
+  },
+  {
+    "case": "hbm-prefetch",
+    "version": 0,
+    "processes": 2,
+    "median_ms": 17.863953590393066,
+    "process_medians": [
+      17.883631706237793,
+      17.84427547454834
+    ],
+    "change_pct": 0.0,
+    "trial_mean_p95_ms": 18.052261352539062,
+    "trial_mean_stddev_ms": 0.15036963565843228,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 71.0,
+      "kernel_launches_median": 595.0,
+      "peak_increment_bytes_median": 17036800.0,
+      "record_stream_count_median": 145.0,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 75,
+            "cpu_us": 2215.4069999999765,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 45,
+            "cpu_us": 0,
+            "device_us": 19.581000000008316
+          },
+          {
+            "name": "Memcpy HtoD (Pageable -> Device)",
+            "count": 20,
+            "cpu_us": 0,
+            "device_us": 6.465000000020154
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.239000000021406
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.895999999986088
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 75,
+            "cpu_us": 2305.20100000003,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 45,
+            "cpu_us": 0,
+            "device_us": 19.52199999993354
+          },
+          {
+            "name": "Memcpy HtoD (Pageable -> Device)",
+            "count": 20,
+            "cpu_us": 0,
+            "device_us": 6.46299999999701
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2409999999908905
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.895999999993364
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "4466f9d2ea34fd74105f57e1d81291798cd23690"
+    ]
+  },
+  {
+    "case": "hbm-prefetch",
+    "version": 3,
+    "processes": 2,
+    "median_ms": 18.973090648651123,
+    "process_medians": [
+      18.891533851623535,
+      19.05464744567871
+    ],
+    "change_pct": 6.208799483528282,
+    "trial_mean_p95_ms": 19.1318998336792,
+    "trial_mean_stddev_ms": 0.1236013881312074,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 71.0,
+      "kernel_launches_median": 595.0,
+      "peak_increment_bytes_median": 17167872.0,
+      "record_stream_count_median": 250.0,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 75,
+            "cpu_us": 2443.3979999999365,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 45,
+            "cpu_us": 0,
+            "device_us": 19.710999999885644
+          },
+          {
+            "name": "Memcpy HtoD (Pageable -> Device)",
+            "count": 20,
+            "cpu_us": 0,
+            "device_us": 6.625999999969281
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.271999999997206
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.768999999982043
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 75,
+            "cpu_us": 2250.5179999999164,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 45,
+            "cpu_us": 0,
+            "device_us": 19.738999999970474
+          },
+          {
+            "name": "Memcpy HtoD (Pageable -> Device)",
+            "count": 20,
+            "cpu_us": 0,
+            "device_us": 6.593000000046231
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2400000000052387
+          },
+          {
+            "name": "Memcpy DtoD (Device -> Device)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 4.800999999988562
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "26bfbd5384b66dbc3e643bac497bdc3a31cf4280"
+    ]
+  },
+  {
+    "case": "hbm-miss",
+    "version": 0,
+    "processes": 2,
+    "median_ms": 2.174351667636074,
+    "process_medians": [
+      2.216011779382825,
+      2.1326915558893234
+    ],
+    "change_pct": 0.0,
+    "trial_mean_p95_ms": 2.366466053412296,
+    "trial_mean_stddev_ms": 0.131769531164327,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 11.0,
+      "kernel_launches_median": 155.0,
+      "peak_increment_bytes_median": 110592.0,
+      "record_stream_count_median": 25.0,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 339.1639999999961,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.143999999994776
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.11200000000008
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 224.04000000000633,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.144000000000233
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.2090000000034706
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "4466f9d2ea34fd74105f57e1d81291798cd23690"
+    ]
+  },
+  {
+    "case": "hbm-miss",
+    "version": 3,
+    "processes": 2,
+    "median_ms": 2.706178214866668,
+    "process_medians": [
+      2.788024559849873,
+      2.624331869883463
+    ],
+    "change_pct": 24.459086133421494,
+    "trial_mean_p95_ms": 2.8035880433162674,
+    "trial_mean_stddev_ms": 0.09286260094950945,
+    "profiles": {
+      "steps": 5,
+      "host_syncs_median": 11.0,
+      "kernel_launches_median": 155.0,
+      "peak_increment_bytes_median": 110592.0,
+      "record_stream_count_median": 25.0,
+      "copy_events": [
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 356.0419999999922,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.1759999999967476
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.1439999999975043
+          }
+        ],
+        [
+          {
+            "name": "cudaMemcpyAsync",
+            "count": 10,
+            "cpu_us": 349.61399999999776,
+            "device_us": 0
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pinned)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.1750000000010914
+          },
+          {
+            "name": "Memcpy DtoH (Device -> Pageable)",
+            "count": 5,
+            "cpu_us": 0,
+            "device_us": 2.1450000000058935
+          }
+        ]
+      ]
+    },
+    "commits": [
+      "26bfbd5384b66dbc3e643bac497bdc3a31cf4280"
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "python": "3.12.7",
+  "packages": {
+    "torch": "2.13.0+cu130",
+    "torchrec": "1.8.0+0ea0ec0",
+    "fbgemm-gpu": "1.8.0+cu130",
+    "numpy": "2.2.6",
+    "pytest": "9.2.0"
+  },
+  "nsys": null,
+  "ncu": null,
+  "devices": "0, NVIDIA RTX PRO 6000 Blackwell Server Edition, 580.126.09, 00000000:16:00.0\n1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 580.126.09, 00000000:27:00.0\n2, NVIDIA RTX PRO 6000 Blackwell Server Edition, 580.126.09, 00000000:A8:00.0\n3, NVIDIA RTX PRO 6000 Blackwell Server Edition, 580.126.09, 00000000:B8:00.0\n",
+  "topology": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNODE\tSYS\tSYS\t0-15,64-79\t0\t\tN/A\nGPU1\tNODE\t X \tSYS\tSYS\t0-15,64-79\t0\t\tN/A\nGPU2\tSYS\tSYS\t X \tNODE\t32-47,96-111\t2\t\tN/A\nGPU3\tSYS\tSYS\tNODE\t X \t32-47,96-111\t2\t\tN/A\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n"
+}

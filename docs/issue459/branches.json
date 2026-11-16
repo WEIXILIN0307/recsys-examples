@@ -1,0 +1,462 @@
+[
+  {
+    "name": "01-lifetime",
+    "branch": "bug-459-row-lifetime",
+    "head": "ee3618ea47a3348cb0b63136bd6943c925ff6f3e",
+    "base": "4466f9d2ea34fd74105f57e1d81291798cd23690",
+    "url": "https://github.com/NVIDIA/recsys-examples/pull/559",
+    "number": 559,
+    "checks": {
+      "black": 0,
+      "isort": 0,
+      "autoflake": 0
+    },
+    "files": [
+      {
+        "path": "corelib/dynamicemb/dynamicemb/async_erase.py",
+        "added": 52,
+        "deleted": 5,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+        "added": 152,
+        "deleted": 20,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+        "added": 18,
+        "deleted": 32,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 1,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/erase_async/test_async_erase.py",
+        "added": 46,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_pin_lease.py",
+        "added": 181,
+        "deleted": 0,
+        "production": false
+      }
+    ],
+    "production_added": 222,
+    "production_deleted": 57
+  },
+  {
+    "name": "02-adapter",
+    "branch": "enh-459-lookup-adapter",
+    "head": "9a1d450fffce83021ecbbeccc2620870abf7d741",
+    "base": "4466f9d2ea34fd74105f57e1d81291798cd23690",
+    "url": "https://github.com/NVIDIA/recsys-examples/pull/560",
+    "number": 560,
+    "checks": {
+      "black": 0,
+      "isort": 0,
+      "autoflake": 0
+    },
+    "files": [
+      {
+        "path": "corelib/dynamicemb/dynamicemb/dense_lookup.py",
+        "added": 90,
+        "deleted": 0,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/torchrec_lookup.py",
+        "added": 241,
+        "deleted": 0,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 1,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_dense_lookup.py",
+        "added": 222,
+        "deleted": 0,
+        "production": false
+      }
+    ],
+    "production_added": 331,
+    "production_deleted": 0
+  },
+  {
+    "name": "03-hbm",
+    "branch": "fea-459-hbm-rw-receiver",
+    "head": "94fd32f5618f7888606970f55b8ca1b04c27a293",
+    "base": "d4d562bf38ea534936ce944e12e293d3caec6c4e",
+    "checks": {
+      "black": 0,
+      "isort": 0,
+      "autoflake": 0
+    },
+    "files": [
+      {
+        "path": "corelib/dynamicemb/docs/receiver_resolution_slices.md",
+        "added": 7,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+        "added": 71,
+        "deleted": 16,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+        "added": 111,
+        "deleted": 62,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+        "added": 113,
+        "deleted": 26,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/embedding.py",
+        "added": 10,
+        "deleted": 0,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/input_dist.py",
+        "added": 150,
+        "deleted": 6,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/resolved_input.py",
+        "added": 128,
+        "deleted": 0,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+        "added": 147,
+        "deleted": 7,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 2,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/per_key_score/test_per_key_score_dist.py",
+        "added": 49,
+        "deleted": 101,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hbm_receiver.py",
+        "added": 936,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hbm_row_state.py",
+        "added": 185,
+        "deleted": 0,
+        "production": false
+      }
+    ],
+    "production_added": 730,
+    "production_deleted": 117
+  },
+  {
+    "name": "04-cache",
+    "branch": "fea-459-cache-receiver",
+    "head": "de9225bd5decc1493bf70627d3e79a10bce7b8e8",
+    "base": "94fd32f5618f7888606970f55b8ca1b04c27a293",
+    "checks": {
+      "black": 0,
+      "isort": 0,
+      "autoflake": 0
+    },
+    "files": [
+      {
+        "path": "corelib/dynamicemb/docs/receiver_resolution_slices.md",
+        "added": 4,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+        "added": 3,
+        "deleted": 4,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+        "added": 4,
+        "deleted": 2,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 1,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_cache_receiver.py",
+        "added": 206,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hbm_receiver.py",
+        "added": 1,
+        "deleted": 1,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hbm_row_state.py",
+        "added": 4,
+        "deleted": 4,
+        "production": false
+      }
+    ],
+    "production_added": 7,
+    "production_deleted": 6
+  },
+  {
+    "name": "05-storage",
+    "branch": "fea-459-storage-receiver",
+    "head": "d9d793e9e3aca328c07c54926a90c75313efb181",
+    "base": "de9225bd5decc1493bf70627d3e79a10bce7b8e8",
+    "checks": {
+      "black": 0,
+      "isort": 0,
+      "autoflake": 0
+    },
+    "files": [
+      {
+        "path": "corelib/dynamicemb/docs/receiver_resolution_slices.md",
+        "added": 4,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+        "added": 2,
+        "deleted": 7,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+        "added": 195,
+        "deleted": 282,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+        "added": 109,
+        "deleted": 121,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/key_value_table.py",
+        "added": 18,
+        "deleted": 19,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/resolved_storage.py",
+        "added": 210,
+        "deleted": 0,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/src/dynamic_emb_op.cu",
+        "added": 124,
+        "deleted": 0,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/src/lookup_kernel.cuh",
+        "added": 15,
+        "deleted": 7,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/test_batched_dynamic_embedding_tables_v2.py",
+        "added": 0,
+        "deleted": 9,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 3,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hbm_receiver.py",
+        "added": 1,
+        "deleted": 1,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_storage_prefetch.py",
+        "added": 235,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_storage_receiver.py",
+        "added": 236,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_storage_row_copy.py",
+        "added": 79,
+        "deleted": 0,
+        "production": false
+      }
+    ],
+    "production_added": 673,
+    "production_deleted": 436
+  },
+  {
+    "name": "06-layouts",
+    "branch": "fea-459-pooled-receiver",
+    "head": "c678535a5a9082a345799c0303f0d204a58ff6c1",
+    "base": "d9d793e9e3aca328c07c54926a90c75313efb181",
+    "checks": {
+      "black": 0,
+      "isort": 0,
+      "autoflake": 0
+    },
+    "files": [
+      {
+        "path": "corelib/dynamicemb/docs/receiver_resolution_slices.md",
+        "added": 4,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+        "added": 1,
+        "deleted": 1,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+        "added": 29,
+        "deleted": 7,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 1,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_pooled_receiver.py",
+        "added": 345,
+        "deleted": 0,
+        "production": false
+      }
+    ],
+    "production_added": 30,
+    "production_deleted": 8
+  },
+  {
+    "name": "07-twrw",
+    "branch": "fea-459-twrw-receiver",
+    "head": "6496114eb5c6e1829b736c5b82e5498094dcd50d",
+    "base": "c678535a5a9082a345799c0303f0d204a58ff6c1",
+    "checks": {
+      "black": 0,
+      "isort": 0,
+      "autoflake": 0
+    },
+    "files": [
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/twrw_sharding.py",
+        "added": 30,
+        "deleted": 2,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_table_row_wise.py",
+        "added": 14,
+        "deleted": 1,
+        "production": false
+      }
+    ],
+    "production_added": 30,
+    "production_deleted": 2
+  },
+  {
+    "name": "08-hierarchy",
+    "branch": "fea-459-hier-receiver",
+    "head": "6bef728fc51dc8c6ddc7d26afff5b40e8d5889a1",
+    "base": "6496114eb5c6e1829b736c5b82e5498094dcd50d",
+    "checks": {
+      "black": 0,
+      "isort": 0,
+      "autoflake": 0
+    },
+    "files": [
+      {
+        "path": "corelib/dynamicemb/docs/receiver_resolution_slices.md",
+        "added": 4,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/hier_output_dist.py",
+        "added": 11,
+        "deleted": 0,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+        "added": 1,
+        "deleted": 3,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 1,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hier_dist.py",
+        "added": 43,
+        "deleted": 5,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hier_receiver.py",
+        "added": 148,
+        "deleted": 0,
+        "production": false
+      }
+    ],
+    "production_added": 12,
+    "production_deleted": 3
+  }
+]

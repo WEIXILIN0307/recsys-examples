@@ -1,0 +1,62 @@
+[
+  {
+    "name": "03-hbm",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/pull/1",
+    "repo": "WEIXILIN0307/recsys-examples",
+    "number": 1,
+    "head": "94fd32f5618f7888606970f55b8ca1b04c27a293",
+    "base": "d4d562bf38ea534936ce944e12e293d3caec6c4e",
+    "base_ref": "review-base/459-hbm-prerequisites",
+    "draft": true
+  },
+  {
+    "name": "04-cache",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/pull/2",
+    "repo": "WEIXILIN0307/recsys-examples",
+    "number": 2,
+    "head": "de9225bd5decc1493bf70627d3e79a10bce7b8e8",
+    "base": "94fd32f5618f7888606970f55b8ca1b04c27a293",
+    "base_ref": "fea-459-hbm-rw-receiver",
+    "draft": true
+  },
+  {
+    "name": "05-storage",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/pull/3",
+    "repo": "WEIXILIN0307/recsys-examples",
+    "number": 3,
+    "head": "d9d793e9e3aca328c07c54926a90c75313efb181",
+    "base": "de9225bd5decc1493bf70627d3e79a10bce7b8e8",
+    "base_ref": "fea-459-cache-receiver",
+    "draft": true
+  },
+  {
+    "name": "06-layouts",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/pull/4",
+    "repo": "WEIXILIN0307/recsys-examples",
+    "number": 4,
+    "head": "c678535a5a9082a345799c0303f0d204a58ff6c1",
+    "base": "d9d793e9e3aca328c07c54926a90c75313efb181",
+    "base_ref": "fea-459-storage-receiver",
+    "draft": true
+  },
+  {
+    "name": "07-twrw",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/pull/5",
+    "repo": "WEIXILIN0307/recsys-examples",
+    "number": 5,
+    "head": "6496114eb5c6e1829b736c5b82e5498094dcd50d",
+    "base": "c678535a5a9082a345799c0303f0d204a58ff6c1",
+    "base_ref": "fea-459-pooled-receiver",
+    "draft": true
+  },
+  {
+    "name": "08-hierarchy",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/pull/6",
+    "repo": "WEIXILIN0307/recsys-examples",
+    "number": 6,
+    "head": "6bef728fc51dc8c6ddc7d26afff5b40e8d5889a1",
+    "base": "6496114eb5c6e1829b736c5b82e5498094dcd50d",
+    "base_ref": "fea-459-twrw-receiver",
+    "draft": true
+  }
+]

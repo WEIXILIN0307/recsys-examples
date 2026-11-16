@@ -1,0 +1,3243 @@
+[
+  {
+    "case": "raw-hbm",
+    "version": 0,
+    "process": 0,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-raw-hbm-0-v0/hbm-none-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 505,
+      "overhead": 2,
+      "kernel": 120,
+      "cuda_runtime": 266,
+      "gpu_memset": 25,
+      "gpu_memcpy": 10,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        72.672
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        65.6
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)3, false>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        29.824000000000005
+      ],
+      [
+        "void dyn_emb::segmented_unique_core<long, dyn_emb::MurmurHash3_32<long, 0u>, 9223372036854775807l, 9223372036854775807l>(long const*, unsigned long, int*, int*, long*, int*, long*, long const*, long const*, long, dyn_emb::FreqReduceOp)",
+        24.994
+      ],
+      [
+        "void load_from_flat_table_kernel_vec4<1, long, float>(long, long, long, float*, long const*, long const*, long const*, long const*, long const*, long, long, long const*, int const*)",
+        22.944999999999997
+      ],
+      [
+        "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        22.176000000000002
+      ],
+      [
+        "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+        16.448
+      ],
+      [
+        "dyn_emb::update_counter_with_layout_kernel(int*, long, long const*, long, int, long const*, long const*, long, long, long const*, long, long)",
+        14.367999999999997
+      ],
+      [
+        "void dyn_emb::segmented_unique_finalize<long>(long const*, int const*, long const*, long const*, long const*, long, long*, long*, long*, long*, unsigned long)",
+        13.632000000000001
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortHistogramKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, unsigned long long, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(unsigned long long*, long const*, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        10.944
+      ],
+      [
+        "dyn_emb::table_resolve_rows_kernel(long*, long*, long const*, long const*, long, long const*, long const*, long*, long, bool)",
+        9.119
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::select::DeviceSelectSweepKernel<cub::_V_300303_SM_1200::detail::select::policy_hub<cuda::std::__4::tuple<long, long, long>, bool, int, false, (cub::_V_300303_SM_1200::SelectImpl)0>::Policy1000, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<thrust::_V_300303_SM_1200::counting_iterator<long, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::compile_time_value<1> >, long const*, long const*> >, bool const*, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<long*, long*, long*> >, long*, cub::_V_300303_SM_1200::ScanTileState<int, true>, cub::_V_300303_SM_1200::NullType, cub::_V_300303_SM_1200::NullType, int, cub::_V_300303_SM_1200::detail::select::streaming_context_t<long, true>, (cub::_V_300303_SM_1200::SelectImpl)0>(thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<thrust::_V_300303_SM_1200::counting_iterator<long, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::compile_time_value<1> >, long const*, long const*> >, bool const*, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<long*, long*, long*> >, long*, cub::_V_300303_SM_1200::ScanTileState<int, true>, cub::_V_300303_SM_1200::NullType, cub::_V_300303_SM_1200::NullType, int, int, cub::_V_300303_SM_1200::detail::select::streaming_context_t<long, true>, cub::_V_300303_SM_1200::detail::vsmem_t)",
+        8.672
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 5,
+        "cpu_us": 7213.190000000006,
+        "device_us": 16.447999999994863,
+        "memory_bytes": 20971520
+      },
+      {
+        "name": "aten::empty",
+        "count": 115,
+        "cpu_us": 1027.157000000031,
+        "device_us": 0,
+        "memory_bytes": 29091840
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 40,
+        "cpu_us": 414.91999999999575,
+        "device_us": 0,
+        "memory_bytes": 1766400
+      },
+      {
+        "name": "aten::mean",
+        "count": 5,
+        "cpu_us": 276.04100000000926,
+        "device_us": 23.743999999997868,
+        "memory_bytes": 2560
+      },
+      {
+        "name": "aten::slice",
+        "count": 35,
+        "cpu_us": 189.26099999999315,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::copy_",
+        "count": 10,
+        "cpu_us": 154.06499999999414,
+        "device_us": 4.385000000002037,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty_like",
+        "count": 35,
+        "cpu_us": 144.05499999999984,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::logical_not",
+        "count": 10,
+        "cpu_us": 117.65799999999763,
+        "device_us": 4.895999999997912,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::select",
+        "count": 15,
+        "cpu_us": 87.92600000000766,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::record_stream",
+        "count": 25,
+        "cpu_us": 86.75399999998717,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::sub",
+        "count": 5,
+        "cpu_us": 86.21100000000479,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::as_strided",
+        "count": 60,
+        "cpu_us": 85.724999999994,
+        "device_us": 0,
+        "memory_bytes": 0
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 10,
+        "cpu_us": 254.9950000000099,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.20900000000438
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.175999999997657
+      }
+    ],
+    "host_syncs": 11,
+    "kernels": 145,
+    "peak_increment_bytes": 9936384
+  },
+  {
+    "case": "raw-hbm",
+    "version": 3,
+    "process": 1,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-raw-hbm-1-v3/hbm-none-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 515,
+      "overhead": 2,
+      "kernel": 120,
+      "cuda_runtime": 276,
+      "gpu_memset": 25,
+      "gpu_memcpy": 10,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        72.161
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        65.31400000000001
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)3, false>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        29.695999999999998
+      ],
+      [
+        "void dyn_emb::segmented_unique_core<long, dyn_emb::MurmurHash3_32<long, 0u>, 9223372036854775807l, 9223372036854775807l>(long const*, unsigned long, int*, int*, long*, int*, long*, long const*, long const*, long, dyn_emb::FreqReduceOp)",
+        24.898
+      ],
+      [
+        "void load_from_flat_table_kernel_vec4<1, long, float>(long, long, long, float*, long const*, long const*, long const*, long const*, long const*, long, long, long const*, int const*)",
+        22.973
+      ],
+      [
+        "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        22.111
+      ],
+      [
+        "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+        16.48
+      ],
+      [
+        "void dyn_emb::segmented_unique_finalize<long>(long const*, int const*, long const*, long const*, long const*, long, long*, long*, long*, long*, unsigned long)",
+        13.696000000000002
+      ],
+      [
+        "dyn_emb::update_counter_with_layout_kernel(int*, long, long const*, long, int, long const*, long const*, long, long, long const*, long, long)",
+        12.353
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortHistogramKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, unsigned long long, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(unsigned long long*, long const*, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        10.912
+      ],
+      [
+        "dyn_emb::table_resolve_rows_kernel(long*, long*, long const*, long const*, long, long const*, long const*, long*, long, bool)",
+        9.184000000000001
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::select::DeviceSelectSweepKernel<cub::_V_300303_SM_1200::detail::select::policy_hub<cuda::std::__4::tuple<long, long, long>, bool, int, false, (cub::_V_300303_SM_1200::SelectImpl)0>::Policy1000, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<thrust::_V_300303_SM_1200::counting_iterator<long, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::compile_time_value<1> >, long const*, long const*> >, bool const*, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<long*, long*, long*> >, long*, cub::_V_300303_SM_1200::ScanTileState<int, true>, cub::_V_300303_SM_1200::NullType, cub::_V_300303_SM_1200::NullType, int, cub::_V_300303_SM_1200::detail::select::streaming_context_t<long, true>, (cub::_V_300303_SM_1200::SelectImpl)0>(thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<thrust::_V_300303_SM_1200::counting_iterator<long, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::compile_time_value<1> >, long const*, long const*> >, bool const*, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<long*, long*, long*> >, long*, cub::_V_300303_SM_1200::ScanTileState<int, true>, cub::_V_300303_SM_1200::NullType, cub::_V_300303_SM_1200::NullType, int, int, cub::_V_300303_SM_1200::detail::select::streaming_context_t<long, true>, cub::_V_300303_SM_1200::detail::vsmem_t)",
+        8.704
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 5,
+        "cpu_us": 6005.1690000000035,
+        "device_us": 16.480000000001382,
+        "memory_bytes": 20971520
+      },
+      {
+        "name": "aten::empty",
+        "count": 115,
+        "cpu_us": 1262.513999999982,
+        "device_us": 0,
+        "memory_bytes": 29091840
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 40,
+        "cpu_us": 477.73600000000056,
+        "device_us": 0,
+        "memory_bytes": 1766400
+      },
+      {
+        "name": "aten::mean",
+        "count": 5,
+        "cpu_us": 347.15399999998954,
+        "device_us": 23.648000000003776,
+        "memory_bytes": 2560
+      },
+      {
+        "name": "aten::slice",
+        "count": 35,
+        "cpu_us": 243.06199999999808,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::copy_",
+        "count": 10,
+        "cpu_us": 202.77500000001237,
+        "device_us": 4.350000000002183,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty_like",
+        "count": 35,
+        "cpu_us": 161.43699999999512,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::logical_not",
+        "count": 10,
+        "cpu_us": 148.4800000000041,
+        "device_us": 4.8639999999986685,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::select",
+        "count": 15,
+        "cpu_us": 111.02199999999903,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::sub",
+        "count": 5,
+        "cpu_us": 110.71800000000258,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::as_strided",
+        "count": 60,
+        "cpu_us": 97.90900000001147,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::record_stream",
+        "count": 25,
+        "cpu_us": 96.31800000001476,
+        "device_us": 0,
+        "memory_bytes": 0
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 10,
+        "cpu_us": 304.0009999999975,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.1740000000008877
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.176000000001295
+      }
+    ],
+    "host_syncs": 11,
+    "kernels": 145,
+    "peak_increment_bytes": 9936384
+  },
+  {
+    "case": "raw-hbm",
+    "version": 8,
+    "process": 2,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-raw-hbm-2-v8/hbm-none-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 545,
+      "overhead": 2,
+      "kernel": 125,
+      "cuda_runtime": 281,
+      "gpu_memset": 25,
+      "gpu_memcpy": 10,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        73.089
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        65.824
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)3, false>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        27.839
+      ],
+      [
+        "void dyn_emb::segmented_unique_core<long, dyn_emb::MurmurHash3_32<long, 0u>, 9223372036854775807l, 9223372036854775807l>(long const*, unsigned long, int*, int*, long*, int*, long*, long const*, long const*, long, dyn_emb::FreqReduceOp)",
+        24.992
+      ],
+      [
+        "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        22.111
+      ],
+      [
+        "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})",
+        19.936
+      ],
+      [
+        "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+        16.547
+      ],
+      [
+        "void dense_embedding_nobag_codegen_forward_unweighted_kernel<float, float, float, long, 32ul>(torch::headeronly::detail::GenericPackedTensorAccessor<torch::headeronly::detail::TensorAccessor<c10::ArrayRef<long>, float, 0ul, torch::headeronly::RestrictPtrTraits, long>, at::detail::IndexBoundsCheck<1ul, long>, float, 1ul, torch::headeronly::RestrictPtrTraits, long>, torch::headeronly::detail::GenericPackedTensorAccessor<torch::headeronly::detail::TensorAccessor<c10::ArrayRef<long>, long, 0ul, torch::headeronly::RestrictPtrTraits, int>, at::detail::IndexBoundsCheck<1ul, int>, long, 1ul, torch::headeronly::RestrictPtrTraits, int>, long, fbgemm_gpu::FixedDivisor, torch::headeronly::detail::GenericPackedTensorAccessor<torch::headeronly::detail::TensorAccessor<c10::ArrayRef<long>, long, 0ul, torch::headeronly::RestrictPtrTraits, int>, at::detail::IndexBoundsCheck<1ul, int>, long, 1ul, torch::headeronly::RestrictPtrTraits, int>, torch::headeronly::detail::GenericPackedTensorAccessor<torch::headeronly::detail::TensorAccessor<c10::ArrayRef<long>, long, 0ul, torch::headeronly::RestrictPtrTraits, int>, at::detail::IndexBoundsCheck<1ul, int>, long, 1ul, torch::headeronly::RestrictPtrTraits, int>, torch::headeronly::detail::GenericPackedTensorAccessor<torch::headeronly::detail::TensorAccessor<c10::ArrayRef<long>, float, 1ul, torch::headeronly::RestrictPtrTraits, long>, at::detail::IndexBoundsCheck<2ul, long>, float, 2ul, torch::headeronly::RestrictPtrTraits, long>)",
+        15.457
+      ],
+      [
+        "void dyn_emb::segmented_unique_finalize<long>(long const*, int const*, long const*, long const*, long const*, long, long*, long*, long*, long*, unsigned long)",
+        13.727
+      ],
+      [
+        "dyn_emb::update_counter_with_layout_kernel(int*, long, long const*, long, int, long const*, long const*, long, long, long const*, long, long)",
+        12.291
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortHistogramKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, unsigned long long, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(unsigned long long*, long const*, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        11.008000000000001
+      ],
+      [
+        "dyn_emb::table_resolve_rows_kernel(long*, long*, long const*, long const*, long, long const*, long const*, long*, long, bool)",
+        9.056
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 5,
+        "cpu_us": 6005.001999999995,
+        "device_us": 16.5470000000023,
+        "memory_bytes": 20971520
+      },
+      {
+        "name": "aten::empty",
+        "count": 115,
+        "cpu_us": 1287.3540000000166,
+        "device_us": 0,
+        "memory_bytes": 29091840
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 40,
+        "cpu_us": 518.9379999999934,
+        "device_us": 0,
+        "memory_bytes": 1766400
+      },
+      {
+        "name": "aten::mean",
+        "count": 5,
+        "cpu_us": 353.9169999999913,
+        "device_us": 23.679000000000087,
+        "memory_bytes": 2560
+      },
+      {
+        "name": "aten::index",
+        "count": 5,
+        "cpu_us": 272.6859999999833,
+        "device_us": 19.93600000000515,
+        "memory_bytes": 655360
+      },
+      {
+        "name": "aten::slice",
+        "count": 35,
+        "cpu_us": 256.43600000001334,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::copy_",
+        "count": 10,
+        "cpu_us": 207.27400000000398,
+        "device_us": 4.35200000000259,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty_like",
+        "count": 35,
+        "cpu_us": 171.22399999999845,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::logical_not",
+        "count": 10,
+        "cpu_us": 156.2969999999932,
+        "device_us": 4.8970000000072105,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::as_strided",
+        "count": 70,
+        "cpu_us": 154.79100000000562,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::select",
+        "count": 15,
+        "cpu_us": 117.35299999999916,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::sub",
+        "count": 5,
+        "cpu_us": 114.14899999999761,
+        "device_us": 0,
+        "memory_bytes": 0
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 10,
+        "cpu_us": 325.3109999999906,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.2080000000005384
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.144000000002052
+      }
+    ],
+    "host_syncs": 11,
+    "kernels": 150,
+    "peak_increment_bytes": 9936384
+  },
+  {
+    "case": "sparse-hbm",
+    "version": 0,
+    "process": 0,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-sparse-hbm-0-v0/hbm-sparse-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 6275,
+      "user_annotation": 170,
+      "overhead": 3,
+      "cuda_runtime": 1703,
+      "kernel": 480,
+      "gpu_memcpy": 75,
+      "cuda_driver": 40,
+      "gpu_memset": 25,
+      "gpu_user_annotation": 85,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "ncclDevKernel_SendRecv(ncclDevKernelArgsStorage<4096ul>)",
+        2042.738
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        71.039
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        65.536
+      ],
+      [
+        "void cub::CUB_300001_SM_800_900_1000_1200::detail::scan::DeviceScanKernel<cub::CUB_300001_SM_800_900_1000_1200::detail::scan::policy_hub<long, long, long, unsigned long long, cuda::std::__4::plus<void> >::Policy1000, long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::NullType, unsigned long long, long, false, cub::CUB_300001_SM_800_900_1000_1200::NullType>(long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, int, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::NullType, unsigned long long)",
+        63.00900000000001
+      ],
+      [
+        "void at::native::vectorized_gather_kernel<16, long>(char*, char*, long*, int, long, long, long, long, bool)",
+        50.208000000000006
+      ],
+      [
+        "void cub::CUB_300001_SM_800_900_1000_1200::detail::scan::DeviceScanKernel<cub::CUB_300001_SM_800_900_1000_1200::detail::scan::policy_hub<long, long, long, unsigned long long, cuda::std::__4::plus<void> >::Policy1000, long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::detail::InputValue<long, long*>, unsigned long long, long, false, long>(long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, int, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::detail::InputValue<long, long*>, unsigned long long)",
+        46.655
+      ],
+      [
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_64x128_8x5_tn_align1>(cutlass_80_simt_sgemm_64x128_8x5_tn_align1::Params)",
+        40.64
+      ],
+      [
+        "void at::native::reduce_kernel<128, 4, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#1}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#1}>, unsigned int, float, 4, 4>)",
+        40.352000000000004
+      ],
+      [
+        "void cublasLt::splitKreduce_kernel<32, 16, int, float, float, float, float, false, float, float, float, true, false, false, false>(cublasLt::cublasSplitKParams<float>, float const*, float const*, float*, float*, float const*, float const*, float const*, float const*, float*, void*, long, float*, int*, float*, float*, float const*, float const*, float const*, float const*, float const*)",
+        37.887
+      ],
+      [
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_64x64_8x5_nn_align1>(cutlass_80_simt_sgemm_64x64_8x5_nn_align1::Params)",
+        35.263
+      ],
+      [
+        "void fbgemm_gpu::permute_2D_data_kernel_vec<false, long, float, decltype(nullptr)>(long, int, int, float const*, decltype(nullptr) const*, int const*, long const*, long const*, float*, decltype(nullptr)*)",
+        32.992
+      ],
+      [
+        "void at::native::vectorized_elementwise_kernel<4, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul> >(int, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>)",
+        31.394000000000005
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 15,
+        "cpu_us": 6818.132000000016,
+        "device_us": 27.329000000012456,
+        "memory_bytes": 42270720
+      },
+      {
+        "name": "aten::empty",
+        "count": 365,
+        "cpu_us": 4174.525999999971,
+        "device_us": 0,
+        "memory_bytes": 138885120
+      },
+      {
+        "name": "aten::slice",
+        "count": 675,
+        "cpu_us": 3881.281000000168,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::split_with_sizes",
+        "count": 5,
+        "cpu_us": 2558.078999999998,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::narrow",
+        "count": 640,
+        "cpu_us": 2256.891000000127,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::as_strided",
+        "count": 2135,
+        "cpu_us": 2042.7390000000287,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::select",
+        "count": 675,
+        "cpu_us": 1943.4940000000988,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::unbind",
+        "count": 5,
+        "cpu_us": 1812.008999999931,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::cat",
+        "count": 15,
+        "cpu_us": 1740.8529999999573,
+        "device_us": 28.191000000013446,
+        "memory_bytes": 41945600
+      },
+      {
+        "name": "aten::sum",
+        "count": 30,
+        "cpu_us": 1696.938000000021,
+        "device_us": 94.71800000002531,
+        "memory_bytes": 28160
+      },
+      {
+        "name": "aten::copy_",
+        "count": 85,
+        "cpu_us": 1557.4379999999956,
+        "device_us": 44.31999999997606,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 105,
+        "cpu_us": 1396.1730000000334,
+        "device_us": 0,
+        "memory_bytes": 4510720
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 75,
+        "cpu_us": 2330.6810000000223,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 45,
+        "cpu_us": 0,
+        "device_us": 19.742000000012922
+      },
+      {
+        "name": "Memcpy HtoD (Pageable -> Device)",
+        "count": 20,
+        "cpu_us": 0,
+        "device_us": 6.461999999995896
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.1780000000053406
+      },
+      {
+        "name": "Memcpy DtoD (Device -> Device)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 4.831999999983964
+      }
+    ],
+    "host_syncs": 71,
+    "kernels": 590,
+    "peak_increment_bytes": 17367040
+  },
+  {
+    "case": "sparse-hbm",
+    "version": 3,
+    "process": 1,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-sparse-hbm-1-v3/hbm-sparse-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 6350,
+      "user_annotation": 170,
+      "overhead": 3,
+      "cuda_runtime": 1806,
+      "kernel": 485,
+      "gpu_memcpy": 75,
+      "cuda_driver": 40,
+      "gpu_memset": 25,
+      "gpu_user_annotation": 85,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "ncclDevKernel_SendRecv(ncclDevKernelArgsStorage<4096ul>)",
+        1213.803
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        70.178
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        65.889
+      ],
+      [
+        "void cub::CUB_300001_SM_800_900_1000_1200::detail::scan::DeviceScanKernel<cub::CUB_300001_SM_800_900_1000_1200::detail::scan::policy_hub<long, long, long, unsigned long long, cuda::std::__4::plus<void> >::Policy1000, long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::NullType, unsigned long long, long, false, cub::CUB_300001_SM_800_900_1000_1200::NullType>(long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, int, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::NullType, unsigned long long)",
+        64.484
+      ],
+      [
+        "void at::native::vectorized_gather_kernel<16, long>(char*, char*, long*, int, long, long, long, long, bool)",
+        50.272000000000006
+      ],
+      [
+        "void cub::CUB_300001_SM_800_900_1000_1200::detail::scan::DeviceScanKernel<cub::CUB_300001_SM_800_900_1000_1200::detail::scan::policy_hub<long, long, long, unsigned long long, cuda::std::__4::plus<void> >::Policy1000, long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::detail::InputValue<long, long*>, unsigned long long, long, false, long>(long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, int, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::detail::InputValue<long, long*>, unsigned long long)",
+        47.903000000000006
+      ],
+      [
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_64x128_8x5_tn_align1>(cutlass_80_simt_sgemm_64x128_8x5_tn_align1::Params)",
+        40.64
+      ],
+      [
+        "void at::native::reduce_kernel<128, 4, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#1}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#1}>, unsigned int, float, 4, 4>)",
+        40.510000000000005
+      ],
+      [
+        "void cublasLt::splitKreduce_kernel<32, 16, int, float, float, float, float, false, float, float, float, true, false, false, false>(cublasLt::cublasSplitKParams<float>, float const*, float const*, float*, float*, float const*, float const*, float const*, float const*, float*, void*, long, float*, int*, float*, float*, float const*, float const*, float const*, float const*, float const*)",
+        37.567
+      ],
+      [
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_64x64_8x5_nn_align1>(cutlass_80_simt_sgemm_64x64_8x5_nn_align1::Params)",
+        35.2
+      ],
+      [
+        "void fbgemm_gpu::permute_2D_data_kernel_vec<false, long, float, decltype(nullptr)>(long, int, int, float const*, decltype(nullptr) const*, int const*, long const*, long const*, float*, decltype(nullptr)*)",
+        32.641999999999996
+      ],
+      [
+        "void at::native::vectorized_elementwise_kernel<4, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul> >(int, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>)",
+        31.394000000000005
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 15,
+        "cpu_us": 6219.553000000025,
+        "device_us": 27.1999999999789,
+        "memory_bytes": 42270720
+      },
+      {
+        "name": "aten::empty",
+        "count": 365,
+        "cpu_us": 3957.269000000005,
+        "device_us": 0,
+        "memory_bytes": 138885120
+      },
+      {
+        "name": "aten::slice",
+        "count": 675,
+        "cpu_us": 3386.8590000001022,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::select",
+        "count": 675,
+        "cpu_us": 2477.75800000006,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::split_with_sizes",
+        "count": 5,
+        "cpu_us": 2170.832000000204,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::as_strided",
+        "count": 2145,
+        "cpu_us": 1888.3759999997983,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::narrow",
+        "count": 640,
+        "cpu_us": 1849.8999999998923,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::sum",
+        "count": 30,
+        "cpu_us": 1737.5530000000435,
+        "device_us": 95.07300000000305,
+        "memory_bytes": 28160
+      },
+      {
+        "name": "aten::cat",
+        "count": 15,
+        "cpu_us": 1587.4260000000577,
+        "device_us": 28.22499999997035,
+        "memory_bytes": 41945600
+      },
+      {
+        "name": "aten::copy_",
+        "count": 85,
+        "cpu_us": 1414.845000000002,
+        "device_us": 44.28099999994993,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 105,
+        "cpu_us": 1332.2880000000296,
+        "device_us": 0,
+        "memory_bytes": 4510720
+      },
+      {
+        "name": "aten::unbind",
+        "count": 5,
+        "cpu_us": 1246.756999999874,
+        "device_us": 0,
+        "memory_bytes": 0
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 75,
+        "cpu_us": 1945.3699999999826,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 45,
+        "cpu_us": 0,
+        "device_us": 19.801999999986947
+      },
+      {
+        "name": "Memcpy HtoD (Pageable -> Device)",
+        "count": 20,
+        "cpu_us": 0,
+        "device_us": 6.432999999993626
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.2079999999914435
+      },
+      {
+        "name": "Memcpy DtoD (Device -> Device)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 4.767999999985477
+      }
+    ],
+    "host_syncs": 71,
+    "kernels": 595,
+    "peak_increment_bytes": 17498112
+  },
+  {
+    "case": "sparse-hbm",
+    "version": 8,
+    "process": 2,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-sparse-hbm-2-v8/hbm-sparse-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 6350,
+      "user_annotation": 170,
+      "overhead": 3,
+      "cuda_runtime": 1873,
+      "kernel": 485,
+      "gpu_memcpy": 75,
+      "cuda_driver": 40,
+      "gpu_memset": 25,
+      "gpu_user_annotation": 85,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "ncclDevKernel_SendRecv(ncclDevKernelArgsStorage<4096ul>)",
+        48461.62099999999
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        70.655
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        65.37599999999999
+      ],
+      [
+        "void cub::CUB_300001_SM_800_900_1000_1200::detail::scan::DeviceScanKernel<cub::CUB_300001_SM_800_900_1000_1200::detail::scan::policy_hub<long, long, long, unsigned long long, cuda::std::__4::plus<void> >::Policy1000, long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::NullType, unsigned long long, long, false, cub::CUB_300001_SM_800_900_1000_1200::NullType>(long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, int, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::NullType, unsigned long long)",
+        65.21600000000001
+      ],
+      [
+        "void at::native::vectorized_gather_kernel<16, long>(char*, char*, long*, int, long, long, long, long, bool)",
+        50.175999999999995
+      ],
+      [
+        "void cub::CUB_300001_SM_800_900_1000_1200::detail::scan::DeviceScanKernel<cub::CUB_300001_SM_800_900_1000_1200::detail::scan::policy_hub<long, long, long, unsigned long long, cuda::std::__4::plus<void> >::Policy1000, long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::detail::InputValue<long, long*>, unsigned long long, long, false, long>(long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, int, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::detail::InputValue<long, long*>, unsigned long long)",
+        48.191
+      ],
+      [
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_64x128_8x5_tn_align1>(cutlass_80_simt_sgemm_64x128_8x5_tn_align1::Params)",
+        40.57600000000001
+      ],
+      [
+        "void at::native::reduce_kernel<128, 4, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#1}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#1}>, unsigned int, float, 4, 4>)",
+        40.44799999999999
+      ],
+      [
+        "void cublasLt::splitKreduce_kernel<32, 16, int, float, float, float, float, false, float, float, float, true, false, false, false>(cublasLt::cublasSplitKParams<float>, float const*, float const*, float*, float*, float const*, float const*, float const*, float const*, float*, void*, long, float*, int*, float*, float*, float const*, float const*, float const*, float const*, float const*)",
+        37.856
+      ],
+      [
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_64x64_8x5_nn_align1>(cutlass_80_simt_sgemm_64x64_8x5_nn_align1::Params)",
+        35.104
+      ],
+      [
+        "void fbgemm_gpu::permute_2D_data_kernel_vec<false, long, float, decltype(nullptr)>(long, int, int, float const*, decltype(nullptr) const*, int const*, long const*, long const*, float*, decltype(nullptr)*)",
+        32.609
+      ],
+      [
+        "void at::native::vectorized_elementwise_kernel<4, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul> >(int, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>)",
+        31.327000000000005
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 15,
+        "cpu_us": 6192.406999999994,
+        "device_us": 27.103999999986627,
+        "memory_bytes": 42270720
+      },
+      {
+        "name": "aten::slice",
+        "count": 675,
+        "cpu_us": 3759.708999999715,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty",
+        "count": 365,
+        "cpu_us": 3474.307000000007,
+        "device_us": 0,
+        "memory_bytes": 138885120
+      },
+      {
+        "name": "aten::select",
+        "count": 675,
+        "cpu_us": 2310.7979999998006,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::narrow",
+        "count": 640,
+        "cpu_us": 2064.6230000001196,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::split_with_sizes",
+        "count": 5,
+        "cpu_us": 1971.2930000002416,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::as_strided",
+        "count": 2145,
+        "cpu_us": 1837.2159999999976,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::sum",
+        "count": 30,
+        "cpu_us": 1480.9680000000126,
+        "device_us": 96.4840000000213,
+        "memory_bytes": 28160
+      },
+      {
+        "name": "aten::cat",
+        "count": 15,
+        "cpu_us": 1426.359000000003,
+        "device_us": 28.221000000001368,
+        "memory_bytes": 41945600
+      },
+      {
+        "name": "aten::unbind",
+        "count": 5,
+        "cpu_us": 1244.0520000001707,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 105,
+        "cpu_us": 1165.5370000000212,
+        "device_us": 0,
+        "memory_bytes": 4510720
+      },
+      {
+        "name": "aten::copy_",
+        "count": 85,
+        "cpu_us": 1154.64700000004,
+        "device_us": 54.87200000003577,
+        "memory_bytes": 0
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 75,
+        "cpu_us": 7398.590000000006,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 45,
+        "cpu_us": 0,
+        "device_us": 26.842000000035114
+      },
+      {
+        "name": "Memcpy HtoD (Pageable -> Device)",
+        "count": 20,
+        "cpu_us": 0,
+        "device_us": 8.960000000002765
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 3.0710000000017317
+      },
+      {
+        "name": "Memcpy DtoD (Device -> Device)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 4.7999999999738066
+      }
+    ],
+    "host_syncs": 71,
+    "kernels": 595,
+    "peak_increment_bytes": 17498112
+  },
+  {
+    "case": "lifetime-raw",
+    "version": 0,
+    "process": 0,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-lifetime-raw-0-v0/hbm-none-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 505,
+      "overhead": 2,
+      "kernel": 120,
+      "cuda_runtime": 266,
+      "gpu_memset": 25,
+      "gpu_memcpy": 10,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        72.544
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        65.634
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)3, false>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        30.495000000000005
+      ],
+      [
+        "void dyn_emb::segmented_unique_core<long, dyn_emb::MurmurHash3_32<long, 0u>, 9223372036854775807l, 9223372036854775807l>(long const*, unsigned long, int*, int*, long*, int*, long*, long const*, long const*, long, dyn_emb::FreqReduceOp)",
+        24.832
+      ],
+      [
+        "void load_from_flat_table_kernel_vec4<1, long, float>(long, long, long, float*, long const*, long const*, long const*, long const*, long const*, long, long, long const*, int const*)",
+        23.006
+      ],
+      [
+        "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        22.208000000000002
+      ],
+      [
+        "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+        16.511
+      ],
+      [
+        "dyn_emb::update_counter_with_layout_kernel(int*, long, long const*, long, int, long const*, long const*, long, long, long const*, long, long)",
+        14.368999999999998
+      ],
+      [
+        "void dyn_emb::segmented_unique_finalize<long>(long const*, int const*, long const*, long const*, long const*, long, long*, long*, long*, long*, unsigned long)",
+        13.632000000000001
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortHistogramKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, unsigned long long, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(unsigned long long*, long const*, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        10.977
+      ],
+      [
+        "dyn_emb::table_resolve_rows_kernel(long*, long*, long const*, long const*, long, long const*, long const*, long*, long, bool)",
+        9.183
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::select::DeviceSelectSweepKernel<cub::_V_300303_SM_1200::detail::select::policy_hub<cuda::std::__4::tuple<long, long, long>, bool, int, false, (cub::_V_300303_SM_1200::SelectImpl)0>::Policy1000, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<thrust::_V_300303_SM_1200::counting_iterator<long, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::compile_time_value<1> >, long const*, long const*> >, bool const*, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<long*, long*, long*> >, long*, cub::_V_300303_SM_1200::ScanTileState<int, true>, cub::_V_300303_SM_1200::NullType, cub::_V_300303_SM_1200::NullType, int, cub::_V_300303_SM_1200::detail::select::streaming_context_t<long, true>, (cub::_V_300303_SM_1200::SelectImpl)0>(thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<thrust::_V_300303_SM_1200::counting_iterator<long, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::compile_time_value<1> >, long const*, long const*> >, bool const*, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<long*, long*, long*> >, long*, cub::_V_300303_SM_1200::ScanTileState<int, true>, cub::_V_300303_SM_1200::NullType, cub::_V_300303_SM_1200::NullType, int, int, cub::_V_300303_SM_1200::detail::select::streaming_context_t<long, true>, cub::_V_300303_SM_1200::detail::vsmem_t)",
+        8.673
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 5,
+        "cpu_us": 6566.393999999998,
+        "device_us": 16.510999999996784,
+        "memory_bytes": 20971520
+      },
+      {
+        "name": "aten::empty",
+        "count": 115,
+        "cpu_us": 1254.4769999999808,
+        "device_us": 0,
+        "memory_bytes": 29091840
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 40,
+        "cpu_us": 483.647000000007,
+        "device_us": 0,
+        "memory_bytes": 1766400
+      },
+      {
+        "name": "aten::mean",
+        "count": 5,
+        "cpu_us": 350.8389999999954,
+        "device_us": 23.743999999999687,
+        "memory_bytes": 2560
+      },
+      {
+        "name": "aten::slice",
+        "count": 35,
+        "cpu_us": 247.85199999999986,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::copy_",
+        "count": 10,
+        "cpu_us": 197.19299999999748,
+        "device_us": 4.384999999998399,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty_like",
+        "count": 35,
+        "cpu_us": 158.5840000000003,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::logical_not",
+        "count": 10,
+        "cpu_us": 145.46500000000378,
+        "device_us": 4.799000000003616,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::select",
+        "count": 15,
+        "cpu_us": 110.63400000000001,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::as_strided",
+        "count": 60,
+        "cpu_us": 106.01500000000578,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::record_stream",
+        "count": 25,
+        "cpu_us": 102.9130000000032,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::sub",
+        "count": 5,
+        "cpu_us": 90.09299999999803,
+        "device_us": 0,
+        "memory_bytes": 0
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 10,
+        "cpu_us": 278.9779999999946,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.2089999999998327
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.1759999999985666
+      }
+    ],
+    "host_syncs": 11,
+    "kernels": 145,
+    "peak_increment_bytes": 9936384
+  },
+  {
+    "case": "lifetime-raw",
+    "version": 1,
+    "process": 1,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-lifetime-raw-1-v1/hbm-none-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 505,
+      "overhead": 2,
+      "kernel": 120,
+      "cuda_runtime": 276,
+      "gpu_memset": 25,
+      "gpu_memcpy": 10,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        72.61
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        65.697
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)3, false>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        28.96
+      ],
+      [
+        "void dyn_emb::segmented_unique_core<long, dyn_emb::MurmurHash3_32<long, 0u>, 9223372036854775807l, 9223372036854775807l>(long const*, unsigned long, int*, int*, long*, int*, long*, long const*, long const*, long, dyn_emb::FreqReduceOp)",
+        24.768
+      ],
+      [
+        "void load_from_flat_table_kernel_vec4<1, long, float>(long, long, long, float*, long const*, long const*, long const*, long const*, long const*, long, long, long const*, int const*)",
+        23.039
+      ],
+      [
+        "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        22.145
+      ],
+      [
+        "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+        16.544999999999998
+      ],
+      [
+        "dyn_emb::update_counter_with_layout_kernel(int*, long, long const*, long, int, long const*, long const*, long, long, long const*, long, long)",
+        14.303999999999997
+      ],
+      [
+        "void dyn_emb::segmented_unique_finalize<long>(long const*, int const*, long const*, long const*, long const*, long, long*, long*, long*, long*, unsigned long)",
+        13.568000000000001
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortHistogramKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, unsigned long long, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(unsigned long long*, long const*, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        11.040000000000001
+      ],
+      [
+        "dyn_emb::table_resolve_rows_kernel(long*, long*, long const*, long const*, long, long const*, long const*, long*, long, bool)",
+        9.218
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::select::DeviceSelectSweepKernel<cub::_V_300303_SM_1200::detail::select::policy_hub<cuda::std::__4::tuple<long, long, long>, bool, int, false, (cub::_V_300303_SM_1200::SelectImpl)0>::Policy1000, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<thrust::_V_300303_SM_1200::counting_iterator<long, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::compile_time_value<1> >, long const*, long const*> >, bool const*, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<long*, long*, long*> >, long*, cub::_V_300303_SM_1200::ScanTileState<int, true>, cub::_V_300303_SM_1200::NullType, cub::_V_300303_SM_1200::NullType, int, cub::_V_300303_SM_1200::detail::select::streaming_context_t<long, true>, (cub::_V_300303_SM_1200::SelectImpl)0>(thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<thrust::_V_300303_SM_1200::counting_iterator<long, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::compile_time_value<1> >, long const*, long const*> >, bool const*, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<long*, long*, long*> >, long*, cub::_V_300303_SM_1200::ScanTileState<int, true>, cub::_V_300303_SM_1200::NullType, cub::_V_300303_SM_1200::NullType, int, int, cub::_V_300303_SM_1200::detail::select::streaming_context_t<long, true>, cub::_V_300303_SM_1200::detail::vsmem_t)",
+        8.641
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 5,
+        "cpu_us": 6906.441999999994,
+        "device_us": 16.544999999996435,
+        "memory_bytes": 20971520
+      },
+      {
+        "name": "aten::empty",
+        "count": 115,
+        "cpu_us": 1520.6249999999973,
+        "device_us": 0,
+        "memory_bytes": 29091840
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 40,
+        "cpu_us": 569.4949999999876,
+        "device_us": 0,
+        "memory_bytes": 1766400
+      },
+      {
+        "name": "aten::mean",
+        "count": 5,
+        "cpu_us": 396.83100000000195,
+        "device_us": 23.6820000000007,
+        "memory_bytes": 2560
+      },
+      {
+        "name": "aten::slice",
+        "count": 35,
+        "cpu_us": 310.8400000000165,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::copy_",
+        "count": 10,
+        "cpu_us": 229.45000000001164,
+        "device_us": 4.417999999994208,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty_like",
+        "count": 35,
+        "cpu_us": 207.30699999999536,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::logical_not",
+        "count": 10,
+        "cpu_us": 180.41100000000006,
+        "device_us": 4.799999999996544,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::select",
+        "count": 15,
+        "cpu_us": 138.7609999999986,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::as_strided",
+        "count": 60,
+        "cpu_us": 126.54799999999796,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::record_stream",
+        "count": 25,
+        "cpu_us": 114.60599999999431,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::sub",
+        "count": 5,
+        "cpu_us": 114.17199999999866,
+        "device_us": 0,
+        "memory_bytes": 0
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 10,
+        "cpu_us": 366.20800000000054,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.209000000000742
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.208999999993466
+      }
+    ],
+    "host_syncs": 11,
+    "kernels": 145,
+    "peak_increment_bytes": 9936384
+  },
+  {
+    "case": "cache-raw",
+    "version": 0,
+    "process": 0,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-cache-raw-0-v0/cache-none-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 710,
+      "overhead": 2,
+      "kernel": 140,
+      "cuda_runtime": 316,
+      "gpu_memset": 25,
+      "gpu_memcpy": 20,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        72.41699999999999
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        65.6
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)3, true>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        29.247999999999998
+      ],
+      [
+        "void dyn_emb::segmented_unique_core<long, dyn_emb::MurmurHash3_32<long, 0u>, 9223372036854775807l, 9223372036854775807l>(long const*, unsigned long, int*, int*, long*, int*, long*, long const*, long const*, long, dyn_emb::FreqReduceOp)",
+        24.96
+      ],
+      [
+        "void load_from_flat_table_kernel_vec4<1, long, float>(long, long, long, float*, long const*, long const*, long const*, long const*, long const*, long, long, long const*, int const*)",
+        23.041
+      ],
+      [
+        "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        22.048000000000002
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)3, false>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        21.919
+      ],
+      [
+        "dyn_emb::update_counter_with_layout_kernel(int*, long, long const*, long, int, long const*, long const*, long, long, long const*, long, long)",
+        18.400000000000002
+      ],
+      [
+        "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+        16.608
+      ],
+      [
+        "void dyn_emb::segmented_unique_finalize<long>(long const*, int const*, long const*, long const*, long const*, long, long*, long*, long*, long*, unsigned long)",
+        13.729000000000001
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortHistogramKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, unsigned long long, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(unsigned long long*, long const*, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        11.07
+      ],
+      [
+        "dyn_emb::table_resolve_rows_kernel(long*, long*, long const*, long const*, long, long const*, long const*, long*, long, bool)",
+        9.343
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 5,
+        "cpu_us": 5880.562999999997,
+        "device_us": 16.607999999998356,
+        "memory_bytes": 20971520
+      },
+      {
+        "name": "aten::empty",
+        "count": 145,
+        "cpu_us": 1354.6330000000025,
+        "device_us": 0,
+        "memory_bytes": 29227520
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 65,
+        "cpu_us": 581.591000000012,
+        "device_us": 0,
+        "memory_bytes": 1930240
+      },
+      {
+        "name": "aten::slice",
+        "count": 55,
+        "cpu_us": 277.82100000000173,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::mean",
+        "count": 5,
+        "cpu_us": 268.7530000000006,
+        "device_us": 23.616000000001804,
+        "memory_bytes": 2560
+      },
+      {
+        "name": "aten::copy_",
+        "count": 20,
+        "cpu_us": 248.4769999999926,
+        "device_us": 11.36300000000665,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty_like",
+        "count": 50,
+        "cpu_us": 190.05700000000263,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::bitwise_not",
+        "count": 5,
+        "cpu_us": 128.27000000000226,
+        "device_us": 4.928000000002612,
+        "memory_bytes": 5120
+      },
+      {
+        "name": "aten::as_strided",
+        "count": 85,
+        "cpu_us": 122.15400000000409,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::logical_not",
+        "count": 10,
+        "cpu_us": 120.75399999999536,
+        "device_us": 4.927999999998974,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::select",
+        "count": 20,
+        "cpu_us": 115.1529999999957,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::record_stream",
+        "count": 25,
+        "cpu_us": 82.5160000000069,
+        "device_us": 0,
+        "memory_bytes": 0
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 20,
+        "cpu_us": 396.9890000000032,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.209000000000742
+      },
+      {
+        "name": "Memcpy DtoD (Device -> Device)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 4.8640000000023065
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 10,
+        "cpu_us": 0,
+        "device_us": 4.290000000003602
+      }
+    ],
+    "host_syncs": 16,
+    "kernels": 165,
+    "peak_increment_bytes": 9928192
+  },
+  {
+    "case": "cache-raw",
+    "version": 4,
+    "process": 1,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-cache-raw-1-v4/cache-none-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 720,
+      "overhead": 2,
+      "kernel": 140,
+      "cuda_runtime": 316,
+      "gpu_memset": 25,
+      "gpu_memcpy": 20,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        73.057
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        66.017
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)3, true>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        29.119
+      ],
+      [
+        "void dyn_emb::segmented_unique_core<long, dyn_emb::MurmurHash3_32<long, 0u>, 9223372036854775807l, 9223372036854775807l>(long const*, unsigned long, int*, int*, long*, int*, long*, long const*, long const*, long, dyn_emb::FreqReduceOp)",
+        24.993000000000002
+      ],
+      [
+        "void load_from_flat_table_kernel_vec4<1, long, float>(long, long, long, float*, long const*, long const*, long const*, long const*, long const*, long, long, long const*, int const*)",
+        23.039
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)3, false>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        22.144
+      ],
+      [
+        "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        22.112000000000002
+      ],
+      [
+        "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+        16.576999999999998
+      ],
+      [
+        "dyn_emb::update_counter_with_layout_kernel(int*, long, long const*, long, int, long const*, long const*, long, long, long const*, long, long)",
+        16.320999999999998
+      ],
+      [
+        "void dyn_emb::segmented_unique_finalize<long>(long const*, int const*, long const*, long const*, long const*, long, long*, long*, long*, long*, unsigned long)",
+        13.792
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortHistogramKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, unsigned long long, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(unsigned long long*, long const*, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        11.042
+      ],
+      [
+        "dyn_emb::table_resolve_rows_kernel(long*, long*, long const*, long const*, long, long const*, long const*, long*, long, bool)",
+        9.344
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 5,
+        "cpu_us": 6718.526999999998,
+        "device_us": 16.577000000001135,
+        "memory_bytes": 20971520
+      },
+      {
+        "name": "aten::empty",
+        "count": 145,
+        "cpu_us": 1579.516999999988,
+        "device_us": 0,
+        "memory_bytes": 29227520
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 65,
+        "cpu_us": 725.2279999999864,
+        "device_us": 0,
+        "memory_bytes": 1930240
+      },
+      {
+        "name": "aten::mean",
+        "count": 5,
+        "cpu_us": 369.4420000000064,
+        "device_us": 23.64799999999923,
+        "memory_bytes": 2560
+      },
+      {
+        "name": "aten::slice",
+        "count": 55,
+        "cpu_us": 360.32599999999456,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::copy_",
+        "count": 20,
+        "cpu_us": 337.2669999999998,
+        "device_us": 11.33100000000195,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty_like",
+        "count": 50,
+        "cpu_us": 220.934999999997,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::as_strided",
+        "count": 85,
+        "cpu_us": 191.52400000001126,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::bitwise_not",
+        "count": 5,
+        "cpu_us": 177.0660000000007,
+        "device_us": 4.895999999997912,
+        "memory_bytes": 5120
+      },
+      {
+        "name": "aten::logical_not",
+        "count": 10,
+        "cpu_us": 162.45600000001286,
+        "device_us": 5.0239999999957945,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::select",
+        "count": 20,
+        "cpu_us": 150.67699999999968,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::record_stream",
+        "count": 25,
+        "cpu_us": 104.36899999998786,
+        "device_us": 0,
+        "memory_bytes": 0
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 20,
+        "cpu_us": 567.7100000000028,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.2080000000041764
+      },
+      {
+        "name": "Memcpy DtoD (Device -> Device)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 4.801000000000386
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 10,
+        "cpu_us": 0,
+        "device_us": 4.321999999997388
+      }
+    ],
+    "host_syncs": 16,
+    "kernels": 165,
+    "peak_increment_bytes": 9928192
+  },
+  {
+    "case": "host-prefetch",
+    "version": 0,
+    "process": 0,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-host-prefetch-0-v0/host-none-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 640,
+      "overhead": 2,
+      "kernel": 160,
+      "cuda_runtime": 311,
+      "gpu_memset": 25,
+      "gpu_memcpy": 15,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        72.801
+      ],
+      [
+        "void load_from_flat_table_kernel_vec4<2, long, float>(long, long, long, float*, long const*, long const*, long const*, long const*, long const*, long, long, long const*, int const*)",
+        67.67999999999999
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        65.792
+      ],
+      [
+        "void store_to_flat_table_kernel_vec4<2, long, float>(long, long, long, float const*, long const*, long const*, long const*, long const*, long const*, long, long)",
+        42.21000000000001
+      ],
+      [
+        "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})",
+        32.671
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)3, false>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        27.391
+      ],
+      [
+        "void dyn_emb::segmented_unique_core<long, dyn_emb::MurmurHash3_32<long, 0u>, 9223372036854775807l, 9223372036854775807l>(long const*, unsigned long, int*, int*, long*, int*, long*, long const*, long const*, long, dyn_emb::FreqReduceOp)",
+        24.96
+      ],
+      [
+        "void dyn_emb::table_insert_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, dyn_emb::InsertKernelTraits<256, 1, 1, 1, 8, (dyn_emb::ScorePolicyType)0, false, false> >(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, int*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, dyn_emb::InsertResult*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType**, int*)",
+        22.753
+      ],
+      [
+        "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        22.529
+      ],
+      [
+        "void dyn_emb::one_to_one_warp_per_ev_vec4_kernel<dyn_emb::ForwardSequenceFusedCopyDesc<float, float, long>, 1>(dyn_emb::ForwardSequenceFusedCopyDesc<float, float, long>)",
+        22.178000000000004
+      ],
+      [
+        "dyn_emb::table_resolve_rows_kernel(long*, long*, long const*, long const*, long, long const*, long const*, long*, long, bool)",
+        18.400000000000002
+      ],
+      [
+        "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+        16.577
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 5,
+        "cpu_us": 6095.600999999997,
+        "device_us": 16.576999999999316,
+        "memory_bytes": 20971520
+      },
+      {
+        "name": "aten::empty",
+        "count": 135,
+        "cpu_us": 1614.257000000026,
+        "device_us": 0,
+        "memory_bytes": 30484480
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 50,
+        "cpu_us": 665.5420000000056,
+        "device_us": 0,
+        "memory_bytes": 1812480
+      },
+      {
+        "name": "aten::index",
+        "count": 15,
+        "cpu_us": 564.445000000007,
+        "device_us": 40.38399999999456,
+        "memory_bytes": 1392640
+      },
+      {
+        "name": "aten::mean",
+        "count": 5,
+        "cpu_us": 400.3690000000024,
+        "device_us": 24.16099999999824,
+        "memory_bytes": 2560
+      },
+      {
+        "name": "aten::copy_",
+        "count": 15,
+        "cpu_us": 294.4279999999999,
+        "device_us": 9.28099999999722,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::slice",
+        "count": 35,
+        "cpu_us": 286.108999999984,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty_like",
+        "count": 40,
+        "cpu_us": 214.34199999999942,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::logical_not",
+        "count": 10,
+        "cpu_us": 177.24100000000544,
+        "device_us": 4.960000000004584,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::fill_",
+        "count": 10,
+        "cpu_us": 159.14599999999336,
+        "device_us": 8.704000000001543,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::arange",
+        "count": 10,
+        "cpu_us": 139.07700000000568,
+        "device_us": 4.223999999995613,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::as_strided",
+        "count": 75,
+        "cpu_us": 137.84099999999853,
+        "device_us": 0,
+        "memory_bytes": 0
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 15,
+        "cpu_us": 477.6510000000062,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.2409999999963475
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.240000000000691
+      },
+      {
+        "name": "Memcpy DtoD (Device -> Device)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 4.800000000000182
+      }
+    ],
+    "host_syncs": 11,
+    "kernels": 185,
+    "peak_increment_bytes": 10190336
+  },
+  {
+    "case": "host-prefetch",
+    "version": 5,
+    "process": 1,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-host-prefetch-1-v5/host-none-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 810,
+      "overhead": 2,
+      "kernel": 165,
+      "cuda_runtime": 336,
+      "gpu_memset": 25,
+      "gpu_memcpy": 25,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "void at::native::radixSortKVInPlace<-2, -1, 32, 32, long, long, unsigned int>(at::cuda::detail::TensorInfo<long, unsigned int>, unsigned int, unsigned int, unsigned int, at::cuda::detail::TensorInfo<long, unsigned int>, unsigned int, bool)",
+        108.51400000000001
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        72.16099999999999
+      ],
+      [
+        "void load_from_flat_table_kernel_vec4<2, long, float>(long, long, long, float*, long const*, long const*, long const*, long const*, long const*, long, long, long const*, int const*)",
+        67.712
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        65.696
+      ],
+      [
+        "void store_to_flat_table_kernel_vec4<2, long, float>(long, long, long, float const*, long const*, long const*, long const*, long const*, long const*, long, long)",
+        41.312
+      ],
+      [
+        "void dyn_emb::one_to_one_warp_per_ev_vec4_kernel<(anonymous namespace)::StorageRowCopyDesc<float>, 1, true>((anonymous namespace)::StorageRowCopyDesc<float>)",
+        34.654
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)3, false>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        28.768000000000004
+      ],
+      [
+        "void dyn_emb::segmented_unique_core<long, dyn_emb::MurmurHash3_32<long, 0u>, 9223372036854775807l, 9223372036854775807l>(long const*, unsigned long, int*, int*, long*, int*, long*, long const*, long const*, long, dyn_emb::FreqReduceOp)",
+        24.832
+      ],
+      [
+        "void dyn_emb::table_insert_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, dyn_emb::InsertKernelTraits<256, 1, 1, 1, 8, (dyn_emb::ScorePolicyType)0, false, false> >(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, int*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, dyn_emb::InsertResult*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType**, int*)",
+        24.065
+      ],
+      [
+        "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        22.208000000000002
+      ],
+      [
+        "dyn_emb::table_resolve_rows_kernel(long*, long*, long const*, long const*, long, long const*, long const*, long*, long, bool)",
+        18.467
+      ],
+      [
+        "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+        16.543
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 5,
+        "cpu_us": 6010.023000000008,
+        "device_us": 16.543000000001484,
+        "memory_bytes": 20971520
+      },
+      {
+        "name": "aten::empty",
+        "count": 140,
+        "cpu_us": 1651.016999999979,
+        "device_us": 0,
+        "memory_bytes": 30484480
+      },
+      {
+        "name": "aten::record_stream",
+        "count": 180,
+        "cpu_us": 846.2129999999688,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 45,
+        "cpu_us": 606.5710000000114,
+        "device_us": 0,
+        "memory_bytes": 1807360
+      },
+      {
+        "name": "aten::mean",
+        "count": 5,
+        "cpu_us": 414.25699999999233,
+        "device_us": 23.80799999998999,
+        "memory_bytes": 2560
+      },
+      {
+        "name": "aten::copy_",
+        "count": 25,
+        "cpu_us": 406.5140000000101,
+        "device_us": 19.326999999999316,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::slice",
+        "count": 40,
+        "cpu_us": 379.67400000002,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::sort",
+        "count": 5,
+        "cpu_us": 345.95499999999083,
+        "device_us": 108.51399999999558,
+        "memory_bytes": 40960
+      },
+      {
+        "name": "aten::arange",
+        "count": 20,
+        "cpu_us": 285.3179999999911,
+        "device_us": 8.413999999993393,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty_like",
+        "count": 40,
+        "cpu_us": 206.54799999997658,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::fill_",
+        "count": 10,
+        "cpu_us": 181.46700000000146,
+        "device_us": 8.70100000000457,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::logical_not",
+        "count": 10,
+        "cpu_us": 174.01400000000285,
+        "device_us": 4.863000000002103,
+        "memory_bytes": 0
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 25,
+        "cpu_us": 726.8849999999939,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.270999999992455
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.240000000007967
+      },
+      {
+        "name": "Memcpy DtoD (Device -> Device)",
+        "count": 15,
+        "cpu_us": 0,
+        "device_us": 14.815999999998894
+      }
+    ],
+    "host_syncs": 11,
+    "kernels": 190,
+    "peak_increment_bytes": 10190848
+  },
+  {
+    "case": "hybrid-prefetch",
+    "version": 0,
+    "process": 0,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-hybrid-prefetch-0-v0/hybrid-none-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 945,
+      "overhead": 2,
+      "kernel": 220,
+      "cuda_runtime": 526,
+      "gpu_memset": 25,
+      "gpu_memcpy": 40,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        72.19500000000001
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        65.856
+      ],
+      [
+        "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})",
+        63.583
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)3, false>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        34.178
+      ],
+      [
+        "void at_cuda_detail::cub::detail::select::DeviceSelectSweepKernel<at_cuda_detail::cub::detail::select::policy_hub<long, bool, int, false, (at_cuda_detail::cub::SelectImpl)0>::Policy1000, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::counting_iterator<long, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default>, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::transform_iterator<at::native::(anonymous namespace)::NonZeroOp<bool>, bool const*, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default>, long*, int*, at_cuda_detail::cub::ScanTileState<int, true>, at_cuda_detail::cub::NullType, at_cuda_detail::cub::NullType, int, at_cuda_detail::cub::detail::select::streaming_context_t<long, true>, (at_cuda_detail::cub::SelectImpl)0>(thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::counting_iterator<long, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default>, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::transform_iterator<at::native::(anonymous namespace)::NonZeroOp<bool>, bool const*, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default>, long*, int*, at_cuda_detail::cub::ScanTileState<int, true>, at_cuda_detail::cub::NullType, at_cuda_detail::cub::NullType, int, int, at_cuda_detail::cub::detail::select::streaming_context_t<long, true>, at_cuda_detail::cub::detail::vsmem_t)",
+        26.337000000000007
+      ],
+      [
+        "void at_cuda_detail::cub::detail::reduce::DeviceReduceSingleTileKernel<at_cuda_detail::cub::detail::reduce::policy_hub<int, unsigned long long, cuda::std::__4::plus<void> >::Policy1000, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::transform_iterator<at::native::(anonymous namespace)::NonZeroOp<bool>, bool const*, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default>, int*, unsigned long long, cuda::std::__4::plus<void>, int, int, cuda::std::__4::__identity>(thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::transform_iterator<at::native::(anonymous namespace)::NonZeroOp<bool>, bool const*, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default>, int*, unsigned long long, cuda::std::__4::plus<void>, int, cuda::std::__4::__identity)",
+        25.438000000000006
+      ],
+      [
+        "void dyn_emb::segmented_unique_core<long, dyn_emb::MurmurHash3_32<long, 0u>, 9223372036854775807l, 9223372036854775807l>(long const*, unsigned long, int*, int*, long*, int*, long*, long const*, long const*, long, dyn_emb::FreqReduceOp)",
+        24.8
+      ],
+      [
+        "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        22.272000000000002
+      ],
+      [
+        "void dyn_emb::one_to_one_warp_per_ev_vec4_kernel<dyn_emb::ForwardSequenceFusedCopyDesc<float, float, long>, 1>(dyn_emb::ForwardSequenceFusedCopyDesc<float, float, long>)",
+        22.143
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)0, false>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        21.311
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::select::DeviceSelectSweepKernel<cub::_V_300303_SM_1200::detail::select::policy_hub<cuda::std::__4::tuple<long, long, long>, bool, int, false, (cub::_V_300303_SM_1200::SelectImpl)0>::Policy1000, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<thrust::_V_300303_SM_1200::counting_iterator<long, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::compile_time_value<1> >, long const*, long const*> >, bool const*, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<long*, long*, long*> >, long*, cub::_V_300303_SM_1200::ScanTileState<int, true>, cub::_V_300303_SM_1200::NullType, cub::_V_300303_SM_1200::NullType, int, cub::_V_300303_SM_1200::detail::select::streaming_context_t<long, true>, (cub::_V_300303_SM_1200::SelectImpl)0>(thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<thrust::_V_300303_SM_1200::counting_iterator<long, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::compile_time_value<1> >, long const*, long const*> >, bool const*, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<long*, long*, long*> >, long*, cub::_V_300303_SM_1200::ScanTileState<int, true>, cub::_V_300303_SM_1200::NullType, cub::_V_300303_SM_1200::NullType, int, int, cub::_V_300303_SM_1200::detail::select::streaming_context_t<long, true>, cub::_V_300303_SM_1200::detail::vsmem_t)",
+        17.922000000000004
+      ],
+      [
+        "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+        16.448999999999998
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 5,
+        "cpu_us": 6672.206999999993,
+        "device_us": 16.449000000000524,
+        "memory_bytes": 20971520
+      },
+      {
+        "name": "aten::empty",
+        "count": 160,
+        "cpu_us": 1938.4220000000405,
+        "device_us": 0,
+        "memory_bytes": 30538240
+      },
+      {
+        "name": "aten::nonzero",
+        "count": 15,
+        "cpu_us": 1232.7380000000048,
+        "device_us": 70.7530000000188,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::index",
+        "count": 30,
+        "cpu_us": 1100.350999999995,
+        "device_us": 78.78200000001743,
+        "memory_bytes": 2662400
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 55,
+        "cpu_us": 692.4880000000109,
+        "device_us": 0,
+        "memory_bytes": 1812480
+      },
+      {
+        "name": "aten::mean",
+        "count": 5,
+        "cpu_us": 396.3660000000036,
+        "device_us": 23.841000000003987,
+        "memory_bytes": 2560
+      },
+      {
+        "name": "aten::slice",
+        "count": 50,
+        "cpu_us": 393.6490000000131,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::copy_",
+        "count": 20,
+        "cpu_us": 392.6969999999992,
+        "device_us": 11.072000000002845,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::logical_not",
+        "count": 20,
+        "cpu_us": 336.48199999999997,
+        "device_us": 9.76000000001386,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::as_strided",
+        "count": 140,
+        "cpu_us": 313.57000000001153,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::resize_",
+        "count": 30,
+        "cpu_us": 266.0929999999871,
+        "device_us": 0,
+        "memory_bytes": 174080
+      },
+      {
+        "name": "aten::any",
+        "count": 5,
+        "cpu_us": 212.19499999999243,
+        "device_us": 9.090000000003783,
+        "memory_bytes": 2560
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 40,
+        "cpu_us": 982.315999999998,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 25,
+        "cpu_us": 0,
+        "device_us": 10.463000000009743
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 10,
+        "cpu_us": 0,
+        "device_us": 4.225000000005821
+      },
+      {
+        "name": "Memcpy DtoD (Device -> Device)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 4.639999999999418
+      }
+    ],
+    "host_syncs": 36,
+    "kernels": 245,
+    "peak_increment_bytes": 10190336
+  },
+  {
+    "case": "hybrid-prefetch",
+    "version": 5,
+    "process": 1,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-hybrid-prefetch-1-v5/hybrid-none-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 1115,
+      "overhead": 2,
+      "kernel": 225,
+      "cuda_runtime": 551,
+      "gpu_memset": 25,
+      "gpu_memcpy": 50,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "void at::native::radixSortKVInPlace<-2, -1, 32, 32, long, long, unsigned int>(at::cuda::detail::TensorInfo<long, unsigned int>, unsigned int, unsigned int, unsigned int, at::cuda::detail::TensorInfo<long, unsigned int>, unsigned int, bool)",
+        107.905
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        72.194
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        65.40899999999999
+      ],
+      [
+        "void dyn_emb::one_to_one_warp_per_ev_vec4_kernel<(anonymous namespace)::StorageRowCopyDesc<float>, 1, true>((anonymous namespace)::StorageRowCopyDesc<float>)",
+        34.562
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)3, false>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        33.375
+      ],
+      [
+        "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})",
+        33.024
+      ],
+      [
+        "void at_cuda_detail::cub::detail::select::DeviceSelectSweepKernel<at_cuda_detail::cub::detail::select::policy_hub<long, bool, int, false, (at_cuda_detail::cub::SelectImpl)0>::Policy1000, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::counting_iterator<long, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default>, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::transform_iterator<at::native::(anonymous namespace)::NonZeroOp<bool>, bool const*, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default>, long*, int*, at_cuda_detail::cub::ScanTileState<int, true>, at_cuda_detail::cub::NullType, at_cuda_detail::cub::NullType, int, at_cuda_detail::cub::detail::select::streaming_context_t<long, true>, (at_cuda_detail::cub::SelectImpl)0>(thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::counting_iterator<long, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default>, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::transform_iterator<at::native::(anonymous namespace)::NonZeroOp<bool>, bool const*, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default>, long*, int*, at_cuda_detail::cub::ScanTileState<int, true>, at_cuda_detail::cub::NullType, at_cuda_detail::cub::NullType, int, int, at_cuda_detail::cub::detail::select::streaming_context_t<long, true>, at_cuda_detail::cub::detail::vsmem_t)",
+        26.431000000000008
+      ],
+      [
+        "void at_cuda_detail::cub::detail::reduce::DeviceReduceSingleTileKernel<at_cuda_detail::cub::detail::reduce::policy_hub<int, unsigned long long, cuda::std::__4::plus<void> >::Policy1000, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::transform_iterator<at::native::(anonymous namespace)::NonZeroOp<bool>, bool const*, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default>, int*, unsigned long long, cuda::std::__4::plus<void>, int, int, cuda::std::__4::__identity>(thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::transform_iterator<at::native::(anonymous namespace)::NonZeroOp<bool>, bool const*, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default, thrust::THRUST_300001_SM_750_800_860_900_1000_1200_NS::use_default>, int*, unsigned long long, cuda::std::__4::plus<void>, int, cuda::std::__4::__identity)",
+        26.368000000000006
+      ],
+      [
+        "void dyn_emb::segmented_unique_core<long, dyn_emb::MurmurHash3_32<long, 0u>, 9223372036854775807l, 9223372036854775807l>(long const*, unsigned long, int*, int*, long*, int*, long*, long const*, long const*, long, dyn_emb::FreqReduceOp)",
+        24.736
+      ],
+      [
+        "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        22.112000000000002
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)0, false>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        21.568
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::select::DeviceSelectSweepKernel<cub::_V_300303_SM_1200::detail::select::policy_hub<cuda::std::__4::tuple<long, long, long>, bool, int, false, (cub::_V_300303_SM_1200::SelectImpl)0>::Policy1000, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<thrust::_V_300303_SM_1200::counting_iterator<long, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::compile_time_value<1> >, long const*, long const*> >, bool const*, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<long*, long*, long*> >, long*, cub::_V_300303_SM_1200::ScanTileState<int, true>, cub::_V_300303_SM_1200::NullType, cub::_V_300303_SM_1200::NullType, int, cub::_V_300303_SM_1200::detail::select::streaming_context_t<long, true>, (cub::_V_300303_SM_1200::SelectImpl)0>(thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<thrust::_V_300303_SM_1200::counting_iterator<long, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::use_default, thrust::_V_300303_SM_1200::compile_time_value<1> >, long const*, long const*> >, bool const*, thrust::_V_300303_SM_1200::zip_iterator<cuda::std::__4::tuple<long*, long*, long*> >, long*, cub::_V_300303_SM_1200::ScanTileState<int, true>, cub::_V_300303_SM_1200::NullType, cub::_V_300303_SM_1200::NullType, int, int, cub::_V_300303_SM_1200::detail::select::streaming_context_t<long, true>, cub::_V_300303_SM_1200::detail::vsmem_t)",
+        18.273
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 5,
+        "cpu_us": 6951.521999999997,
+        "device_us": 16.545000000000073,
+        "memory_bytes": 20971520
+      },
+      {
+        "name": "aten::empty",
+        "count": 165,
+        "cpu_us": 1833.860000000027,
+        "device_us": 0,
+        "memory_bytes": 30538240
+      },
+      {
+        "name": "aten::nonzero",
+        "count": 15,
+        "cpu_us": 1207.6000000000204,
+        "device_us": 71.74199999998382,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::record_stream",
+        "count": 180,
+        "cpu_us": 772.8140000000212,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::index",
+        "count": 15,
+        "cpu_us": 665.2500000000109,
+        "device_us": 40.64100000001781,
+        "memory_bytes": 1269760
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 50,
+        "cpu_us": 665.0350000000171,
+        "device_us": 0,
+        "memory_bytes": 1807360
+      },
+      {
+        "name": "aten::copy_",
+        "count": 30,
+        "cpu_us": 461.9120000000239,
+        "device_us": 21.24700000001212,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::slice",
+        "count": 55,
+        "cpu_us": 448.5310000000154,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::mean",
+        "count": 5,
+        "cpu_us": 383.4319999999889,
+        "device_us": 23.648000000002867,
+        "memory_bytes": 2560
+      },
+      {
+        "name": "aten::logical_not",
+        "count": 20,
+        "cpu_us": 337.170999999993,
+        "device_us": 9.888999999996486,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::sort",
+        "count": 5,
+        "cpu_us": 318.62899999999354,
+        "device_us": 107.90500000000975,
+        "memory_bytes": 40960
+      },
+      {
+        "name": "aten::resize_",
+        "count": 35,
+        "cpu_us": 296.9680000000126,
+        "device_us": 0,
+        "memory_bytes": 215040
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 50,
+        "cpu_us": 1090.565999999987,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 25,
+        "cpu_us": 0,
+        "device_us": 10.273000000004686
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 10,
+        "cpu_us": 0,
+        "device_us": 4.289000000006126
+      },
+      {
+        "name": "Memcpy DtoD (Device -> Device)",
+        "count": 15,
+        "cpu_us": 0,
+        "device_us": 14.71900000000096
+      }
+    ],
+    "host_syncs": 36,
+    "kernels": 250,
+    "peak_increment_bytes": 10190848
+  },
+  {
+    "case": "hbm-prefetch",
+    "version": 0,
+    "process": 0,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-hbm-prefetch-0-v0/hbm-prefetch-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 6350,
+      "user_annotation": 175,
+      "overhead": 3,
+      "cuda_runtime": 1843,
+      "kernel": 480,
+      "gpu_memcpy": 75,
+      "cuda_driver": 40,
+      "gpu_memset": 25,
+      "gpu_user_annotation": 90,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "ncclDevKernel_SendRecv(ncclDevKernelArgsStorage<4096ul>)",
+        2044.4679999999998
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        70.528
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        65.792
+      ],
+      [
+        "void cub::CUB_300001_SM_800_900_1000_1200::detail::scan::DeviceScanKernel<cub::CUB_300001_SM_800_900_1000_1200::detail::scan::policy_hub<long, long, long, unsigned long long, cuda::std::__4::plus<void> >::Policy1000, long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::NullType, unsigned long long, long, false, cub::CUB_300001_SM_800_900_1000_1200::NullType>(long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, int, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::NullType, unsigned long long)",
+        63.07100000000001
+      ],
+      [
+        "void at::native::vectorized_gather_kernel<16, long>(char*, char*, long*, int, long, long, long, long, bool)",
+        50.208000000000006
+      ],
+      [
+        "void cub::CUB_300001_SM_800_900_1000_1200::detail::scan::DeviceScanKernel<cub::CUB_300001_SM_800_900_1000_1200::detail::scan::policy_hub<long, long, long, unsigned long long, cuda::std::__4::plus<void> >::Policy1000, long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::detail::InputValue<long, long*>, unsigned long long, long, false, long>(long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, int, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::detail::InputValue<long, long*>, unsigned long long)",
+        47.138
+      ],
+      [
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_64x128_8x5_tn_align1>(cutlass_80_simt_sgemm_64x128_8x5_tn_align1::Params)",
+        40.414
+      ],
+      [
+        "void at::native::reduce_kernel<128, 4, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#1}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#1}>, unsigned int, float, 4, 4>)",
+        40.288
+      ],
+      [
+        "void cublasLt::splitKreduce_kernel<32, 16, int, float, float, float, float, false, float, float, float, true, false, false, false>(cublasLt::cublasSplitKParams<float>, float const*, float const*, float*, float*, float const*, float const*, float const*, float const*, float*, void*, long, float*, int*, float*, float*, float const*, float const*, float const*, float const*, float const*)",
+        37.633
+      ],
+      [
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_64x64_8x5_nn_align1>(cutlass_80_simt_sgemm_64x64_8x5_nn_align1::Params)",
+        35.201
+      ],
+      [
+        "void fbgemm_gpu::permute_2D_data_kernel_vec<false, long, float, decltype(nullptr)>(long, int, int, float const*, decltype(nullptr) const*, int const*, long const*, long const*, float*, decltype(nullptr)*)",
+        32.833999999999996
+      ],
+      [
+        "void at::native::vectorized_elementwise_kernel<4, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul> >(int, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>)",
+        31.358999999999995
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 15,
+        "cpu_us": 7198.452000000005,
+        "device_us": 27.070999999976266,
+        "memory_bytes": 42270720
+      },
+      {
+        "name": "aten::empty",
+        "count": 365,
+        "cpu_us": 4235.650999999884,
+        "device_us": 0,
+        "memory_bytes": 138885120
+      },
+      {
+        "name": "aten::slice",
+        "count": 675,
+        "cpu_us": 3622.6309999999103,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::select",
+        "count": 675,
+        "cpu_us": 2833.7750000000506,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::split_with_sizes",
+        "count": 5,
+        "cpu_us": 2598.1799999998548,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::as_strided",
+        "count": 2135,
+        "cpu_us": 2301.4820000002483,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::narrow",
+        "count": 640,
+        "cpu_us": 2173.9330000000773,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::unbind",
+        "count": 5,
+        "cpu_us": 1726.832999999875,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::cat",
+        "count": 15,
+        "cpu_us": 1688.4660000000313,
+        "device_us": 27.96800000002986,
+        "memory_bytes": 41945600
+      },
+      {
+        "name": "aten::copy_",
+        "count": 85,
+        "cpu_us": 1556.4120000001385,
+        "device_us": 44.44500000004791,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::sum",
+        "count": 30,
+        "cpu_us": 1515.5830000000042,
+        "device_us": 95.52099999997881,
+        "memory_bytes": 28160
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 105,
+        "cpu_us": 1362.8539999999066,
+        "device_us": 0,
+        "memory_bytes": 4510720
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 75,
+        "cpu_us": 2215.4069999999765,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 45,
+        "cpu_us": 0,
+        "device_us": 19.581000000008316
+      },
+      {
+        "name": "Memcpy HtoD (Pageable -> Device)",
+        "count": 20,
+        "cpu_us": 0,
+        "device_us": 6.465000000020154
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.239000000021406
+      },
+      {
+        "name": "Memcpy DtoD (Device -> Device)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 4.895999999986088
+      }
+    ],
+    "host_syncs": 71,
+    "kernels": 595,
+    "peak_increment_bytes": 17036800
+  },
+  {
+    "case": "hbm-prefetch",
+    "version": 3,
+    "process": 1,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-hbm-prefetch-1-v3/hbm-prefetch-128-default-rank0.json",
+    "categories": {
+      "cpu_op": 6480,
+      "user_annotation": 175,
+      "overhead": 2,
+      "cuda_runtime": 1982,
+      "kernel": 485,
+      "gpu_memcpy": 75,
+      "cuda_driver": 40,
+      "gpu_memset": 25,
+      "gpu_user_annotation": 85,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "ncclDevKernel_SendRecv(ncclDevKernelArgsStorage<4096ul>)",
+        2046.51
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortOnesweepKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(int*, int*, unsigned long long*, unsigned long long const*, long*, long const*, dyn_emb::GradInfo<long>*, dyn_emb::GradInfo<long> const*, int, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        70.146
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        65.761
+      ],
+      [
+        "void cub::CUB_300001_SM_800_900_1000_1200::detail::scan::DeviceScanKernel<cub::CUB_300001_SM_800_900_1000_1200::detail::scan::policy_hub<long, long, long, unsigned long long, cuda::std::__4::plus<void> >::Policy1000, long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::NullType, unsigned long long, long, false, cub::CUB_300001_SM_800_900_1000_1200::NullType>(long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, int, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::NullType, unsigned long long)",
+        65.15100000000001
+      ],
+      [
+        "void at::native::vectorized_gather_kernel<16, long>(char*, char*, long*, int, long, long, long, long, bool)",
+        50.209
+      ],
+      [
+        "void cub::CUB_300001_SM_800_900_1000_1200::detail::scan::DeviceScanKernel<cub::CUB_300001_SM_800_900_1000_1200::detail::scan::policy_hub<long, long, long, unsigned long long, cuda::std::__4::plus<void> >::Policy1000, long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::detail::InputValue<long, long*>, unsigned long long, long, false, long>(long*, long*, cub::CUB_300001_SM_800_900_1000_1200::ScanTileState<long, true>, int, cuda::std::__4::plus<void>, cub::CUB_300001_SM_800_900_1000_1200::detail::InputValue<long, long*>, unsigned long long)",
+        48.257
+      ],
+      [
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_64x128_8x5_tn_align1>(cutlass_80_simt_sgemm_64x128_8x5_tn_align1::Params)",
+        40.736000000000004
+      ],
+      [
+        "void at::native::reduce_kernel<128, 4, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#1}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#1}>, unsigned int, float, 4, 4>)",
+        40.321
+      ],
+      [
+        "void cublasLt::splitKreduce_kernel<32, 16, int, float, float, float, float, false, float, float, float, true, false, false, false>(cublasLt::cublasSplitKParams<float>, float const*, float const*, float*, float*, float const*, float const*, float const*, float const*, float*, void*, long, float*, int*, float*, float*, float const*, float const*, float const*, float const*, float const*)",
+        37.855999999999995
+      ],
+      [
+        "void cutlass::Kernel2<cutlass_80_simt_sgemm_64x64_8x5_nn_align1>(cutlass_80_simt_sgemm_64x64_8x5_nn_align1::Params)",
+        35.073
+      ],
+      [
+        "void fbgemm_gpu::permute_2D_data_kernel_vec<false, long, float, decltype(nullptr)>(long, int, int, float const*, decltype(nullptr) const*, int const*, long const*, long const*, float*, decltype(nullptr)*)",
+        32.702999999999996
+      ],
+      [
+        "void at::native::vectorized_elementwise_kernel<4, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul> >(int, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>)",
+        30.945
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 15,
+        "cpu_us": 7152.923000000001,
+        "device_us": 26.880999999995765,
+        "memory_bytes": 42270720
+      },
+      {
+        "name": "aten::empty",
+        "count": 365,
+        "cpu_us": 4742.61300000002,
+        "device_us": 0,
+        "memory_bytes": 138885120
+      },
+      {
+        "name": "aten::slice",
+        "count": 675,
+        "cpu_us": 3333.9740000001148,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::split_with_sizes",
+        "count": 5,
+        "cpu_us": 3154.052000000029,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::select",
+        "count": 675,
+        "cpu_us": 2708.908000000154,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::as_strided",
+        "count": 2145,
+        "cpu_us": 2185.1209999998127,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::narrow",
+        "count": 640,
+        "cpu_us": 1926.7599999997947,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::copy_",
+        "count": 85,
+        "cpu_us": 1809.6390000002393,
+        "device_us": 44.481999999828076,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::cat",
+        "count": 15,
+        "cpu_us": 1731.536999999982,
+        "device_us": 28.223000000007232,
+        "memory_bytes": 41945600
+      },
+      {
+        "name": "aten::unbind",
+        "count": 5,
+        "cpu_us": 1704.2000000000153,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::sum",
+        "count": 30,
+        "cpu_us": 1566.203000000045,
+        "device_us": 95.58699999995588,
+        "memory_bytes": 28160
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 105,
+        "cpu_us": 1494.9039999999313,
+        "device_us": 0,
+        "memory_bytes": 4510720
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 75,
+        "cpu_us": 2443.3979999999365,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 45,
+        "cpu_us": 0,
+        "device_us": 19.710999999885644
+      },
+      {
+        "name": "Memcpy HtoD (Pageable -> Device)",
+        "count": 20,
+        "cpu_us": 0,
+        "device_us": 6.625999999969281
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.271999999997206
+      },
+      {
+        "name": "Memcpy DtoD (Device -> Device)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 4.768999999982043
+      }
+    ],
+    "host_syncs": 71,
+    "kernels": 595,
+    "peak_increment_bytes": 17167872
+  },
+  {
+    "case": "hbm-miss",
+    "version": 0,
+    "process": 0,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-hbm-miss-0-v0/hbm-none-1-default-rank0.json",
+    "categories": {
+      "cpu_op": 625,
+      "overhead": 2,
+      "kernel": 155,
+      "cuda_runtime": 256,
+      "gpu_memcpy": 10,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "void dyn_emb::table_insert_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, dyn_emb::InsertKernelTraits<256, 1, 1, 1, 8, (dyn_emb::ScorePolicyType)3, false, false> >(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, int*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, dyn_emb::InsertResult*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType**, int*)",
+        962.791
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        66.048
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)3, false>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        56.8
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortSingleTileKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(long const*, long*, dyn_emb::GradInfo<long> const*, dyn_emb::GradInfo<long>*, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        20.191
+      ],
+      [
+        "dyn_emb::update_counter_with_layout_kernel(int*, long, long const*, long, int, long const*, long const*, long, long, long const*, long, long)",
+        17.793
+      ],
+      [
+        "void dyn_emb::segmented_unique_core<long, dyn_emb::MurmurHash3_32<long, 0u>, 9223372036854775807l, 9223372036854775807l>(long const*, unsigned long, int*, int*, long*, int*, long*, long const*, long const*, long, dyn_emb::FreqReduceOp)",
+        17.44
+      ],
+      [
+        "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<8> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<8> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<8> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<8> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})",
+        15.550999999999998
+      ],
+      [
+        "dyn_emb::table_resolve_rows_kernel(long*, long*, long const*, long const*, long, long const*, long const*, long*, long, bool)",
+        14.336
+      ],
+      [
+        "void dyn_emb::segmented_unique_finalize<long>(long const*, int const*, long const*, long const*, long const*, long, long*, long*, long*, long*, unsigned long)",
+        12.609
+      ],
+      [
+        "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        12.545
+      ],
+      [
+        "void dyn_emb::initialize_with_index_addressor_kernel<float, long, dyn_emb::MappingEmbeddingGenerator<long> >(long, long, long, float*, long const*, dyn_emb::MappingEmbeddingGenerator<long>::Args)",
+        9.152
+      ],
+      [
+        "void load_from_flat_table_kernel_vec4<1, long, float>(long, long, long, float*, long const*, long const*, long const*, long const*, long const*, long, long, long const*, int const*)",
+        8.895999999999999
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 5,
+        "cpu_us": 6624.862999999999,
+        "device_us": 6.015000000001237,
+        "memory_bytes": 163840
+      },
+      {
+        "name": "aten::empty",
+        "count": 135,
+        "cpu_us": 1485.1529999999839,
+        "device_us": 0,
+        "memory_bytes": 581120
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 45,
+        "cpu_us": 585.7739999999932,
+        "device_us": 0,
+        "memory_bytes": 38400
+      },
+      {
+        "name": "aten::mean",
+        "count": 5,
+        "cpu_us": 319.4970000000003,
+        "device_us": 12.545000000002801,
+        "memory_bytes": 2560
+      },
+      {
+        "name": "aten::slice",
+        "count": 35,
+        "cpu_us": 296.3259999999982,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::_index_put_impl_",
+        "count": 10,
+        "cpu_us": 263.6919999999982,
+        "device_us": 15.55099999999129,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::copy_",
+        "count": 10,
+        "cpu_us": 236.89099999999053,
+        "device_us": 4.255999999994856,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty_like",
+        "count": 40,
+        "cpu_us": 192.00100000000407,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::logical_not",
+        "count": 10,
+        "cpu_us": 165.86100000000442,
+        "device_us": 5.279000000001361,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::fill_",
+        "count": 10,
+        "cpu_us": 148.56500000000688,
+        "device_us": 8.833000000000538,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::select",
+        "count": 15,
+        "cpu_us": 130.9520000000066,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::arange",
+        "count": 10,
+        "cpu_us": 129.39399999998932,
+        "device_us": 3.9999999999972715,
+        "memory_bytes": 0
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 10,
+        "cpu_us": 339.1639999999961,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.143999999994776
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.11200000000008
+      }
+    ],
+    "host_syncs": 11,
+    "kernels": 155,
+    "peak_increment_bytes": 110592
+  },
+  {
+    "case": "hbm-miss",
+    "version": 3,
+    "process": 1,
+    "trace": "/home/lwx/recsys-examples-pr551-hbm-split/evidence/profiles/perf-hbm-miss-1-v3/hbm-none-1-default-rank0.json",
+    "categories": {
+      "cpu_op": 635,
+      "overhead": 2,
+      "kernel": 155,
+      "cuda_runtime": 266,
+      "gpu_memcpy": 10,
+      "Trace": 1
+    },
+    "top_kernels_inclusive_gpu_us": [
+      [
+        "void dyn_emb::table_insert_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, dyn_emb::InsertKernelTraits<256, 1, 1, 1, 8, (dyn_emb::ScorePolicyType)3, false, false> >(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, int*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, dyn_emb::InsertResult*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType**, int*)",
+        945.031
+      ],
+      [
+        "void (anonymous namespace)::multi_to_one_reduce_kernel1_vec4<float, float, long, 1, 32, false>(long, long, float const*, float*, dyn_emb::GradInfo<long> const*, long const*, float*, long*, dyn_emb::PooledLayout, long const*, dyn_emb::PoolingMode)",
+        66.402
+      ],
+      [
+        "void dyn_emb::table_lookup_kernel<dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, 1, (dyn_emb::ScorePolicyType)3, false>(dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*, long, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >::KeyType const*, long const*, bool*, long*, unsigned long*, long*, dyn_emb::LinearBucketTable<dyn_emb::LinearBucket<long, void> >, long const*)",
+        53.122
+      ],
+      [
+        "void cub::_V_300303_SM_1200::detail::radix_sort::DeviceRadixSortSingleTileKernel<cub::_V_300303_SM_1200::detail::radix_sort::policy_selector_from_types<long, dyn_emb::GradInfo<long>, unsigned long long>, (cub::_V_300303_SM_1200::SortOrder)0, long, dyn_emb::GradInfo<long>, unsigned long long, cub::_V_300303_SM_1200::detail::identity_decomposer_t>(long const*, long*, dyn_emb::GradInfo<long> const*, dyn_emb::GradInfo<long>*, unsigned long long, int, int, cub::_V_300303_SM_1200::detail::identity_decomposer_t)",
+        20.352
+      ],
+      [
+        "void dyn_emb::segmented_unique_core<long, dyn_emb::MurmurHash3_32<long, 0u>, 9223372036854775807l, 9223372036854775807l>(long const*, unsigned long, int*, int*, long*, int*, long*, long const*, long const*, long, dyn_emb::FreqReduceOp)",
+        17.312
+      ],
+      [
+        "dyn_emb::update_counter_with_layout_kernel(int*, long, long const*, long, int, long const*, long const*, long, long, long const*, long, long)",
+        16.192
+      ],
+      [
+        "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<8> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<8> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<8> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<8> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})",
+        15.520999999999999
+      ],
+      [
+        "dyn_emb::table_resolve_rows_kernel(long*, long*, long const*, long const*, long, long const*, long const*, long*, long, bool)",
+        14.432999999999998
+      ],
+      [
+        "void dyn_emb::segmented_unique_finalize<long>(long const*, int const*, long const*, long const*, long const*, long, long*, long*, long*, long*, unsigned long)",
+        12.578000000000001
+      ],
+      [
+        "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+        12.543000000000001
+      ],
+      [
+        "void dyn_emb::initialize_with_index_addressor_kernel<float, long, dyn_emb::MappingEmbeddingGenerator<long> >(long, long, long, float*, long const*, dyn_emb::MappingEmbeddingGenerator<long>::Args)",
+        9.055
+      ],
+      [
+        "void load_from_flat_table_kernel_vec4<1, long, float>(long, long, long, float*, long const*, long const*, long const*, long const*, long const*, long, long, long const*, int const*)",
+        8.865
+      ]
+    ],
+    "top_operators_inclusive_cpu_us": [
+      {
+        "name": "aten::div",
+        "count": 5,
+        "cpu_us": 7376.858,
+        "device_us": 6.017000000003463,
+        "memory_bytes": 163840
+      },
+      {
+        "name": "aten::empty",
+        "count": 135,
+        "cpu_us": 1534.007999999998,
+        "device_us": 0,
+        "memory_bytes": 581120
+      },
+      {
+        "name": "aten::empty_strided",
+        "count": 45,
+        "cpu_us": 574.6519999999987,
+        "device_us": 0,
+        "memory_bytes": 38400
+      },
+      {
+        "name": "aten::mean",
+        "count": 5,
+        "cpu_us": 330.7210000000032,
+        "device_us": 12.543000000006941,
+        "memory_bytes": 2560
+      },
+      {
+        "name": "aten::slice",
+        "count": 35,
+        "cpu_us": 294.64199999999346,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::_index_put_impl_",
+        "count": 10,
+        "cpu_us": 273.01300000000356,
+        "device_us": 15.521000000007916,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::copy_",
+        "count": 10,
+        "cpu_us": 236.92000000000644,
+        "device_us": 4.319999999994252,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::empty_like",
+        "count": 40,
+        "cpu_us": 197.89799999997695,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::logical_not",
+        "count": 10,
+        "cpu_us": 176.76100000000497,
+        "device_us": 5.376000000000204,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::fill_",
+        "count": 10,
+        "cpu_us": 163.3949999999959,
+        "device_us": 8.768000000010034,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::select",
+        "count": 15,
+        "cpu_us": 145.24799999999505,
+        "device_us": 0,
+        "memory_bytes": 0
+      },
+      {
+        "name": "aten::as_strided",
+        "count": 70,
+        "cpu_us": 142.90100000000166,
+        "device_us": 0,
+        "memory_bytes": 0
+      }
+    ],
+    "copies": [
+      {
+        "name": "cudaMemcpyAsync",
+        "count": 10,
+        "cpu_us": 356.0419999999922,
+        "device_us": 0
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pinned)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.1759999999967476
+      },
+      {
+        "name": "Memcpy DtoH (Device -> Pageable)",
+        "count": 5,
+        "cpu_us": 0,
+        "device_us": 2.1439999999975043
+      }
+    ],
+    "host_syncs": 11,
+    "kernels": 155,
+    "peak_increment_bytes": 110592
+  }
+]

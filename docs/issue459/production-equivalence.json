@@ -1,0 +1,47 @@
+[
+  {
+    "runtime": "lifetime",
+    "timed_commit": "ee3618ea47a3348cb0b63136bd6943c925ff6f3e",
+    "final_commit": "ee3618ea47a3348cb0b63136bd6943c925ff6f3e",
+    "production_identical": true,
+    "python_code_sha256": "06feb4e64cddd373634b0bb80ad6ca160f5f3332e3448ff4c9a772459e10a722",
+    "extension_sha256": "7f5aee1308e286008d95464cffccd956b4c28b6c40a16aca24e0bd5e759c2321"
+  },
+  {
+    "runtime": "hbm-final",
+    "timed_commit": "26bfbd5384b66dbc3e643bac497bdc3a31cf4280",
+    "final_commit": "94fd32f5618f7888606970f55b8ca1b04c27a293",
+    "production_identical": true,
+    "python_code_sha256": "a075cca0f266a2c1cce6e48bf42bfe4f9087b88a2d607b0cf0aa99e14d5e65e6",
+    "extension_sha256": "61fcb9d69f96e31e22ffbd1d47d0ab8c283beb4a5a2d11a68559736d4a062fc4"
+  },
+  {
+    "runtime": "final4",
+    "timed_commit": "2e9af4549be3e4b62b7069f3dd6571ead2e2913f",
+    "final_commit": "de9225bd5decc1493bf70627d3e79a10bce7b8e8",
+    "production_identical": true,
+    "python_code_sha256": "e1d7d060c028fecfbdce81c299ddd0904a508c897e1f138f68bea300fb330745",
+    "extension_sha256": "61fcb9d69f96e31e22ffbd1d47d0ab8c283beb4a5a2d11a68559736d4a062fc4"
+  },
+  {
+    "runtime": "rebuilt5",
+    "timed_commit": "81f068a6ef118ab2a531ba133759164cbc25f39a",
+    "final_commit": "d9d793e9e3aca328c07c54926a90c75313efb181",
+    "production_identical": true,
+    "python_code_sha256": "f7c5944698ed7c24110d64e4f9d91451d27d7fa05c96053457c3627b8e7d6b69",
+    "extension_sha256": "49340133f450dcb901375ab715a386cee56182f64711669b64709ce4bd486f6b"
+  },
+  {
+    "runtime": "rebuilt8",
+    "timed_commit": "5f7a7c16ef1acd6596e633e5f5187d6721e4c1d8",
+    "final_commit": "6bef728fc51dc8c6ddc7d26afff5b40e8d5889a1",
+    "production_identical": true,
+    "python_code_sha256": "2a97041a85f7b5cb487564219680df33dc4ab5c32da6df066915fb548cbfe3d4",
+    "extension_sha256": "49340133f450dcb901375ab715a386cee56182f64711669b64709ce4bd486f6b"
+  },
+  {
+    "reference": "ae9cb01002d9b4ffbca4869bdc2dba1e8fbd52ab",
+    "production_parent": "6bef728fc51dc8c6ddc7d26afff5b40e8d5889a1",
+    "production_identical": true
+  }
+]
