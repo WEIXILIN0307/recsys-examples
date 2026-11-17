@@ -13,7 +13,7 @@ for name in order:
 def write(n,s):(D/n).write_text(s.strip()+'\n')
 def link(n):return f'[{n}]({artifact}/{n})'
 nav='| Slice | PR | Branch | Published head | Own production +/− | Own total +/− |\n|---|---|---|---|---:|---:|\n'
-for s in summary:nav+=f"| {labels[s['name']]} | {s['url']} | `{s['branch']}` | `{s['head']}` | {s['production_added']}/{s['production_deleted']} | {sum(x['added'] for x in s['files'])}/{sum(x['deleted'] for x in s['files'])} |\n"
+for s in summary:nav+=f"| {labels[s['name']]} | {s['url']} | `{s.get('public_branch',s['branch'])}` | `{s['head']}` | {s['production_added']}/{s['production_deleted']} | {sum(x['added'] for x in s['files'])}/{sum(x['deleted'] for x in s['files'])} |\n"
 base_note=f'''Current source baseline: `{main}` (release26.10). #548 FP8/gradient/64-bit offsets and #557 actual refusal reporting/atomic counters are integrated. #558 is superseded by merged557; it is not copied or required again. Original8518edd and all previous evidence remain reachable in protected refs/bundles and the new551 merge history. Public updates are ordinary fast-forwards, never force-pushes.'''
 env='''Python3.12.7, PyTorch2.13.0+cu130, FBGEMM1.8.0+cu130, TorchRec v1.8.0-rc1 (0ea0ec0; installed package1.8.0+0ea0ec0). Native SM120 builds:35 compilation units each for main and integration, plus fresh lexical/custom eviction fatbins. Main library SHA25623900547983ab327be0951c39f2eb21bb8d620ee775cd3bfe3afa70e09e9a176; integration3d0389ae80d519437a46d7db81ecf89f1bc670e9cb3dfbdd05754ed7e77e4eb3. RTX PRO6000 Blackwell Server96GB ×4, driver580.126.09, PCIe only. NCCL2.30.7 is preloaded (torch metadata2.29.7). Package tags match the current Dockerfile; this is not a full NGC26.07 container run. README's1.5 statement was stale and is corrected separately in562.'''
 write('PR_SPLIT_PLAN.md',f'''# Updated functional split
@@ -404,7 +404,7 @@ Base: {dep}. Full ownership and actual base hashes: {link('PR_SPLIT_PLAN.md')}. 
 # Keep published standalone payloads and append current evidence links.
 for n in ['pr-cache-refusal.md','pr-raw-compat.md','pr-dependency-docs.md']:
  p=D/n
- if p.exists():p.write_text(p.read_text().rstrip()+f'\n\nDetailed reproducible evidence: {link("PR_VALIDATION_MATRIX.md")}; {link("PERFORMANCE_REPORT.md")}.\n')
+ if p.exists():p.write_text(p.read_text().split('\n\nDetailed reproducible evidence:')[0].rstrip()+f'\n\nDetailed reproducible evidence: {link("PR_VALIDATION_MATRIX.md")}; {link("PERFORMANCE_REPORT.md")}.\n')
 write('maintainer-follow-up-draft.md','''@shijieliu @jiashuy Current-main548/557 integration and fresh native/JIT regressions are complete. Independent563 fixes reproduced refusal recovery: dirty victims, accepted rows and hit-pin ownership;562 aligns dependency docs. Raw/FIFO compatibility has isolated11–12.7% raw-step improvement while resolved input still uses TorchRec. Final integrated correctness is865 passed/6 skipped per rank; performance still trails main in the reported workloads. Could you review559/560/563 before HBM and confirm representative performance gates? We have no NVLink/GIN or production-PS resources. No deployment acceptance is claimed.''')
 write('rewrite-review.md',f'''# Fact and consistency audit
 

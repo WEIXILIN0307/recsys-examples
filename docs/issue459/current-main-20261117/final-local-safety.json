@@ -1,0 +1,96 @@
+{
+  "original_head": "8518eddaf1ac3da2cca6070215b7841ddccfe2f9",
+  "original_worktree_clean": true,
+  "original_is_ancestor": true,
+  "integration_head": "4f4356076e2788afd7f8fc6610a667a81b679da4",
+  "branches": [
+    {
+      "name": "01-lifetime",
+      "head": "c54ffa6b424c710d3802ed0a3cda94897c015644",
+      "base": "2995c4148346cf62d0873d346be354382085228c",
+      "clean": true,
+      "diff_check": true,
+      "dco_commits": 2
+    },
+    {
+      "name": "02-adapter",
+      "head": "4efb2692dab38c4d2de595fff3c2fe56417db2d3",
+      "base": "2995c4148346cf62d0873d346be354382085228c",
+      "clean": true,
+      "diff_check": true,
+      "dco_commits": 2
+    },
+    {
+      "name": "18-cache-refusal",
+      "head": "ebc4a20cc9e86927ed61f54416f792420528b053",
+      "base": "2995c4148346cf62d0873d346be354382085228c",
+      "clean": true,
+      "diff_check": true,
+      "dco_commits": 2
+    },
+    {
+      "name": "03-hbm",
+      "head": "7fb44e327b1c409c445887b989f422f02f92268f",
+      "base": "b0d8cf88d54e962d330b4f9e4118d446d1f8db7f",
+      "clean": true,
+      "diff_check": true,
+      "dco_commits": 11
+    },
+    {
+      "name": "04-cache",
+      "head": "81bdc086c4eaa94b195ef6b5154e17b3944f2a59",
+      "base": "d2dc9ed47fff221730bdd39b8475f483b4fc39a9",
+      "clean": true,
+      "diff_check": true,
+      "dco_commits": 18
+    },
+    {
+      "name": "05-storage",
+      "head": "80acb34ee79e5f69e6191eecb17a3e7a68e03f10",
+      "base": "81bdc086c4eaa94b195ef6b5154e17b3944f2a59",
+      "clean": true,
+      "diff_check": true,
+      "dco_commits": 22
+    },
+    {
+      "name": "06-layouts",
+      "head": "cb9d34ed9a0f9becdd38bec53b3a62a9d6b4f180",
+      "base": "80acb34ee79e5f69e6191eecb17a3e7a68e03f10",
+      "clean": true,
+      "diff_check": true,
+      "dco_commits": 26
+    },
+    {
+      "name": "07-twrw",
+      "head": "31b471578f108d3591640eddefc1035af3e6c79d",
+      "base": "cb9d34ed9a0f9becdd38bec53b3a62a9d6b4f180",
+      "clean": true,
+      "diff_check": true,
+      "dco_commits": 30
+    },
+    {
+      "name": "08-hierarchy",
+      "head": "9b6c82354dc3a0e2b444bead00cbf8cf75632af3",
+      "base": "31b471578f108d3591640eddefc1035af3e6c79d",
+      "clean": true,
+      "diff_check": true,
+      "dco_commits": 34
+    },
+    {
+      "name": "14-raw-compat",
+      "head": "df0d61c51fcd1f3eab2c247116369ae2e7c31755",
+      "base": "80acb34ee79e5f69e6191eecb17a3e7a68e03f10",
+      "clean": true,
+      "diff_check": true,
+      "dco_commits": 25
+    },
+    {
+      "name": "17-dependency-docs",
+      "head": "3facd2e065a373e486e50846cf09012c5ee0acd8",
+      "base": "2995c4148346cf62d0873d346be354382085228c",
+      "clean": true,
+      "diff_check": true,
+      "dco_commits": 1
+    }
+  ]
+}

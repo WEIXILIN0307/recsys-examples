@@ -11,7 +11,10 @@
     "previous": "ee3618ea47a3348cb0b63136bd6943c925ff6f3e",
     "candidate": "52ba05cbacf26ef3408c383b888d57f99858da3f",
     "tested_head": "c54ffa6b424c710d3802ed0a3cda94897c015644",
-    "production_identical_to_tested": true
+    "production_identical_to_tested": true,
+    "public_branch": "bug-459-row-lifetime",
+    "validation": "release-lifetime",
+    "validation_exit": 0
   },
   {
     "name": "02-adapter",
@@ -25,7 +28,10 @@
     "previous": "9a1d450fffce83021ecbbeccc2620870abf7d741",
     "candidate": "cf7e23d1cabc0b4054fe43183501d1df8d512a4b",
     "tested_head": "4efb2692dab38c4d2de595fff3c2fe56417db2d3",
-    "production_identical_to_tested": true
+    "production_identical_to_tested": true,
+    "public_branch": "enh-459-lookup-adapter",
+    "validation": "release-adapter",
+    "validation_exit": 0
   },
   {
     "name": "00-prerequisites",
@@ -41,7 +47,8 @@
     "previous": null,
     "candidate": "e19e8d4fa6a1abda284a96f4f85920eea728bcce",
     "tested_head": "b0d8cf88d54e962d330b4f9e4118d446d1f8db7f",
-    "production_identical_to_tested": true
+    "production_identical_to_tested": true,
+    "public_branch": "review-base/459-hbm-prerequisites"
   },
   {
     "name": "03-hbm",
@@ -55,7 +62,10 @@
     "previous": "94fd32f5618f7888606970f55b8ca1b04c27a293",
     "candidate": "36a9261885e385f2efce4d9b750771e6f7ae8689",
     "tested_head": "873aa4f0105e66c84d160a9ef96aadcae6f586c9",
-    "production_identical_to_tested": true
+    "production_identical_to_tested": true,
+    "public_branch": "fea-459-hbm-rw-receiver",
+    "validation": "release-hbm",
+    "validation_exit": 0
   },
   {
     "name": "04-cache",
@@ -68,9 +78,12 @@
     ],
     "previous": "de9225bd5decc1493bf70627d3e79a10bce7b8e8",
     "candidate": "11fc5e719d87cc33415f5b70313c073efa29dbe0",
-    "tested_head": "07ce1e4e426eb7347cc32241a527c078637800e0",
-    "production_identical_to_tested": false,
-    "followup": "Refusal-only safety fix; normal non-refusing path unchanged. New final integration tests pending."
+    "tested_head": "81bdc086c4eaa94b195ef6b5154e17b3944f2a59",
+    "production_identical_to_tested": true,
+    "followup": "Cache-refusal integration validated; see current test manifest.",
+    "public_branch": "fea-459-cache-receiver",
+    "validation": "final-cache-safe",
+    "validation_exit": 0
   },
   {
     "name": "05-storage",
@@ -83,9 +96,12 @@
     ],
     "previous": "d9d793e9e3aca328c07c54926a90c75313efb181",
     "candidate": "325c6d632a9eebec342ca33524796fa79a6db669",
-    "tested_head": "3edbc6c4a7f64d5029bd4d1fca2e8413ba8ec17b",
-    "production_identical_to_tested": false,
-    "followup": "Refusal-only safety fix; normal non-refusing path unchanged. New final integration tests pending."
+    "tested_head": "80acb34ee79e5f69e6191eecb17a3e7a68e03f10",
+    "production_identical_to_tested": true,
+    "followup": "Cache-refusal integration validated; see current test manifest.",
+    "public_branch": "fea-459-storage-receiver",
+    "validation": "safe-05-storage",
+    "validation_exit": 0
   },
   {
     "name": "06-layouts",
@@ -98,9 +114,12 @@
     ],
     "previous": "c678535a5a9082a345799c0303f0d204a58ff6c1",
     "candidate": "a6acfc853272fe97d2eda6ae52a1692eb5748923",
-    "tested_head": "a3c34a53cf75633025fe81959fd16267c163cc8e",
-    "production_identical_to_tested": false,
-    "followup": "Refusal-only safety fix; normal non-refusing path unchanged. New final integration tests pending."
+    "tested_head": "cb9d34ed9a0f9becdd38bec53b3a62a9d6b4f180",
+    "production_identical_to_tested": true,
+    "followup": "Cache-refusal integration validated; see current test manifest.",
+    "public_branch": "fea-459-pooled-receiver",
+    "validation": "safe-06-layouts",
+    "validation_exit": 0
   },
   {
     "name": "07-twrw",
@@ -113,9 +132,12 @@
     ],
     "previous": "6496114eb5c6e1829b736c5b82e5498094dcd50d",
     "candidate": "4a091f1bb19458959df663ddc4687aed8e773812",
-    "tested_head": "a0cdf7415e9b41df084ba12977716df19d5e0898",
-    "production_identical_to_tested": false,
-    "followup": "Refusal-only safety fix; normal non-refusing path unchanged. New final integration tests pending."
+    "tested_head": "31b471578f108d3591640eddefc1035af3e6c79d",
+    "production_identical_to_tested": true,
+    "followup": "Cache-refusal integration validated; see current test manifest.",
+    "public_branch": "fea-459-twrw-receiver",
+    "validation": "safe-twrw-parity",
+    "validation_exit": 0
   },
   {
     "name": "08-hierarchy",
@@ -128,9 +150,12 @@
     ],
     "previous": "6bef728fc51dc8c6ddc7d26afff5b40e8d5889a1",
     "candidate": "d1e7f75a69247b94f5e9bb75f43ae247ebe53550",
-    "tested_head": "c65803870719ee0ed68ea680ec01ca6b81305480",
-    "production_identical_to_tested": false,
-    "followup": "Refusal-only safety fix; normal non-refusing path unchanged. New final integration tests pending."
+    "tested_head": "9b6c82354dc3a0e2b444bead00cbf8cf75632af3",
+    "production_identical_to_tested": true,
+    "followup": "Cache-refusal integration validated; see current test manifest.",
+    "public_branch": "fea-459-hier-receiver",
+    "validation": "safe-08-hierarchy",
+    "validation_exit": 0
   },
   {
     "name": "14-raw-compat",
@@ -142,9 +167,12 @@
     ],
     "previous": null,
     "candidate": "5f1234f07e849088bf190bf8a209ecca24433ba1",
-    "tested_head": "eb091b28497f4f8fa8b7216303e97c8da9719925",
-    "production_identical_to_tested": false,
-    "followup": "Refusal-only safety fix; normal non-refusing path unchanged. New final integration tests pending."
+    "tested_head": "df0d61c51fcd1f3eab2c247116369ae2e7c31755",
+    "production_identical_to_tested": true,
+    "followup": "Cache-refusal integration validated; see current test manifest.",
+    "public_branch": "fea-459-preserve-raw-lookup",
+    "validation": "safe-14-raw-compat",
+    "validation_exit": 0
   },
   {
     "name": "09-validation",
@@ -159,7 +187,8 @@
     "candidate": "c0c10bb9e24c4844f705b4070c6d027652bacff2",
     "tested_head": "2750b31ac1c1a971a269bec8e9c730304ffacc2a",
     "production_identical_to_tested": false,
-    "followup": "Refusal-only safety fix; normal non-refusing path unchanged. New final integration tests pending."
+    "followup": "Refusal-only safety fix; normal non-refusing path unchanged. New final integration tests pending.",
+    "public_branch": "reference/459-current-main-validation"
   },
   {
     "name": "15-integration-551",
@@ -172,27 +201,37 @@
     ],
     "previous": null,
     "candidate": "42e01710a74a78efc2d5abfb01278210420719a1",
-    "tested_head": "24116cad80e34f382ef9edbf3f798a1dcba6d85f",
-    "production_identical_to_tested": false,
-    "followup": "Refusal-only safety fix; normal non-refusing path unchanged. New final integration tests pending."
+    "tested_head": "4f4356076e2788afd7f8fc6610a667a81b679da4",
+    "production_identical_to_tested": true,
+    "followup": "Cache-refusal integration validated; see current test manifest.",
+    "public_branch": "fea-row-wise-input-dist-indices",
+    "validation": "final-cache-safe551",
+    "validation_exit": 0
   },
   {
     "name": "17-dependency-docs",
     "branch": "enh-459-dependency-docs",
     "head": "3facd2e065a373e486e50846cf09012c5ee0acd8",
     "base": "2995c4148346cf62d0873d346be354382085228c",
-    "production_identical_to_tested": true
+    "production_identical_to_tested": true,
+    "public_branch": "enh-459-dependency-docs"
   },
   {
     "name": "18-cache-refusal",
     "branch": "bug-459-cache-refusal-state",
     "head": "ebc4a20cc9e86927ed61f54416f792420528b053",
-    "base": "2995c4148346cf62d0873d346be354382085228c"
+    "base": "2995c4148346cf62d0873d346be354382085228c",
+    "public_branch": "bug-459-cache-refusal-state",
+    "validation": "cache-refusal-release",
+    "validation_exit": 0,
+    "tested_head": "ebc4a20cc9e86927ed61f54416f792420528b053",
+    "production_identical_to_tested": true
   },
   {
     "name": "19-cache-base",
     "branch": "review-base/459-cache-prerequisites",
     "head": "d2dc9ed47fff221730bdd39b8475f483b4fc39a9",
-    "base": "7fb44e327b1c409c445887b989f422f02f92268f"
+    "base": "7fb44e327b1c409c445887b989f422f02f92268f",
+    "public_branch": "review-base/459-cache-prerequisites"
   }
 ]

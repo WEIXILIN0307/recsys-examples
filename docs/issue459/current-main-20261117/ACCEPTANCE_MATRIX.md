@@ -1,6 +1,6 @@
-# Issue459 acceptance
+# Issue #459 acceptance
 
-Original459 and shijieliu's clarification require receiver resolution, TorchRec forward reuse, correct replacement/state/interfaces and eventual backend coverage. HBM RW sequence is the first accepted implementation boundary. There is no specified official performance percentage.
+Original 459 and shijieliu's clarification require receiver resolution, TorchRec forward reuse, correct replacement/state/interfaces and eventual backend coverage. HBM RW sequence is the first accepted implementation boundary. There is no specified official performance percentage.
 
 | Requirement | Current implementation / evidence | Status / remaining gap |
 |---|---|---|
@@ -15,7 +15,7 @@ Original459 and shijieliu's clarification require receiver resolution, TorchRec 
 | Pooled/weighted/mixed-D/processors | own pooled268/rank and combined fixture | Implemented & tested supported weights; differentiable weights retain refusal |
 | TW-RW | real2-GPU parity/jagged +4-GPU gradient | Tested one host/logical nodes; physical multi-node NOT RUN |
 | Hierarchical528 |5 GPU ownership/fallback/status/overflow cases | Implemented; actual NVLink/GIN NOT RUN |
-| Current548/557 compatibility |35+35 fresh native units/fatbins;18 FP8 +36 new upstream; source ancestry | Semantic conflicts resolved; full NGC image pending |
+| Current 548/557 compatibility |35+35 fresh native units/fatbins;18 FP8 +36 new upstream; source ancestry | Semantic conflicts resolved; full NGC image pending |
 | Eval/checkpoint/low precision | FP8 output_alloc train/eval and roundtrip; local mode/state tests | Targeted tested; full cross-product not certified |
 | Performance | isolated raw−11–12.7%; final measured main still faster9.1/13.2/13.9/3.6% | Partial improvement; acceptance/trade-off remains open |
 | Reviewability/conservation | explicit independent fixes, fork bases, DCO, archive8518 history | Implemented; dependent upstream PRs await prerequisites |

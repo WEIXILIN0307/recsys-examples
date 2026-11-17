@@ -1,7 +1,9 @@
-# Current-main receiver split:2026-11-17
+# Receiver resolution: current-main delivery (2026-11-17)
 
-Start with [IMPLEMENTATION_AUDIT.md](IMPLEMENTATION_AUDIT.md), [PR_VALIDATION_MATRIX.md](PR_VALIDATION_MATRIX.md), [PERFORMANCE_REPORT.md](PERFORMANCE_REPORT.md), [PR_SPLIT_PLAN.md](PR_SPLIT_PLAN.md) and [MERGE_READINESS.md](MERGE_READINESS.md).
+Start with [final publication verification](DELIVERY_VERIFICATION.md), [implementation audit](IMPLEMENTATION_AUDIT.md), [validation matrix](PR_VALIDATION_MATRIX.md), [performance](PERFORMANCE_REPORT.md), [split plan](PR_SPLIT_PLAN.md), and [merge readiness](MERGE_READINESS.md).
 
-This version integrates main2995c41/548/557, fixes independently reproduced cache refusal recovery563, retains the measured raw compatibility optimization, and corrects dependency documentation562. Final source tests and separate historical/candidate evidence are identified by commit and source hashes. No full deployment/performance acceptance is claimed.
+This version integrates main `2995c41`, including #548 and #557, independently fixes cache-refusal state recovery in #563, preserves the measured raw/FIFO optimization, and corrects dependency documentation in #562. #558 is superseded. Feature proposals use real prerequisite branches; #551 remains the integrated Draft reference. No full deployment or performance acceptance is claimed.
 
-The complete archive includes failed candidates/negative controls as well as passes, separate42/20/24-process performance datasets, traces, cProfile stats and full native/JIT build manifests. It excludes credentials and dependency binaries. Original8518 and prior Nov15/16 raw data remain at their immutable historical references; do not relabel those as current tests. Code is reviewed on linked feature branches, not this documentation-only artifact branch.
+The immutable archive contains the 42-, 20-, and 24-process performance datasets, traces, negative controls, failed candidates, and fresh native/JIT build manifests. Top-level matrices and publication readbacks were refreshed after outward body updates; historical candidate metadata inside the archive is retained verbatim. The archive checksum and the authenticated-free public download verification are recorded separately. Original `8518edd` and earlier November 15/16 evidence remain commit-addressable and must not be relabeled as current tests.
+
+Code is reviewed on the linked source branches, not this documentation-only artifact branch. The follow-up comment remains an unpublished draft.

@@ -1,10 +1,10 @@
 ## Summary
 
-Keep cache rows and pin ownership valid when the kernel refuses part of a batch. This is an independent correctness follow-up to the merged557 admission check.
+Keep cache rows and pin ownership valid when the kernel refuses part of a batch. This is an independent correctness follow-up to the merged #557 admission check.
 
 ## Problem
 
-Insert changes cache membership before reporting refusal. Raising immediately loses dirty evicted weights/moments, leaves accepted keys mapped to uninitialized values, and leaks the hit pins acquired earlier in that failed request. On current main2995c41483, a trained-row reproducer loses0.25 and reads wrong new-key values after the exception.
+Insert changes cache membership before reporting refusal. Raising immediately loses dirty evicted weights/moments, leaves accepted keys mapped to uninitialized values, and leaks the hit pins acquired earlier in that failed request. On current main 2995c41483, a trained-row reproducer loses 0.25 and reads wrong new-key values after the exception.
 
 ## Changes
 
@@ -19,7 +19,7 @@ Refusal handling only. Keep the same error and kernel-reported capacity decision
 
 ## Validation
 
-11 local cases pass on SM120 with a freshly built current-main extension: the existing3 refusal tests plus8 recovery cases across SGD, Adam, FP16 and FP8 row-wise Adagrad, with/without an older prefetched owner. They compare complete row bytes, initialized accepted rows, pin counts and retry outputs. Baseline reproduction and failed-run evidence are retained. Full NGC/fabric/network-PS validation is not claimed.
+11 local cases pass on SM120 with a freshly built current-main extension: the existing 3 refusal tests plus 8 recovery cases across SGD, Adam, FP16 and FP8 row-wise Adagrad, with/without an older prefetched owner. They compare complete row bytes, initialized accepted rows, pin counts and retry outputs. Baseline reproduction and failed-run evidence are retained. Full NGC/fabric/network-PS validation is not claimed.
 
 ## Performance
 
@@ -27,6 +27,6 @@ The successful path is unchanged; extra compaction/copies execute only on refusa
 
 ## Dependencies / Follow-ups
 
-Independent main base2995c41483; follows merged557 and does not depend on551/559. Integration551 and the Cache stack preview consume this fix through an explicit prerequisite base. Keep Draft for maintainer review; do not close459.
+Independent main base 2995c41483; follows merged #557 and does not depend on551/559. Integration551 and the Cache stack preview consume this fix through an explicit prerequisite base. Keep Draft for maintainer review; do not close #459.
 
-Detailed reproducible evidence: [PR_VALIDATION_MATRIX.md](https://github.com/WEIXILIN0307/recsys-examples/tree/docs-459-receiver-split-evidence/docs/issue459/current-main-20261117/PR_VALIDATION_MATRIX.md); [PERFORMANCE_REPORT.md](https://github.com/WEIXILIN0307/recsys-examples/tree/docs-459-receiver-split-evidence/docs/issue459/current-main-20261117/PERFORMANCE_REPORT.md).
+Detailed reproducible evidence: [PR_VALIDATION_MATRIX.md](https://github.com/WEIXILIN0307/recsys-examples/tree/ee3e312450572772d8b73285c7fba5026efd0186/docs/issue459/current-main-20261117/PR_VALIDATION_MATRIX.md); [PERFORMANCE_REPORT.md](https://github.com/WEIXILIN0307/recsys-examples/tree/ee3e312450572772d8b73285c7fba5026efd0186/docs/issue459/current-main-20261117/PERFORMANCE_REPORT.md).
