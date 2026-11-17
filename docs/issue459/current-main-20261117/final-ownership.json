@@ -1,0 +1,626 @@
+[
+  {
+    "name": "01-lifetime",
+    "branch": "fixes/459-01-lifetime-current",
+    "head": "c54ffa6b424c710d3802ed0a3cda94897c015644",
+    "base": "2995c4148346cf62d0873d346be354382085228c",
+    "parents": [
+      "ee3618ea47a3348cb0b63136bd6943c925ff6f3e",
+      "2995c4148346cf62d0873d346be354382085228c"
+    ],
+    "previous": "ee3618ea47a3348cb0b63136bd6943c925ff6f3e",
+    "candidate": "52ba05cbacf26ef3408c383b888d57f99858da3f",
+    "tested_head": "c54ffa6b424c710d3802ed0a3cda94897c015644",
+    "production_identical_to_tested": true,
+    "url": "https://github.com/NVIDIA/recsys-examples/pull/559",
+    "review_base": "2995c4148346cf62d0873d346be354382085228c",
+    "files": [
+      {
+        "path": "corelib/dynamicemb/dynamicemb/async_erase.py",
+        "added": 52,
+        "deleted": 5,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+        "added": 128,
+        "deleted": 12,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+        "added": 18,
+        "deleted": 32,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 1,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/erase_async/test_async_erase.py",
+        "added": 46,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_pin_lease.py",
+        "added": 175,
+        "deleted": 0,
+        "production": false
+      }
+    ],
+    "production_added": 198,
+    "production_deleted": 49
+  },
+  {
+    "name": "02-adapter",
+    "branch": "fixes/459-02-adapter-current",
+    "head": "4efb2692dab38c4d2de595fff3c2fe56417db2d3",
+    "base": "2995c4148346cf62d0873d346be354382085228c",
+    "parents": [
+      "9a1d450fffce83021ecbbeccc2620870abf7d741",
+      "2995c4148346cf62d0873d346be354382085228c"
+    ],
+    "previous": "9a1d450fffce83021ecbbeccc2620870abf7d741",
+    "candidate": "cf7e23d1cabc0b4054fe43183501d1df8d512a4b",
+    "tested_head": "4efb2692dab38c4d2de595fff3c2fe56417db2d3",
+    "production_identical_to_tested": true,
+    "url": "https://github.com/NVIDIA/recsys-examples/pull/560",
+    "review_base": "2995c4148346cf62d0873d346be354382085228c",
+    "files": [
+      {
+        "path": "corelib/dynamicemb/dynamicemb/dense_lookup.py",
+        "added": 90,
+        "deleted": 0,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/torchrec_lookup.py",
+        "added": 241,
+        "deleted": 0,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 1,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_dense_lookup.py",
+        "added": 222,
+        "deleted": 0,
+        "production": false
+      }
+    ],
+    "production_added": 331,
+    "production_deleted": 0
+  },
+  {
+    "name": "18-cache-refusal",
+    "branch": "bug-459-cache-refusal-state",
+    "head": "ebc4a20cc9e86927ed61f54416f792420528b053",
+    "base": "2995c4148346cf62d0873d346be354382085228c",
+    "url": "https://github.com/NVIDIA/recsys-examples/pull/563",
+    "review_base": "2995c4148346cf62d0873d346be354382085228c",
+    "files": [
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+        "added": 27,
+        "deleted": 5,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 1,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_cache_refusal_recovery.py",
+        "added": 104,
+        "deleted": 0,
+        "production": false
+      }
+    ],
+    "production_added": 27,
+    "production_deleted": 5
+  },
+  {
+    "name": "03-hbm",
+    "branch": "fixes/459-03-hbm-current",
+    "head": "7fb44e327b1c409c445887b989f422f02f92268f",
+    "base": "b0d8cf88d54e962d330b4f9e4118d446d1f8db7f",
+    "parents": [
+      "94fd32f5618f7888606970f55b8ca1b04c27a293",
+      "b0d8cf88d54e962d330b4f9e4118d446d1f8db7f"
+    ],
+    "previous": "94fd32f5618f7888606970f55b8ca1b04c27a293",
+    "candidate": "36a9261885e385f2efce4d9b750771e6f7ae8689",
+    "tested_head": "873aa4f0105e66c84d160a9ef96aadcae6f586c9",
+    "production_identical_to_tested": true,
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/pull/1",
+    "review_base": "b0d8cf88d54e962d330b4f9e4118d446d1f8db7f",
+    "files": [
+      {
+        "path": "corelib/dynamicemb/docs/receiver_resolution_slices.md",
+        "added": 7,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+        "added": 71,
+        "deleted": 16,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+        "added": 114,
+        "deleted": 63,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+        "added": 110,
+        "deleted": 23,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/embedding.py",
+        "added": 10,
+        "deleted": 0,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/input_dist.py",
+        "added": 152,
+        "deleted": 6,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/resolved_input.py",
+        "added": 128,
+        "deleted": 0,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+        "added": 147,
+        "deleted": 7,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 2,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/per_key_score/test_per_key_score_dist.py",
+        "added": 49,
+        "deleted": 101,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hbm_receiver.py",
+        "added": 985,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hbm_row_state.py",
+        "added": 184,
+        "deleted": 0,
+        "production": false
+      }
+    ],
+    "production_added": 732,
+    "production_deleted": 115
+  },
+  {
+    "name": "04-cache",
+    "branch": "fixes/459-04-cache-current",
+    "head": "81bdc086c4eaa94b195ef6b5154e17b3944f2a59",
+    "base": "873aa4f0105e66c84d160a9ef96aadcae6f586c9",
+    "parents": [
+      "de9225bd5decc1493bf70627d3e79a10bce7b8e8",
+      "873aa4f0105e66c84d160a9ef96aadcae6f586c9"
+    ],
+    "previous": "de9225bd5decc1493bf70627d3e79a10bce7b8e8",
+    "candidate": "11fc5e719d87cc33415f5b70313c073efa29dbe0",
+    "tested_head": "07ce1e4e426eb7347cc32241a527c078637800e0",
+    "production_identical_to_tested": false,
+    "followup": "Refusal-only safety fix; normal non-refusing path unchanged. New final integration tests pending.",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/pull/2",
+    "review_base": "d2dc9ed47fff221730bdd39b8475f483b4fc39a9",
+    "files": [
+      {
+        "path": "corelib/dynamicemb/docs/receiver_resolution_slices.md",
+        "added": 4,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+        "added": 3,
+        "deleted": 4,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+        "added": 1,
+        "deleted": 0,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+        "added": 4,
+        "deleted": 2,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 1,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_cache_receiver.py",
+        "added": 206,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hbm_receiver.py",
+        "added": 4,
+        "deleted": 1,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hbm_row_state.py",
+        "added": 4,
+        "deleted": 4,
+        "production": false
+      }
+    ],
+    "production_added": 8,
+    "production_deleted": 6
+  },
+  {
+    "name": "05-storage",
+    "branch": "fixes/459-05-storage-current",
+    "head": "80acb34ee79e5f69e6191eecb17a3e7a68e03f10",
+    "base": "07ce1e4e426eb7347cc32241a527c078637800e0",
+    "parents": [
+      "d9d793e9e3aca328c07c54926a90c75313efb181",
+      "07ce1e4e426eb7347cc32241a527c078637800e0"
+    ],
+    "previous": "d9d793e9e3aca328c07c54926a90c75313efb181",
+    "candidate": "325c6d632a9eebec342ca33524796fa79a6db669",
+    "tested_head": "3edbc6c4a7f64d5029bd4d1fca2e8413ba8ec17b",
+    "production_identical_to_tested": false,
+    "followup": "Refusal-only safety fix; normal non-refusing path unchanged. New final integration tests pending.",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/pull/3",
+    "review_base": "81bdc086c4eaa94b195ef6b5154e17b3944f2a59",
+    "files": [
+      {
+        "path": "corelib/dynamicemb/docs/receiver_resolution_slices.md",
+        "added": 4,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+        "added": 2,
+        "deleted": 7,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+        "added": 191,
+        "deleted": 281,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+        "added": 112,
+        "deleted": 121,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/key_value_table.py",
+        "added": 18,
+        "deleted": 19,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/resolved_storage.py",
+        "added": 210,
+        "deleted": 0,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/src/dynamic_emb_op.cu",
+        "added": 124,
+        "deleted": 0,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/src/lookup_kernel.cuh",
+        "added": 15,
+        "deleted": 7,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/test_batched_dynamic_embedding_tables_v2.py",
+        "added": 0,
+        "deleted": 9,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 4,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_fp8_snapshot.py",
+        "added": 44,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hbm_receiver.py",
+        "added": 4,
+        "deleted": 1,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_storage_prefetch.py",
+        "added": 235,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_storage_receiver.py",
+        "added": 236,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_storage_row_copy.py",
+        "added": 90,
+        "deleted": 0,
+        "production": false
+      }
+    ],
+    "production_added": 672,
+    "production_deleted": 435
+  },
+  {
+    "name": "06-layouts",
+    "branch": "fixes/459-06-layouts-current",
+    "head": "cb9d34ed9a0f9becdd38bec53b3a62a9d6b4f180",
+    "base": "3edbc6c4a7f64d5029bd4d1fca2e8413ba8ec17b",
+    "parents": [
+      "c678535a5a9082a345799c0303f0d204a58ff6c1",
+      "3edbc6c4a7f64d5029bd4d1fca2e8413ba8ec17b"
+    ],
+    "previous": "c678535a5a9082a345799c0303f0d204a58ff6c1",
+    "candidate": "a6acfc853272fe97d2eda6ae52a1692eb5748923",
+    "tested_head": "a3c34a53cf75633025fe81959fd16267c163cc8e",
+    "production_identical_to_tested": false,
+    "followup": "Refusal-only safety fix; normal non-refusing path unchanged. New final integration tests pending.",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/pull/4",
+    "review_base": "80acb34ee79e5f69e6191eecb17a3e7a68e03f10",
+    "files": [
+      {
+        "path": "corelib/dynamicemb/docs/receiver_resolution_slices.md",
+        "added": 4,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_compute_kernel.py",
+        "added": 1,
+        "deleted": 1,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+        "added": 29,
+        "deleted": 7,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 1,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hbm_receiver.py",
+        "added": 3,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_pooled_receiver.py",
+        "added": 345,
+        "deleted": 0,
+        "production": false
+      }
+    ],
+    "production_added": 30,
+    "production_deleted": 8
+  },
+  {
+    "name": "07-twrw",
+    "branch": "fixes/459-07-twrw-current",
+    "head": "31b471578f108d3591640eddefc1035af3e6c79d",
+    "base": "a3c34a53cf75633025fe81959fd16267c163cc8e",
+    "parents": [
+      "6496114eb5c6e1829b736c5b82e5498094dcd50d",
+      "a3c34a53cf75633025fe81959fd16267c163cc8e"
+    ],
+    "previous": "6496114eb5c6e1829b736c5b82e5498094dcd50d",
+    "candidate": "4a091f1bb19458959df663ddc4687aed8e773812",
+    "tested_head": "a0cdf7415e9b41df084ba12977716df19d5e0898",
+    "production_identical_to_tested": false,
+    "followup": "Refusal-only safety fix; normal non-refusing path unchanged. New final integration tests pending.",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/pull/5",
+    "review_base": "cb9d34ed9a0f9becdd38bec53b3a62a9d6b4f180",
+    "files": [
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/twrw_sharding.py",
+        "added": 30,
+        "deleted": 2,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hbm_receiver.py",
+        "added": 3,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_table_row_wise.py",
+        "added": 14,
+        "deleted": 1,
+        "production": false
+      }
+    ],
+    "production_added": 30,
+    "production_deleted": 2
+  },
+  {
+    "name": "08-hierarchy",
+    "branch": "fixes/459-08-hierarchy-current",
+    "head": "9b6c82354dc3a0e2b444bead00cbf8cf75632af3",
+    "base": "a0cdf7415e9b41df084ba12977716df19d5e0898",
+    "parents": [
+      "6bef728fc51dc8c6ddc7d26afff5b40e8d5889a1",
+      "a0cdf7415e9b41df084ba12977716df19d5e0898"
+    ],
+    "previous": "6bef728fc51dc8c6ddc7d26afff5b40e8d5889a1",
+    "candidate": "d1e7f75a69247b94f5e9bb75f43ae247ebe53550",
+    "tested_head": "c65803870719ee0ed68ea680ec01ca6b81305480",
+    "production_identical_to_tested": false,
+    "followup": "Refusal-only safety fix; normal non-refusing path unchanged. New final integration tests pending.",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/pull/6",
+    "review_base": "31b471578f108d3591640eddefc1035af3e6c79d",
+    "files": [
+      {
+        "path": "corelib/dynamicemb/docs/receiver_resolution_slices.md",
+        "added": 4,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/hier_output_dist.py",
+        "added": 11,
+        "deleted": 0,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/shard/rw_sharding.py",
+        "added": 1,
+        "deleted": 3,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 1,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hbm_receiver.py",
+        "added": 3,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hier_dist.py",
+        "added": 43,
+        "deleted": 5,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_hier_receiver.py",
+        "added": 148,
+        "deleted": 0,
+        "production": false
+      }
+    ],
+    "production_added": 12,
+    "production_deleted": 3
+  },
+  {
+    "name": "14-raw-compat",
+    "branch": "fea-459-preserve-raw-lookup",
+    "head": "df0d61c51fcd1f3eab2c247116369ae2e7c31755",
+    "base": "3edbc6c4a7f64d5029bd4d1fca2e8413ba8ec17b",
+    "parents": [
+      "3edbc6c4a7f64d5029bd4d1fca2e8413ba8ec17b"
+    ],
+    "previous": null,
+    "candidate": "5f1234f07e849088bf190bf8a209ecca24433ba1",
+    "tested_head": "eb091b28497f4f8fa8b7216303e97c8da9719925",
+    "production_identical_to_tested": false,
+    "followup": "Refusal-only safety fix; normal non-refusing path unchanged. New final integration tests pending.",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/pull/7",
+    "review_base": "80acb34ee79e5f69e6191eecb17a3e7a68e03f10",
+    "files": [
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_function.py",
+        "added": 89,
+        "deleted": 20,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/dynamicemb/batched_dynamicemb_tables.py",
+        "added": 6,
+        "deleted": 2,
+        "production": true
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_test.sh",
+        "added": 1,
+        "deleted": 0,
+        "production": false
+      },
+      {
+        "path": "corelib/dynamicemb/test/unit_tests/test_raw_lookup_dispatch.py",
+        "added": 31,
+        "deleted": 0,
+        "production": false
+      }
+    ],
+    "production_added": 95,
+    "production_deleted": 22
+  },
+  {
+    "name": "17-dependency-docs",
+    "branch": "enh-459-dependency-docs",
+    "head": "3facd2e065a373e486e50846cf09012c5ee0acd8",
+    "base": "2995c4148346cf62d0873d346be354382085228c",
+    "production_identical_to_tested": true,
+    "url": "https://github.com/NVIDIA/recsys-examples/pull/562",
+    "review_base": "2995c4148346cf62d0873d346be354382085228c",
+    "files": [
+      {
+        "path": "corelib/dynamicemb/README.md",
+        "added": 5,
+        "deleted": 5,
+        "production": false
+      }
+    ],
+    "production_added": 0,
+    "production_deleted": 0
+  }
+]

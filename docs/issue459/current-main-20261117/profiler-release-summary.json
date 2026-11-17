@@ -1,0 +1,98 @@
+[
+  {
+    "case": "raw",
+    "version": 0,
+    "kernels": 145.0,
+    "host_syncs": 11.0,
+    "peak_increment_mib": 9.47607421875,
+    "record_stream_calls": 25.0
+  },
+  {
+    "case": "raw",
+    "version": 8,
+    "kernels": 150.0,
+    "host_syncs": 11.0,
+    "peak_increment_mib": 9.47607421875,
+    "record_stream_calls": 25.0
+  },
+  {
+    "case": "raw",
+    "version": 9,
+    "kernels": 145.0,
+    "host_syncs": 11.0,
+    "peak_increment_mib": 9.47607421875,
+    "record_stream_calls": 25.0
+  },
+  {
+    "case": "host",
+    "version": 0,
+    "kernels": 185.0,
+    "host_syncs": 11.0,
+    "peak_increment_mib": 9.71826171875,
+    "record_stream_calls": 15.0
+  },
+  {
+    "case": "host",
+    "version": 8,
+    "kernels": 190.0,
+    "host_syncs": 11.0,
+    "peak_increment_mib": 9.71875,
+    "record_stream_calls": 180.0
+  },
+  {
+    "case": "host",
+    "version": 9,
+    "kernels": 190.0,
+    "host_syncs": 11.0,
+    "peak_increment_mib": 9.71875,
+    "record_stream_calls": 180.0
+  },
+  {
+    "case": "hybrid",
+    "version": 0,
+    "kernels": 245.0,
+    "host_syncs": 36.0,
+    "peak_increment_mib": 9.71826171875,
+    "record_stream_calls": 15.0
+  },
+  {
+    "case": "hybrid",
+    "version": 8,
+    "kernels": 250.0,
+    "host_syncs": 36.0,
+    "peak_increment_mib": 9.71875,
+    "record_stream_calls": 180.0
+  },
+  {
+    "case": "hybrid",
+    "version": 9,
+    "kernels": 250.0,
+    "host_syncs": 36.0,
+    "peak_increment_mib": 9.71875,
+    "record_stream_calls": 180.0
+  },
+  {
+    "case": "sparse",
+    "version": 0,
+    "kernels": 590.0,
+    "host_syncs": 71.0,
+    "peak_increment_mib": 16.5625,
+    "record_stream_calls": 80.0
+  },
+  {
+    "case": "sparse",
+    "version": 8,
+    "kernels": 595.0,
+    "host_syncs": 71.0,
+    "peak_increment_mib": 16.6875,
+    "record_stream_calls": 120.0
+  },
+  {
+    "case": "sparse",
+    "version": 9,
+    "kernels": 595.0,
+    "host_syncs": 71.0,
+    "peak_increment_mib": 16.6875,
+    "record_stream_calls": 120.0
+  }
+]

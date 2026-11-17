@@ -1,0 +1,26 @@
+[
+  {
+    "name": "14-raw-compat",
+    "url": "https://github.com/WEIXILIN0307/recsys-examples/pull/7",
+    "repo": "WEIXILIN0307/recsys-examples",
+    "number": 7,
+    "head": "3039fcef6eaa12476f7a9e61727718505eba4882",
+    "base": "fea-459-storage-receiver"
+  },
+  {
+    "name": "17-dependency-docs",
+    "url": "https://github.com/NVIDIA/recsys-examples/pull/562",
+    "repo": "NVIDIA/recsys-examples",
+    "number": 562,
+    "head": "3facd2e065a373e486e50846cf09012c5ee0acd8",
+    "base": "main"
+  },
+  {
+    "name": "18-cache-refusal",
+    "url": "https://github.com/NVIDIA/recsys-examples/pull/563",
+    "repo": "NVIDIA/recsys-examples",
+    "number": 563,
+    "head": "ebc4a20cc9e86927ed61f54416f792420528b053",
+    "base": "main"
+  }
+]
