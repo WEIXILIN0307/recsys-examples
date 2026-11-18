@@ -16,6 +16,7 @@ from test_no_grad_slot_lifetime import batch, check_values, make_model, pins
 from torchrec import KeyedJaggedTensor
 
 
+@pytest.mark.parametrize("layout", ["hbm", "cache"])
 @pytest.mark.parametrize(
     "optimizer,dtype,wrap_kjt",
     [
@@ -25,8 +26,10 @@ from torchrec import KeyedJaggedTensor
     ],
     ids=["contiguous-dense", "strided-dense", "ec-fallback"],
 )
-def test_single_persistent_matrix_uses_physical_rows(optimizer, dtype, wrap_kjt):
-    template, _ = make_model(DynamicEmbPoolingMode.NONE, "hbm")
+def test_single_persistent_matrix_uses_physical_rows(
+    layout, optimizer, dtype, wrap_kjt
+):
+    template, _ = make_model(DynamicEmbPoolingMode.NONE, layout)
     model = BatchedDynamicEmbeddingTablesV2(
         table_options=[replace(template._dynamicemb_options[0], embedding_dtype=dtype)],
         table_names=["t0"],
@@ -117,7 +120,7 @@ def test_hbm_refused_insert_uses_initialized_temporary_rows(dtype, free_slots):
     assert pins(counter) == 0
 
 
-@pytest.mark.parametrize("layout", ["hbm"])
+@pytest.mark.parametrize("layout", ["hbm", "cache"])
 @pytest.mark.parametrize("mapped", [False, True])
 def test_output_allocator_preserves_values_and_gradient_rows(layout, mapped):
     model, counter = make_model(DynamicEmbPoolingMode.NONE, layout)
@@ -191,7 +194,7 @@ def test_shared_output_window_accepts_multiple_lookup_groups():
         torch.testing.assert_close(actual, expected, rtol=0, atol=0)
 
 
-@pytest.mark.parametrize("layout", ["hbm"])
+@pytest.mark.parametrize("layout", ["hbm", "cache"])
 def test_cross_stream_cancellation_keeps_release_metadata(layout):
     model, counter = make_model(DynamicEmbPoolingMode.NONE, layout)
     keys, offsets = batch(0)
@@ -217,7 +220,7 @@ def test_cross_stream_cancellation_keeps_release_metadata(layout):
     assert len(reused) == 200
 
 
-@pytest.mark.parametrize("layout", ["hbm"])
+@pytest.mark.parametrize("layout", ["hbm", "cache"])
 def test_retained_backward_cancelled_on_another_stream_waits_for_update(layout):
     model, counter = make_model(DynamicEmbPoolingMode.NONE, layout)
     keys, offsets = batch(0)

@@ -1477,6 +1477,7 @@ class DynamicEmbeddingFunction(torch.autograd.Function):
                 borrowed = (
                     native_lookup is not None
                     and emb_dtype != FP8_STORAGE_DTYPE
+                    and emb_dtype != FP8_STORAGE_DTYPE
                     and prefetch_state.table_num == 1
                     and prefetch_state.non_admitted_positions is None
                     and not is_pooling
