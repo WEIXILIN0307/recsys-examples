@@ -1,6 +1,8 @@
 # Receiver-resolution evidence index
 
-**Latest HBM safety follow-up:** [November 18 results and test commands](hbm-refusal-20261118/README.md).
+**Latest scope audit and test consolidation:** [November 18 results](claim-audit-20261118/README.md).
+
+**HBM safety follow-up:** [November 18 results and test commands](hbm-refusal-20261118/README.md).
 
 **November 17 implementation and results:** [2026-11-17 current-main audit](current-main-20261117/README.md).
 

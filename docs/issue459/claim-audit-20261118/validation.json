@@ -1,0 +1,93 @@
+{
+  "claim-audit-final": {
+    "commit": "5d9a5052a4d5d1ff9ff10b1cad9072362b1edcd3",
+    "devices": "0,2",
+    "argv": [
+      "/home/lwx/.cache/recsys-459-target-venv/bin/python",
+      "-m",
+      "torch.distributed.run",
+      "--standalone",
+      "--nproc_per_node=2",
+      "-m",
+      "pytest",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_hbm_receiver.py",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_hbm_row_state.py",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_cache_receiver.py",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_storage_receiver.py",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_pooled_receiver.py",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_hier_receiver.py",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_storage_prefetch.py",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_storage_row_copy.py",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_fp8_snapshot.py",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_raw_lookup_dispatch.py",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_cache_refused_insert.py",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_cache_refusal_recovery.py",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_dense_lookup.py",
+      "-x",
+      "--tb=short",
+      "-q",
+      "-p",
+      "no:cacheprovider"
+    ],
+    "runtime_sha256": "cb84afb37c817da371007eac4a8d75b69b90456b5e9725682f9aa400bef563eb",
+    "extension_sha256": "3d0389ae80d519437a46d7db81ecf89f1bc670e9cb3dfbdd05754ed7e77e4eb3",
+    "test_sources": {
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_hbm_receiver.py": "1e1fe80ca309dffbd81cafdfb3b36ab017d02cbe1b0dba66aec5954707ba7fb2",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_hbm_row_state.py": "236ec1dfc7c67467d09d25b49673385fc1ce8e88c9a1778d4a9422b0649a6ae6",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_cache_receiver.py": "d612492f8365c2b2ed282759543671df27ef434d8573316b68cb58edf16cdf29",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_storage_receiver.py": "813beac3fc1dbc1dbcd5418fb40212e689b3e63a4d7a5a8b87457962e70ddbbb",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_pooled_receiver.py": "b0b19236f88dddf97cf9301456a20da493735c51221f1c4277df3ccbe84e1ef1",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_hier_receiver.py": "4a072ed07551b49f29f9167f73230335ebcdce17b413c2b31dd1ad93269afac0",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_storage_prefetch.py": "f01597abdc458a5ad4099143c96037396db2ad4578067c6ef637dbab295bca00",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_storage_row_copy.py": "f7dce94cbc11cd44e88935c9bc0c2a4decc1e6beef8221c3ed93ad7d002b4117",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_fp8_snapshot.py": "162d8190631b13f6324bea27f5b0e0011f8c58d58e09fb6823e7e2de35719dee",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_raw_lookup_dispatch.py": "6a35981e3f23e84425dd1f3c29561201b25ef347ab343e5846302f2ad4523fa7",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_cache_refused_insert.py": "464d30a7847921118bb66236f7d47f92a28820c0b4b37cd7d60b7f5839620432",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_cache_refusal_recovery.py": "cf11276dca110456bc7b0498a8d5ba759600806949a32ecf7abe7933599bce4d",
+      "/home/lwx/recsys-examples-pr551-current-main/15-integration-551/corelib/dynamicemb/test/unit_tests/test_dense_lookup.py": "1419cc9ca835cde3f6e6847628384b0fbb17ee4e891e9d1cb9f0e23bed662115"
+    },
+    "log_sha256": "8dbe1080a309ebfc8a42a937f427104d267d34bbb3f99d1449f6594e9bc47bd5"
+  },
+  "claim-audit-hbm": {
+    "commit": "183a26dbca5c6182e30bbc2a28d19d7ecbe6c18e",
+    "devices": "3",
+    "argv": [
+      "/home/lwx/.cache/recsys-459-target-venv/bin/python",
+      "-m",
+      "pytest",
+      "/home/lwx/recsys-examples-pr551-current-main/03-hbm/corelib/dynamicemb/test/unit_tests/test_hbm_receiver.py",
+      "/home/lwx/recsys-examples-pr551-current-main/03-hbm/corelib/dynamicemb/test/unit_tests/test_hbm_row_state.py",
+      "-x",
+      "--tb=short",
+      "-q",
+      "-p",
+      "no:cacheprovider"
+    ],
+    "runtime_sha256": "a15aee92fab41fe685a747f113387de8307e8a9bfea23a1fcd89111723ee94e8",
+    "extension_sha256": "23900547983ab327be0951c39f2eb21bb8d620ee775cd3bfe3afa70e09e9a176",
+    "test_sources": {
+      "/home/lwx/recsys-examples-pr551-current-main/03-hbm/corelib/dynamicemb/test/unit_tests/test_hbm_receiver.py": "26e8ee27b9a243c3499715bc662c758784a9f87ea63c4252667693facb28d32a",
+      "/home/lwx/recsys-examples-pr551-current-main/03-hbm/corelib/dynamicemb/test/unit_tests/test_hbm_row_state.py": "2b428236a2b90d09492a3eb76235127c97ad674b7599f077854ff64362735fb9"
+    },
+    "log_sha256": "2c6077a26038a64061ceaaea030d8d808bb74316c6801f50722485ac7decd0d8"
+  },
+  "claim-audit-sharded-refusal": {
+    "commit": "183a26dbca5c6182e30bbc2a28d19d7ecbe6c18e",
+    "devices": "3",
+    "argv": [
+      "/home/lwx/.cache/recsys-459-target-venv/bin/python",
+      "-m",
+      "pytest",
+      "/home/lwx/recsys-examples-pr551-current-main/evidence/claim_audit_sharded_refusal.py::test_sharded_hbm_receiver_refusal",
+      "-s",
+      "-x",
+      "-q",
+      "-p",
+      "no:cacheprovider"
+    ],
+    "runtime_sha256": "a15aee92fab41fe685a747f113387de8307e8a9bfea23a1fcd89111723ee94e8",
+    "extension_sha256": "23900547983ab327be0951c39f2eb21bb8d620ee775cd3bfe3afa70e09e9a176",
+    "test_sources": {},
+    "log_sha256": "136a4b099f08738c439a9e1b1b224dcf247b9225f38b677d2e96da58700c62c3"
+  }
+}
